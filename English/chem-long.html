@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 12 Chemistry - Top 20 Long Questions (5 Marks)</title>
+    <style>
+        /* FONTS & PRINT SETUP */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif', 'Times New Roman', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* LAYOUT */
+        h1 {
+            text-align: center;
+            font-size: 16pt;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 9pt;
+            font-style: italic;
+            margin-bottom: 15px;
+            column-span: all;
+            color: #444;
+        }
+
+        .container {
+            column-count: 2;
+            column-gap: 8mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Q&A BLOCKS */
+        .qa-box {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #999;
+            padding-bottom: 10px;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 10.5pt;
+            background-color: #f0f0f0;
+            padding: 4px;
+            border-left: 4px solid #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+        }
+
+        /* TEXT STYLES */
+        strong { font-weight: 700; }
+        p { margin: 4px 0; }
+        ul, ol { margin: 5px 0 5px 20px; padding: 0; }
+        li { margin-bottom: 4px; }
+
+        /* MATH & EQUATIONS (CSS ONLY) */
+        .eq-box {
+            display: block;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            margin: 8px 0;
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 2px;
+            font-size: 0.9em;
+        }
+        .num { border-bottom: 1px solid #000; padding: 0 2px; }
+        .den { padding: 0 2px; }
+
+        sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+        sup { top: -0.5em; } sub { bottom: -0.25em; }
+
+        /* TABLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+            margin: 8px 0;
+        }
+        th, td { border: 1px solid #000; padding: 4px; vertical-align: top; }
+        th { background-color: #e0e0e0; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h1>Chemistry - Long Answer Questions</h1>
+    <div class="subtitle">Class 12 Bihar Board | Detailed 5-Marks Solutions | Top 20 Questions</div>
+
+    <div class="container">
+
+        <!-- Q1 -->
+        <div class="qa-box">
+            <span class="question">Q1. Define Order of Reaction. Derive the integrated rate equation (expression for rate constant k) for a First Order Reaction.</span>
+            <div class="answer">
+                <strong>(i) Order of Reaction:</strong><br>
+                The sum of the powers of the concentration terms of the reactants in the rate law expression is called the order of that chemical reaction. It is an experimental value which can be zero, fractional, or an integer.
+                <br><br>
+                <strong>(ii) Expression for First Order Reaction:</strong><br>
+                A reaction is said to be of first order if its rate is directly proportional to the first power of the concentration of the reactant.<br>
+                Let the reaction be: R &rarr; P (Product)<br>
+                Rate at time t:
+                <div class="eq-box">Rate = <span class="frac"><span class="num">-d[R]</span><span class="den">dt</span></span> = k[R]</div>
+                Separating the variables:
+                <div class="eq-box"><span class="frac"><span class="num">d[R]</span><span class="den">[R]</span></span> = -k dt</div>
+                Integrating both sides:<br>
+                &int; (1/[R]) d[R] = -k &int; dt<br>
+                <div class="eq-box">ln[R] = -kt + I ... (Equation 1)</div>
+                Where I is the integration constant.<br>
+                <strong>Initial State:</strong> At t = 0, [R] = [R]<sub>0</sub> (Initial Concentration).<br>
+                Substituting in Eq 1: I = ln[R]<sub>0</sub><br><br>
+                Substituting value of I back into Eq 1:<br>
+                ln[R] = -kt + ln[R]<sub>0</sub><br>
+                kt = ln[R]<sub>0</sub> - ln[R]<br>
+                k = (1/t) ln([R]<sub>0</sub> / [R])<br>
+                Converting natural log (ln) to log base 10:
+                <div class="eq-box">k = <span class="frac"><span class="num">2.303</span><span class="den">t</span></span> log <span class="frac"><span class="num">[R]<sub>0</sub></span><span class="den">[R]</span></span></div>
+                This is the required expression for the rate constant.
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-box">
+            <span class="question">Q2. Name the chief ore of Iron. Describe the extraction of Iron from its ore using a Blast Furnace.</span>
+            <div class="answer">
+                <strong>Chief Ore:</strong> Haematite (Fe<sub>2</sub>O<sub>3</sub>).<br>
+                <strong>Principle of Extraction:</strong> The concentrated ore is reduced by carbon (Coke) in a massive steel tower called a <strong>Blast Furnace</strong>.
+                <br>
+                <strong>Process & Reactions:</strong><br>
+                A mixture of calcined ore, Coke, and Limestone (Ratio 8:4:1) is fed from the top. A blast of hot air is blown from the bottom. The furnace has distinct zones based on temperature:
+                <ol>
+                    <li>
+                        <strong>Combustion Zone (Bottom):</strong> Coke burns to produce heat (Temp ~2170 K).
+                        <br>C + O<sub>2</sub> &rarr; CO<sub>2</sub> + Heat
+                    </li>
+                    <li>
+                        <strong>Reduction Zone (Top):</strong> The temperature is lower (500-900 K). Rising Carbon Monoxide (CO) gas reduces Haematite ore into spongy iron.
+                        <div class="eq-box">Fe<sub>2</sub>O<sub>3</sub> + 3CO &rarr; 2Fe + 3CO<sub>2</sub></div>
+                    </li>
+                    <li>
+                        <strong>Slag Formation (Middle):</strong> Limestone (CaCO<sub>3</sub>) decomposes to give CaO, which reacts with Silica (SiO<sub>2</sub>) impurity to form Slag.
+                        <div class="eq-box">CaO + SiO<sub>2</sub> &rarr; CaSiO<sub>3</sub> (Slag)</div>
+                    </li>
+                </ol>
+                Molten iron (Pig Iron) is collected from the bottom of the furnace.
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-box">
+            <span class="question">Q3. Describe the manufacture of Sulphuric Acid by the Contact Process. Write the reactions with Copper and Oxalic Acid.</span>
+            <div class="answer">
+                The Contact Process is the modern industrial method for manufacturing Sulphuric Acid. The main steps are:
+                <ol>
+                    <li>
+                        <strong>Production of SO<sub>2</sub>:</strong> Burning Sulphur or Iron Pyrites in air.
+                        <br>S + O<sub>2</sub> &rarr; SO<sub>2</sub>
+                    </li>
+                    <li>
+                        <strong>Conversion of SO<sub>2</sub> to SO<sub>3</sub> (Key Step):</strong><br>
+                        Pure SO<sub>2</sub> and O<sub>2</sub> are passed over <strong>Vanadium Pentoxide (V<sub>2</sub>O<sub>5</sub>)</strong> catalyst at 720K and 2 bar pressure. This is an exothermic reaction.
+                        <div class="eq-box">2SO<sub>2</sub> + O<sub>2</sub> &#8652; 2SO<sub>3</sub> ; &Delta;H = -ve</div>
+                    </li>
+                    <li>
+                        <strong>Formation of Oleum:</strong> SO<sub>3</sub> is not dissolved directly in water (causes fog). It is absorbed in 98% conc. H<sub>2</sub>SO<sub>4</sub> to form <strong>Oleum (H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>)</strong>.
+                        <br>SO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>
+                    </li>
+                    <li>
+                        <strong>Dilution:</strong> Oleum is diluted with water to get acid of desired concentration.
+                        <br>H<sub>2</sub>S<sub>2</sub>O<sub>7</sub> + H<sub>2</sub>O &rarr; 2H<sub>2</sub>SO<sub>4</sub>
+                    </li>
+                </ol>
+                <strong>Chemical Reactions:</strong><br>
+                (i) <strong>With Copper:</strong> Cu + 2H<sub>2</sub>SO<sub>4</sub> &rarr; CuSO<sub>4</sub> + SO<sub>2</sub> + 2H<sub>2</sub>O<br>
+                (ii) <strong>With Oxalic Acid:</strong> (COOH)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; CO + CO<sub>2</sub> + H<sub>2</sub>O
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-box">
+            <span class="question">Q4. State the principle of manufacturing Ammonia by Haber’s Process. How does it react with CuSO<sub>4</sub> solution?</span>
+            <div class="answer">
+                <strong>Principle:</strong>
+                Ammonia is manufactured by heating a mixture of Nitrogen (N<sub>2</sub>) and Hydrogen (H<sub>2</sub>) in a 1:3 ratio.
+                <div class="eq-box">N<sub>2</sub>(g) + 3H<sub>2</sub>(g) &#8652; 2NH<sub>3</sub>(g) + Heat</div>
+                Since the reaction is reversible and exothermic, favorable conditions according to Le-Chatelier’s principle are:
+                <ol>
+                    <li><strong>Low Temperature:</strong> Since heat is evolved, lower temp (~700 K) favors forward reaction.</li>
+                    <li><strong>High Pressure:</strong> Volume decreases in formation, so high pressure (~200 atm) is required.</li>
+                    <li><strong>Catalyst:</strong> Iron Oxide (Fe<sub>2</sub>O<sub>3</sub>) with K<sub>2</sub>O/Al<sub>2</sub>O<sub>3</sub> as a promoter is used to increase the rate.</li>
+                </ol>
+                <strong>Reaction with CuSO<sub>4</sub>:</strong><br>
+                When aqueous ammonia (NH<sub>4</sub>OH) is added to copper sulphate solution, a <strong>Deep Blue</strong> complex (Tetraamminecopper(II) sulphate) is formed.
+                <div class="eq-box">Cu<sup>2+</sup>(aq) + 4NH<sub>3</sub>(aq) &rarr; [Cu(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup></div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-box">
+            <span class="question">Q5. Define Osmotic Pressure. Prove that Osmotic Pressure is a colligative property.</span>
+            <div class="answer">
+                <strong>(i) Osmosis:</strong> The flow of solvent molecules from pure solvent to solution through a semi-permeable membrane (SPM).
+                <br>
+                <strong>(ii) Osmotic Pressure:</strong> The minimum external pressure that must be applied to the solution side to just stop the flow of solvent into the solution through the SPM is called <strong>Osmotic Pressure (&pi;)</strong>.
+                <br><br>
+                <strong>(iii) Proof as Colligative Property:</strong><br>
+                According to Van't Hoff, for dilute solutions, osmotic pressure follows the gas equation:
+                <div class="eq-box">&pi; = CRT</div>
+                Where C is molar concentration, R is gas constant, T is temperature.<br>
+                Since C = n / V (moles per liter), we get:
+                <div class="eq-box">&pi; = <span class="frac"><span class="num">n</span><span class="den">V</span></span> RT</div>
+                Here, n is the number of moles of solute. At constant T and V, osmotic pressure (&pi;) is directly proportional to the number of solute particles (n).<br>
+                By definition, properties that depend only on the number of solute particles are called <strong>Colligative Properties</strong>. Hence, Osmotic Pressure is a colligative property.
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-box">
+            <span class="question">Q6. How would you distinguish between Primary (1&deg;), Secondary (2&deg;), and Tertiary (3&deg;) Alcohols?</span>
+            <div class="answer">
+                The best method to distinguish them is the <strong>Lucas Test</strong>.
+                <br>
+                <strong>Lucas Reagent:</strong> A mixture of Concentrated HCl and Anhydrous ZnCl<sub>2</sub>.
+                <br>
+                <strong>Principle:</strong> Alcohols react with Lucas reagent to form alkyl chlorides. Alkyl chlorides are insoluble in water and produce <strong>turbidity</strong> (cloudiness). The rate depends on the stability of the carbocation formed.
+                <br>ROH + HCl &rarr; R-Cl + H<sub>2</sub>O
+                <br><br>
+                <strong>Observations:</strong>
+                <ol>
+                    <li>
+                        <strong>Tertiary (3&deg;) Alcohol:</strong> Most reactive. Produces turbidity <strong>immediately</strong> upon adding the reagent.
+                    </li>
+                    <li>
+                        <strong>Secondary (2&deg;) Alcohol:</strong> Moderately reactive. Produces turbidity after about <strong>5 minutes</strong>.
+                    </li>
+                    <li>
+                        <strong>Primary (1&deg;) Alcohol:</strong> Least reactive. No turbidity at room temperature. Turbidity appears only upon <strong>heating</strong>.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-box">
+            <span class="question">Q7. How would you distinguish between the following pairs: (a) Acetaldehyde and Acetone, (b) Formic Acid and Acetic Acid.</span>
+            <div class="answer">
+                <strong>(a) Acetaldehyde (CH<sub>3</sub>CHO) vs Acetone (CH<sub>3</sub>COCH<sub>3</sub>):</strong>
+                Acetaldehyde is an aldehyde (reducing agent), Acetone is a ketone.
+                <table>
+                    <tr><th>Test</th><th>Acetaldehyde</th><th>Acetone</th></tr>
+                    <tr><td><strong>Tollen's Test</strong></td><td>Reduces it to metallic silver (gives <strong>Silver Mirror</strong>).</td><td>No reaction.</td></tr>
+                    <tr><td><strong>Fehling's Solution</strong></td><td>Gives <strong>Red Precipitate</strong> of Cu<sub>2</sub>O.</td><td>No reaction.</td></tr>
+                </table>
+                <br>
+                <strong>(b) Formic Acid (HCOOH) vs Acetic Acid (CH<sub>3</sub>COOH):</strong>
+                Formic acid is unique as it contains an aldehyde group (-CHO like structure) along with the acid group.
+                <table>
+                    <tr><th>Test</th><th>Formic Acid</th><th>Acetic Acid</th></tr>
+                    <tr><td><strong>Tollen's Test</strong></td><td>Reduces Tollen's reagent to give <strong>Silver Mirror</strong>.</td><td>No reaction.</td></tr>
+                    <tr><td><strong>HgCl<sub>2</sub> Test</strong></td><td>Reduces HgCl<sub>2</sub> to white ppt of Hg<sub>2</sub>Cl<sub>2</sub>.</td><td>No reaction.</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-box">
+            <span class="question">Q8. What are Carbohydrates? How are they classified? Give examples.</span>
+            <div class="answer">
+                <strong>Definition:</strong>
+                Carbohydrates are optically active polyhydroxy aldehydes or polyhydroxy ketones, or substances that yield such units on hydrolysis. Their general formula is often C<sub>x</sub>(H<sub>2</sub>O)<sub>y</sub>. They are the primary source of energy.
+                <br><br>
+                <strong>Classification (based on Hydrolysis):</strong>
+                <ol>
+                    <li>
+                        <strong>Monosaccharides:</strong><br>
+                        The simplest carbohydrates that cannot be hydrolyzed further into simpler units.
+                        <br><em>Examples:</em> Glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>), Fructose, Ribose.
+                    </li>
+                    <li>
+                        <strong>Oligosaccharides:</strong><br>
+                        Carbohydrates that yield 2 to 10 monosaccharide units on hydrolysis. Those yielding two units are Disaccharides.
+                        <br><em>Examples:</em> Sucrose (Cane sugar) &rarr; Glucose + Fructose; Maltose.
+                    </li>
+                    <li>
+                        <strong>Polysaccharides:</strong><br>
+                        High molecular mass polymers that yield a large number (100s to 1000s) of monosaccharide units on hydrolysis. They are not sweet (Non-sugars).
+                        <br><em>Examples:</em> Starch, Cellulose, Glycogen.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-box">
+            <span class="question">Q9. Discuss the factors affecting the rate of reaction (especially Temperature).</span>
+            <div class="answer">
+                <strong>Rate of Reaction:</strong> The speed at which reactants are converted into products. Factors affecting it are:
+                <ol>
+                    <li>
+                        <strong>Concentration of Reactants:</strong><br>
+                        Increasing concentration increases the number of molecules per unit volume, leading to more effective collisions and a higher rate. (Rate &propto; [Conc]<sup>n</sup>).
+                    </li>
+                    <li>
+                        <strong>Effect of Temperature:</strong><br>
+                        Temperature has the most significant effect. Increasing temperature increases kinetic energy, allowing more molecules to cross the activation energy barrier.<br>
+                        Generally, for every 10&deg;C rise in temperature, the rate constant nearly <strong>doubles</strong>.
+                        <br><strong>Arrhenius Equation:</strong>
+                        <div class="eq-box">k = A e<sup>-E<sub>a</sub> / RT</sup></div>
+                        Where k is rate constant, E<sub>a</sub> is Activation Energy, and T is absolute temperature.
+                    </li>
+                    <li>
+                        <strong>Catalyst:</strong><br>
+                        A positive catalyst provides an alternate pathway with lower activation energy, thus increasing the reaction rate.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-box">
+            <span class="question">Q10. What are the main sources of Iodine? Describe the extraction of Iodine from seaweeds.</span>
+            <div class="answer">
+                <strong>Main Sources:</strong>
+                1. Sea weeds (Laminaria species).
+                2. Chile Saltpetre (contains NaIO<sub>3</sub> as impurity).
+                3. Natural Brine.
+                <br><br>
+                <strong>Extraction from Sea Weeds:</strong>
+                This is the most common method.
+                <ol>
+                    <li>
+                        <strong>Preparation of Kelp:</strong> Seaweeds are dried and burnt carefully in deep pits to avoid sublimation of iodine. The ash obtained is called <strong>'Kelp'</strong> (contains 0.4% to 1.3% Iodine).
+                    </li>
+                    <li>
+                        <strong>Crystallization:</strong> Kelp is dissolved in water and concentrated. Less soluble salts (NaCl, KCl, sulphates) crystallize out first. The remaining thick liquid is called <strong>Mother Liquor</strong>. It is rich in Iodides (NaI, KI).
+                    </li>
+                    <li>
+                        <strong>Distillation:</strong> The mother liquor is mixed with Sulphuric Acid (H<sub>2</sub>SO<sub>4</sub>) and Manganese Dioxide (MnO<sub>2</sub>) and heated in an iron retort. Iodine vaporizes and is condensed in Aludels.
+                        <div class="eq-box">2NaI + MnO<sub>2</sub> + 3H<sub>2</sub>SO<sub>4</sub> &rarr; MnSO<sub>4</sub> + 2NaHSO<sub>4</sub> + 2H<sub>2</sub>O + I<sub>2</sub></div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-box">
+            <span class="question">Q11. What is Elevation in Boiling Point? Derive the relation between elevation in boiling point and molar mass of solute.</span>
+            <div class="answer">
+                <strong>(i) Elevation in Boiling Point (&Delta;T<sub>b</sub>):</strong><br>
+                When a non-volatile solute is added to a volatile solvent, the vapour pressure of the solvent decreases. To make the solution boil (i.e., equal atmospheric pressure), it must be heated to a higher temperature.<br>
+                The difference between the boiling point of the solution (T<sub>b</sub>) and the pure solvent (T<sub>b</sub><sup>0</sup>) is called Elevation in Boiling Point.
+                <div class="eq-box">&Delta;T<sub>b</sub> = T<sub>b</sub> - T<sub>b</sub><sup>0</sup></div>
+                <strong>(ii) Relation with Molar Mass:</strong><br>
+                According to Raoult's Law for dilute solutions, elevation in boiling point is proportional to molality (m).
+                <br>&Delta;T<sub>b</sub> = K<sub>b</sub> &times; m
+                <br>(K<sub>b</sub> = Molal Elevation Constant)
+                <br>
+                Molality (m) = <span class="frac"><span class="num">w<sub>2</sub>/M<sub>2</sub></span><span class="den">w<sub>1</sub>/1000</span></span>
+                <br>
+                Substituting m:
+                <br>&Delta;T<sub>b</sub> = K<sub>b</sub> &times; <span class="frac"><span class="num">w<sub>2</sub> &times; 1000</span><span class="den">M<sub>2</sub> &times; w<sub>1</sub></span></span>
+                <br>
+                Therefore, Molar Mass of solute (M<sub>2</sub>):
+                <div class="eq-box">M<sub>2</sub> = <span class="frac"><span class="num">K<sub>b</sub> &times; w<sub>2</sub> &times; 1000</span><span class="den">&Delta;T<sub>b</sub> &times; w<sub>1</sub></span></span></div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-box">
+            <span class="question">Q12. Describe the manufacture of Nitric Acid (HNO<sub>3</sub>) by Ostwald Process.</span>
+            <div class="answer">
+                The Ostwald process involves the catalytic oxidation of Ammonia. It occurs in three steps:
+                <ol>
+                    <li>
+                        <strong>Catalytic Oxidation of Ammonia:</strong><br>
+                        A mixture of NH<sub>3</sub> and air (1:9) is passed over Platinum-Rhodium gauze at 500 K and 9 bar pressure. NO gas is formed.
+                        <div class="eq-box">4NH<sub>3</sub> + 5O<sub>2</sub> &rarr; 4NO + 6H<sub>2</sub>O + Heat</div>
+                    </li>
+                    <li>
+                        <strong>Oxidation of NO:</strong><br>
+                        The nitric oxide is cooled and oxidized to Nitrogen Dioxide (NO<sub>2</sub>) in an oxidation chamber.
+                        <div class="eq-box">2NO + O<sub>2</sub> &rightleftharpoons; 2NO<sub>2</sub> (Brown gas)</div>
+                    </li>
+                    <li>
+                        <strong>Absorption in Water:</strong><br>
+                        NO<sub>2</sub> is passed through a tower packed with quartz where water is sprayed from the top. It dissolves to form Nitric Acid.
+                        <div class="eq-box">3NO<sub>2</sub> + H<sub>2</sub>O &rarr; 2HNO<sub>3</sub> + NO</div>
+                    </li>
+                </ol>
+                The recycled NO is sent back to the oxidation chamber. The dilute acid is concentrated by distillation.
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-box">
+            <span class="question">Q13. Name the main ore of Aluminium. Describe the principle and method of extraction from Bauxite.</span>
+            <div class="answer">
+                <strong>Main Ore:</strong> Bauxite (Al<sub>2</sub>O<sub>3</sub>&cdot;2H<sub>2</sub>O).<br>
+                Extraction involves two main steps:
+                <br>
+                <strong>1. Concentration (Bayer's Process):</strong><br>
+                Bauxite is digested with conc. NaOH. Alumina dissolves as Sodium Aluminate, leaving impurities (Fe<sub>2</sub>O<sub>3</sub>, SiO<sub>2</sub>) behind.
+                <ul>
+                    <li>Al<sub>2</sub>O<sub>3</sub> + 2NaOH &rarr; 2NaAlO<sub>2</sub> + H<sub>2</sub>O</li>
+                    <li>The filtrate is diluted and CO<sub>2</sub> is passed to precipitate Al(OH)<sub>3</sub>, which is calcined to get pure Alumina (Al<sub>2</sub>O<sub>3</sub>).</li>
+                </ul>
+                <strong>2. Electrolytic Reduction (Hall-Heroult Process):</strong><br>
+                Pure Alumina is a bad conductor with a high melting point (2050&deg;C).
+                <ul>
+                    <li>It is mixed with <strong>Cryolite (Na<sub>3</sub>AlF<sub>6</sub>)</strong> and Fluorspar (CaF<sub>2</sub>) to lower melting point (to 900&deg;C) and increase conductivity.</li>
+                    <li>Electrolysis is done using Carbon electrodes.</li>
+                    <li><strong>Cathode:</strong> Al<sup>3+</sup> + 3e<sup>-</sup> &rarr; Al (Molten metal sinks).</li>
+                    <li><strong>Anode:</strong> C + O<sup>2-</sup> &rarr; CO / CO<sub>2</sub> (Gas evolves).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-box">
+            <span class="question">Q14. Explain (i) Aldol Condensation, (ii) Cannizzaro’s Reaction with examples.</span>
+            <div class="answer">
+                <strong>(i) Aldol Condensation:</strong><br>
+                Aldehydes or ketones containing at least one <strong>&alpha;-hydrogen</strong> atom undergo condensation in the presence of dilute alkali (dil NaOH) to form &beta;-hydroxy aldehydes (Aldol) or &beta;-hydroxy ketones.
+                <br><em>Example:</em> Two molecules of Acetaldehyde (CH<sub>3</sub>CHO):
+                <div class="eq-box">2CH<sub>3</sub>CHO <span style="font-size:0.8em">&rarr;(dil NaOH)&rarr;</span> CH<sub>3</sub>-CH(OH)-CH<sub>2</sub>-CHO</div>
+                (Product: 3-Hydroxybutanal or Aldol)
+
+                <br><br>
+                <strong>(ii) Cannizzaro Reaction:</strong><br>
+                Aldehydes having <strong>no &alpha;-hydrogen</strong> atom (e.g., Formaldehyde HCHO, Benzaldehyde) undergo <strong>disproportionation</strong> when treated with concentrated alkali (Conc. NaOH/KOH). One molecule is oxidized to acid salt and another is reduced to alcohol.
+                <br><em>Example:</em>
+                <div class="eq-box">2HCHO + Conc. NaOH &rarr; CH<sub>3</sub>OH + HCOONa</div>
+                (Methanol + Sodium Formate)
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-box">
+            <span class="question">Q15. Explain the construction and working of an Electrochemical (Galvanic) Cell.</span>
+            <div class="answer">
+                <strong>Definition:</strong> A device that converts chemical energy of a spontaneous redox reaction into electrical energy. Example: <strong>Daniel Cell</strong>.
+                <br><br>
+                <strong>Construction:</strong>
+                <ol>
+                    <li><strong>Anode (-ve pole):</strong> Zinc rod dipped in ZnSO<sub>4</sub> solution (Oxidation half).</li>
+                    <li><strong>Cathode (+ve pole):</strong> Copper rod dipped in CuSO<sub>4</sub> solution (Reduction half).</li>
+                    <li><strong>Salt Bridge:</strong> An inverted U-tube containing inert electrolyte (KCl/KNO<sub>3</sub>) in agar-agar jelly. It connects the two solutions and maintains electrical neutrality.</li>
+                </ol>
+                <strong>Working:</strong>
+                When connected:
+                <ul>
+                    <li>At Anode: Zinc atoms lose electrons to form Zn<sup>2+</sup> ions.
+                        <br>Zn(s) &rarr; Zn<sup>2+</sup>(aq) + 2e<sup>-</sup></li>
+                    <li>Electrons flow through the wire from Zinc to Copper.</li>
+                    <li>At Cathode: Cu<sup>2+</sup> ions from solution gain electrons to form Copper metal.
+                        <br>Cu<sup>2+</sup>(aq) + 2e<sup>-</sup> &rarr; Cu(s)</li>
+                </ul>
+                <strong>Net Cell Reaction:</strong> Zn + Cu<sup>2+</sup> &rarr; Zn<sup>2+</sup> + Cu (EMF = 1.1 V)
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-box">
+            <span class="question">Q16. State Raoult’s Law for relative lowering of vapour pressure. How is molecular mass determined?</span>
+            <div class="answer">
+                <strong>Relative Lowering of VP:</strong> When a non-volatile solute is dissolved in a solvent, the vapour pressure of the solvent decreases relative to the pure solvent.
+                <br><br>
+                <strong>Raoult's Law:</strong><br>
+                "For a solution containing a non-volatile solute, the <strong>relative lowering of vapour pressure</strong> is equal to the <strong>mole fraction of the solute</strong>."
+                <br><br>
+                <strong>Mathematical Expression:</strong>
+                <div class="eq-box"><span class="frac"><span class="num">P<sup>0</sup> - P<sub>s</sub></span><span class="den">P<sup>0</sup></span></span> = X<sub>solute</sub></div>
+                Where P<sup>0</sup> is VP of pure solvent, P<sub>s</sub> is VP of solution, and X<sub>solute</sub> is mole fraction (n / (n+N)).
+                <br><br>
+                <strong>Determination of Molar Mass (m):</strong><br>
+                For dilute solutions (n << N), n+N &asymp; N.
+                <br>
+                (P<sup>0</sup> - P<sub>s</sub>) / P<sup>0</sup> = n / N = (w/m) / (W/M)
+                <br>
+                Where w, m are weight & molar mass of solute; W, M are weight & molar mass of solvent.
+                <br>
+                Rearranging for m:
+                <div class="eq-box">m = <span class="frac"><span class="num">w &times; M</span><span class="den">W</span></span> &times; <span class="frac"><span class="num">P<sup>0</sup></span><span class="den">P<sup>0</sup> - P<sub>s</sub></span></span></div>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-box">
+            <span class="question">Q17. Describe the laboratory method for the preparation of Aniline.</span>
+            <div class="answer">
+                <strong>Principle:</strong>
+                In the laboratory, Aniline (C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>) is prepared by the reduction of <strong>Nitrobenzene (C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub>)</strong> with Tin (Sn) and Concentrated Hydrochloric Acid (HCl).
+                <br><br>
+                <strong>Reactions:</strong>
+                <ol>
+                    <li>
+                        Nitrobenzene is reduced by nascent hydrogen produced by Sn and HCl.
+                        <div class="eq-box">C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> + 6[H] <span style="font-size:0.8em">&rarr;(Sn/HCl)&rarr;</span> C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + 2H<sub>2</sub>O</div>
+                    </li>
+                    <li>
+                        Since the medium is acidic, Aniline forms a salt called Anilinium Hydrochloride (C<sub>6</sub>H<sub>5</sub>NH<sub>3</sub><sup>+</sup>Cl<sup>-</sup>).
+                    </li>
+                    <li>
+                        To liberate free Aniline, the salt is treated with strong alkali (NaOH).
+                        <br>C<sub>6</sub>H<sub>5</sub>NH<sub>3</sub>Cl + NaOH &rarr; C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + NaCl + H<sub>2</sub>O
+                    </li>
+                </ol>
+                <strong>Procedure:</strong> Nitrobenzene and Tin are mixed in a flask. Conc. HCl is added. After the reaction, the mixture is steam distilled to separate crude Aniline.
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-box">
+            <span class="question">Q18. Differentiate between Lyophilic and Lyophobic sols. What is an Emulsion?</span>
+            <div class="answer">
+                <strong>(i) Differences:</strong>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Lyophilic (Solvent-loving)</th>
+                        <th>Lyophobic (Solvent-hating)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Preparation</strong></td>
+                        <td>Formed easily by direct mixing.</td>
+                        <td>Require special chemical methods.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stability</strong></td>
+                        <td>Highly stable. Not easily coagulated.</td>
+                        <td>Less stable. Coagulate on adding electrolyte.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reversibility</strong></td>
+                        <td>Reversible (Sol can be remade).</td>
+                        <td>Irreversible (Cannot be remade).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Examples</strong></td>
+                        <td>Gum, Starch, Gelatin.</td>
+                        <td>Gold sol, Sulphur sol, Fe(OH)<sub>3</sub>.</td>
+                    </tr>
+                </table>
+                <br>
+                <strong>(ii) Emulsion:</strong><br>
+                An emulsion is a colloidal system in which both the Dispersed Phase and the Dispersion Medium are <strong>liquids</strong> (usually immiscible). Emulsifiers are added to stabilize them.
+                <br><em>Examples:</em> Milk (Liquid fat in water), Butter (Water in liquid fat).
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-box">
+            <span class="question">Q19. Describe the laboratory method for the preparation of Chloroform. Reaction with Acetone.</span>
+            <div class="answer">
+                <strong>Laboratory Method:</strong>
+                Chloroform (CHCl<sub>3</sub>) is prepared by distilling Ethanol or Acetone with a paste of <strong>Bleaching Powder (CaOCl<sub>2</sub>)</strong> and water.
+                <br>
+                <strong>Steps (Using Acetone):</strong>
+                <ol>
+                    <li>
+                        <strong>Formation of Chlorine:</strong> Bleaching powder reacts with water to release Chlorine.
+                        <br>CaOCl<sub>2</sub> + H<sub>2</sub>O &rarr; Ca(OH)<sub>2</sub> + Cl<sub>2</sub>
+                    </li>
+                    <li>
+                        <strong>Chlorination:</strong> Chlorine reacts with Acetone to form Trichloroacetone.
+                        <br>CH<sub>3</sub>COCH<sub>3</sub> + 3Cl<sub>2</sub> &rarr; CCl<sub>3</sub>COCH<sub>3</sub> + 3HCl
+                    </li>
+                    <li>
+                        <strong>Hydrolysis:</strong> Trichloroacetone reacts with Lime water (Ca(OH)<sub>2</sub>) to yield Chloroform.
+                        <div class="eq-box">2CCl<sub>3</sub>COCH<sub>3</sub> + Ca(OH)<sub>2</sub> &rarr; 2CHCl<sub>3</sub> + (CH<sub>3</sub>COO)<sub>2</sub>Ca</div>
+                        (Chloroform + Calcium Acetate)
+                    </li>
+                </ol>
+                <strong>Reaction with Acetone:</strong><br>
+                In the presence of KOH, Chloroform condenses with Acetone to form <strong>Chloretone</strong>, which is used as a hypnotic drug.
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-box">
+            <span class="question">Q20. What is Soap? Explain its Cleansing Action.</span>
+            <div class="answer">
+                <strong>Soap:</strong>
+                Soaps are sodium or potassium salts of long-chain fatty acids (like Stearic, Oleic, or Palmitic acid).
+                <br><em>General Formula:</em> R-COONa (e.g., Sodium Stearate C<sub>17</sub>H<sub>35</sub>COONa).
+                <br><br>
+                <strong>Cleansing Action:</strong><br>
+                A soap molecule has two parts:
+                <ol>
+                    <li><strong>Hydrophilic Head:</strong> Ionic part (COO<sup>-</sup>Na<sup>+</sup>). Soluble in water, insoluble in oil.</li>
+                    <li><strong>Hydrophobic Tail:</strong> Long hydrocarbon chain. Insoluble in water, soluble in oil/grease.</li>
+                </ol>
+                <strong>Micelle Formation:</strong><br>
+                When soap is dissolved in water containing dirt (oil/grease), the hydrophobic tails dissolve into the oil droplet, while the hydrophilic heads project outwards into the water. This spherical structure is called a <strong>Micelle</strong>.
+                <br>
+                When agitated, the micelles pull the oil droplet off the surface into the water, forming an emulsion. The dirt is thus washed away with water.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

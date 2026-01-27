@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathematics Class 12 - Top 20 Important Questions (Hints)</title>
+    <style>
+        /* Base Fonts & Print Settings */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 6mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            column-span: all;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 9pt;
+            font-style: italic;
+            margin-bottom: 10px;
+            column-span: all;
+            color: #444;
+        }
+
+        /* Question Block */
+        .qa-container {
+            break-inside: avoid;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dotted #999;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 10.5pt;
+            display: block;
+            margin-bottom: 4px;
+            background-color: #f0f0f0;
+            padding: 3px 5px;
+            border-left: 4px solid #000;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+            font-size: 9.5pt;
+        }
+
+        /* Structural Elements */
+        strong { font-weight: 700; }
+        p { margin: 2px 0; }
+        ul, ol { margin: 3px 0 5px 16px; padding: 0; }
+        li { margin-bottom: 2px; padding-left: 2px; }
+
+        /* Equation/Box Styling */
+        .equation-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px 0;
+            padding: 3px;
+            background: #fff;
+            border: 1px solid #ddd;
+            font-family: 'Times New Roman', serif;
+            font-size: 9.5pt;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Matrix Tables */
+        table.matrix {
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin: 0 auto;
+            display: inline-table;
+            vertical-align: middle;
+        }
+        table.matrix td {
+            border: 1px solid #000;
+            padding: 2px 5px;
+            text-align: center;
+            min-width: 15px;
+        }
+        
+        .highlight {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mathematics (गणित) - 5 Marks Questions</h1>
+    <div class="subtitle">Class 12 Bihar Board | Top 20 Most Probable Questions & Hints</div>
+
+    <div class="content-wrapper">
+
+        <!-- Q1 -->
+        <div class="qa-container">
+            <div class="question">Q1. Z = 5x + 10y का अधिकतमीकरण एवं न्यूनतमीकरण करें, जबकि x + 2y &le; 120, x + y &ge; 60, x - 2y &ge; 0, x, y &ge; 0.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ol>
+                    <li>दिए गए असमिकाओं (inequalities) को समीकरण मानकर ग्राफ खींचे।</li>
+                    <li>उभयनिष्ठ सुसंगत क्षेत्र (Feasible Region) को छायांकित करें।</li>
+                    <li>क्षेत्र के <strong>कोणीय बिंदुओं (Corner Points)</strong> के निर्देशांक ज्ञात करें।</li>
+                    <li>प्रत्येक बिंदु पर Z का मान निकालें। सबसे बड़ा मान 'अधिकतम' और सबसे छोटा 'न्यूनतम' होगा।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-container">
+            <div class="question">Q2. यदि tan⁻¹x + tan⁻¹y + tan⁻¹z = &pi;/2, तो सिद्ध करें कि yz + zx + xy = 1.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                सूत्र का प्रयोग करें:
+                <div class="equation-box">tan⁻¹[(x+y+z - xyz) / (1 - xy - yz - zx)] = &pi;/2</div>
+                चूँकि tan(&pi;/2) = &infin; (या 1/0), अतः हर (denominator) को 0 के बराबर रखें:
+                <br>1 - xy - yz - zx = 0 &rArr; yz + zx + xy = 1.
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-container">
+            <div class="question">Q3. मान ज्ञात करें: &int;<sub>0</sub><sup>&pi;/2</sup> log(sin x) dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ol>
+                    <li>इसे I मानें। गुणधर्म &int;<sub>0</sub><sup>a</sup> f(x)dx = &int;<sub>0</sub><sup>a</sup> f(a-x)dx का प्रयोग करें।</li>
+                    <li>I = &int; log(cos x) dx प्राप्त होगा। दोनों समीकरणों को जोड़ें (2I)।</li>
+                    <li>log(sin x) + log(cos x) = log(sin 2x) - log 2 का प्रयोग करें।</li>
+                    <li>अंतिम उत्तर: <strong>-(&pi;/2) log 2</strong></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-container">
+            <div class="question">Q4. हल करें: (x² - y²) dy/dx = 2xy.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                यह एक <strong>समघातीय अवकल समीकरण (Homogeneous D.E.)</strong> है।
+                <ul>
+                    <li>y = vx रखें, तो dy/dx = v + x(dv/dx) होगा।</li>
+                    <li>मान रखकर चरों को अलग करें (Variable Separation)।</li>
+                    <li>समाकलन करें: &int;[1/(1+v²)] dv आदि का प्रयोग होगा।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-container">
+            <div class="question">Q5. गुणनखंड निकालें: <br>
+                <table class="matrix">
+                    <tr><td>(b+c)²</td><td>a²</td><td>a²</td></tr>
+                    <tr><td>b²</td><td>(c+a)²</td><td>b²</td></tr>
+                    <tr><td>c²</td><td>c²</td><td>(a+b)²</td></tr>
+                </table>
+            </div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                संक्रियाओं (Operations) का प्रयोग कर अधिकतम शून्य बनायें:
+                <ul>
+                    <li>C₁ &rarr; C₁ - C₃ और C₂ &rarr; C₂ - C₃ करें।</li>
+                    <li>(a² - b²) = (a-b)(a+b) सूत्र का प्रयोग कर उभयनिष्ठ (Common) निकालें।</li>
+                    <li>अंत में सारणिक का विस्तार करें। उत्तर: 2abc(a+b+c)³</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-container">
+            <div class="question">Q6. dy/dx निकालें, जब x<sup>y</sup> + y<sup>x</sup> = 1.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                फलन की घात फलन है, अतः <strong>लघुगणक (Log)</strong> का प्रयोग करें।
+                <ul>
+                    <li>u = x<sup>y</sup> तथा v = y<sup>x</sup> मानें, तो u + v = 1.</li>
+                    <li>du/dx + dv/dx = 0.</li>
+                    <li>अलग-अलग log लेकर अवकलन करें: log u = y log x.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-container">
+            <div class="question">Q7. तीन सिक्कों की उछाल में शीर्षों (Heads) की संख्या का माध्य ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ul>
+                    <li>यादृच्छिक चर X (शीर्षों की संख्या) के मान 0, 1, 2, 3 हो सकते हैं।</li>
+                    <li>प्रायिकता P(X) निकालें: P(0)=1/8, P(1)=3/8...</li>
+                    <li>माध्य (Mean) का सूत्र: <strong>&mu; = &sum; X&cdot;P(X)</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-container">
+            <div class="question">Q8. मान ज्ञात करें: (î - 3ĵ + 4k̂) &cdot; [(2î - ĵ) &times; (ĵ + k̂)].</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                यह <strong>अदिश त्रिक गुणन (Scalar Triple Product)</strong> है।
+                <ol>
+                    <li>पहले कोष्ठक [...] के अंदर सदिश गुणन (Cross Product) निकालें।</li>
+                    <li>प्राप्त सदिश का पहले सदिश के साथ बिंदु गुणन (Dot Product) करें।</li>
+                    <li>वैकल्पिक विधि: सारणिक (Determinant) में तीनों सदिशों के गुणांक रखकर मान निकालें।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-container">
+            <div class="question">Q9. आव्यूह विधि से हल करें: 2x + 3y + 3z = 5, x - 2y + z = -4, 3x - y - 2z = 3.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                समीकरण को AX = B रूप में लिखें।
+                <ul>
+                    <li>|A| का मान निकालें (शून्य नहीं होना चाहिए)।</li>
+                    <li>सहखंडज आव्यूह (adj A) निकालें।</li>
+                    <li>A⁻¹ = (1/|A|) &times; (adj A) का प्रयोग करें।</li>
+                    <li>अंत में X = A⁻¹B गुणा करके x, y, z निकालें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-container">
+            <div class="question">Q10. हल करें: (1+x²) dy/dx + y = tan⁻¹x.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                यह <strong>रैखिक अवकल समीकरण (L.D.E.)</strong> है: dy/dx + Py = Q.
+                <ul>
+                    <li>P = 1/(1+x²) पहचानें।</li>
+                    <li>समाकलन गुणांक (I.F.) निकालें: I.F. = e<sup>&int; P dx</sup> = e<sup>tan⁻¹x</sup>.</li>
+                    <li>हल: y(I.F.) = &int; Q(I.F.) dx + C.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-container">
+            <div class="question">Q11. रेखाओं r = (î+2ĵ+k̂) + &lambda;(î-2ĵ+k̂) तथा r = (2î-2ĵ-k̂) + &mu;(î+ĵ+2k̂) के बीच की न्यूनतम दूरी ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                विषम-तलीय रेखाओं (Skew Lines) के बीच की दूरी का सूत्र:
+                <div class="equation-box">d = | (b₁ &times; b₂) &cdot; (a₂ - a₁) | / |b₁ &times; b₂|</div>
+                यहाँ b₁ और b₂ दिशा सदिश हैं। इनका क्रॉस गुणन निकालें।
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-container">
+            <div class="question">Q12. हल करें: &int;<sub>0</sub><sup>1</sup> x log(1 + 2x) dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <strong>खंडशः समाकलन (Integration by Parts)</strong> का प्रयोग करें।
+                <ul>
+                    <li>ILATE नियम के अनुसार: u = log(1+2x) (पहला फलन) और v = x (दूसरा फलन)।</li>
+                    <li>सूत्र: &int;uv dx = u&int;v dx - &int;[(du/dx)&int;v dx] dx.</li>
+                    <li>अंत में सीमाएँ (Limits) 0 से 1 रखें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-container">
+            <div class="question">Q13. सिद्ध कीजिए (AB)⁻¹ = B⁻¹A⁻¹, जहाँ A और B 3x3 आव्यूह दिए गए हैं।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                यह प्रश्न गणना आधारित है।
+                <ol>
+                    <li>AB का गुणा करें और उसका व्युत्क्रम (Inverse) निकालें (LHS)।</li>
+                    <li>B का Inverse और A का Inverse अलग-अलग निकालें।</li>
+                    <li>B⁻¹A⁻¹ का गुणा करें (RHS) और दिखाएं कि दोनों समान हैं।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-container">
+            <div class="question">Q14. यदि (x + y) = sec⁻¹(x - y) तो dy/dx ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ul>
+                    <li>त्रिकोणमितीय रूपांतरण: sec(x + y) = x - y.</li>
+                    <li>अब x के सापेक्ष दोनों पक्षों का अवकलन करें।</li>
+                    <li>sec(x+y)tan(x+y) [1 + dy/dx] = 1 - dy/dx.</li>
+                    <li>dy/dx वाले पदों को एक तरफ करके हल करें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-container">
+            <div class="question">Q15. हल करें: (1 + tan y)(dx - dy) + 2x dy = 0.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                इस समीकरण को dy/dx या dx/dy के रूप में व्यवस्थित करें।
+                <br>यह dx/dy + Px = Q (रैखिक) रूप में बदल सकता है।
+                <br>I.F. निकालकर हल करें।
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-container">
+            <div class="question">Q16. तल 3x + 4y - 5z = 2 के सापेक्ष बिन्दु P(3, 1, -4) का प्रतिबिम्ब ज्ञात कीजिए।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ul>
+                    <li>माना प्रतिबिम्ब Q(h, k, w) है।</li>
+                    <li>सूत्र: (x-x₁)/a = (y-y₁)/b = (z-z₁)/c = -2(ax₁+by₁+cz₁+d) / (a²+b²+c²).</li>
+                    <li>यहाँ a,b,c तल के अभिलंब (3, 4, -5) हैं। हल करके h, k, w निकालें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-container">
+            <div class="question">Q17. समाकलन करें: &int; tan⁴ x dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ul>
+                    <li>इसे &int;tan²x &cdot; tan²x dx लिखें।</li>
+                    <li>एक tan²x को (sec²x - 1) में बदलें।</li>
+                    <li>&int;(tan²x sec²x - tan²x) dx.</li>
+                    <li>प्रथम भाग में tan x = t मानें, दूसरे भाग में tan²x को फिर (sec²x - 1) लिखें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-container">
+            <div class="question">Q18. वक्र 3x² - y² = 8 पर उन अभिलम्ब रेखाओं का समीकरण ज्ञात करें जो रेखा x + 3y = 4 के समांतर हैं।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ol>
+                    <li>दी गई रेखा की ढाल m = -1/3 है। चूँकि अभिलम्ब समांतर है, अभिलम्ब की ढाल भी -1/3 होगी।</li>
+                    <li>वक्र का अवकलन कर स्पर्श रेखा की ढाल (m_t) निकालें।</li>
+                    <li>अभिलम्ब की ढाल = -1 / m_t = -1/3 रखकर संपर्क बिंदु (x, y) निकालें।</li>
+                    <li>बिंदु-ढाल रूप से समीकरण लिखें।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-container">
+            <div class="question">Q19. दो पासों को चार बार फेंकने में कम से कम दो बार द्विक (doublets) आने की प्रायिकता क्या है?</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                यह <strong>बरनौली परीक्षण (Bernoulli Trials)</strong> है।
+                <ul>
+                    <li>n = 4. द्विक (जैसे 1,1; 2,2...) आने की प्रायिकता p = 6/36 = 1/6। q = 5/6।</li>
+                    <li>"कम से कम दो बार" = P(X &ge; 2) = 1 - [P(0) + P(1)]।</li>
+                    <li>सूत्र P(X=r) = <sup>n</sup>C<sub>r</sub> p<sup>r</sup> q<sup>n-r</sup> का प्रयोग करें।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-container">
+            <div class="question">Q20. यदि a = î-ĵ+k̂ तथा b = ĵ-k̂, तो c ज्ञात करें ताकि a &times; c = b तथा a &cdot; c = 3.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ul>
+                    <li>माना c = xî + yĵ + zk̂.</li>
+                    <li>a &cdot; c = 3 &rArr; x - y + z = 3 (समीकरण 1).</li>
+                    <li>a &times; c निकालें और उसे b के बराबर रखकर x, y, z में अन्य समीकरण प्राप्त करें।</li>
+                    <li>समीकरणों को हल करके x, y, z निकालें।</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

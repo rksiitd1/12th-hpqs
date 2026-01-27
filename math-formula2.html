@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 12 Math Important Formulas</title>
+    <style>
+        /* Print-Optimized Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 11.5pt; /* Requested readable size */
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 18pt;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            font-size: 10pt;
+            margin-bottom: 15px;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 8mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Section Styling */
+        .section {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            border: 1px solid #000;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #fdfdfd;
+        }
+
+        .sec-title {
+            font-weight: 700;
+            text-align: center;
+            background: #eee;
+            margin: -8px -8px 8px -8px;
+            padding: 5px;
+            border-bottom: 1px solid #000;
+            font-size: 12pt;
+        }
+
+        /* Math Typography */
+        .formula-row {
+            margin-bottom: 6px;
+            padding-bottom: 4px;
+            border-bottom: 1px dotted #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .formula-row:last-child { border-bottom: none; }
+
+        .math {
+            font-family: 'Times New Roman', serif;
+            font-weight: 600;
+            font-size: 12pt;
+        }
+
+        /* Custom Fraction CSS */
+        .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 2px;
+        }
+        .frac > span { display: block; padding: 0 2px; }
+        .frac span.num { border-bottom: 1px solid #000; }
+        .frac span.den { display: block; }
+
+        /* Vectors & Integrals */
+        .vec { font-weight: bold; position: relative; }
+        .vec::after { content: "\2192"; position: absolute; top: -7px; left: 0; width: 100%; text-align: center; font-size: 0.7em; font-weight: normal; }
+        
+        .integral-sign { font-size: 1.3em; vertical-align: -3px; margin-right: 2px; }
+    </style>
+</head>
+<body>
+
+    <h1>कक्षा 12 गणित - महत्वपूर्ण सूत्र</h1>
+    <div class="subtitle">Class 12 Mathematics | Important Formulas for Memorization</div>
+
+    <div class="content-wrapper">
+
+        <!-- 1. Inverse Trigonometry -->
+        <div class="section">
+            <div class="sec-title">1. प्रतिलोम त्रिकोणमिति (Inverse Trig)</div>
+            <div class="formula-row">
+                <span>sin⁻¹x + cos⁻¹x = &pi;/2</span>
+                <span style="font-size:0.8em; color:#555;">x &in; [-1, 1]</span>
+            </div>
+            <div class="formula-row">
+                <span>tan⁻¹x + cot⁻¹x = &pi;/2</span>
+                <span style="font-size:0.8em; color:#555;">x &in; R</span>
+            </div>
+            <div class="formula-row" style="display:block; text-align:center;">
+                <span class="math">tan⁻¹x + tan⁻¹y = tan⁻¹<div class="frac"><span class="num">x + y</span><span class="den">1 - xy</span></div></span>
+            </div>
+            <div class="formula-row" style="display:block; text-align:center;">
+                <span class="math">2tan⁻¹x = sin⁻¹<div class="frac"><span class="num">2x</span><span class="den">1+x²</span></div> = cos⁻¹<div class="frac"><span class="num">1-x²</span><span class="den">1+x²</span></div></span>
+            </div>
+        </div>
+
+        <!-- 2. Matrices & Determinants -->
+        <div class="section">
+            <div class="sec-title">2. आव्यूह और सारणिक (Matrices)</div>
+            <div class="formula-row">
+                <span>सममित (Symmetric): A' = A</span>
+            </div>
+            <div class="formula-row">
+                <span>विषम-सममित (Skew): A' = -A</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">(AB)' = B'A'</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">A(adj A) = (adj A)A = |A| I</span>
+            </div>
+            <div class="formula-row" style="justify-content:center;">
+                <span class="math">A⁻¹ = <div class="frac"><span class="num">1</span><span class="den">|A|</span></div> (adj A)</span>
+            </div>
+            <div class="formula-row" style="justify-content:center;">
+                <span class="math">X = A⁻¹B</span> (रैखिक समीकरण हल)
+            </div>
+            <div class="formula-row">
+                <span>त्रिभुज का क्षेत्रफल = <div class="frac"><span class="num">1</span><span class="den">2</span></div> |det(x, y, 1)|</span>
+            </div>
+        </div>
+
+        <!-- 3. Differentiation -->
+        <div class="section">
+            <div class="sec-title">3. अवकलन (Differentiation)</div>
+            <div class="formula-row"><span class="math">d/dx(xⁿ) = nxⁿ⁻¹</span></div>
+            <div class="formula-row"><span class="math">d/dx(log x) = 1/x</span></div>
+            <div class="formula-row"><span class="math">d/dx(aˣ) = aˣ log a</span></div>
+            <div class="formula-row"><span class="math">d/dx(tan x) = sec²x</span></div>
+            <div class="formula-row"><span class="math">d/dx(sec x) = sec x tan x</span></div>
+            <div class="formula-row"><span class="math">d/dx(sin⁻¹x) = <div class="frac"><span class="num">1</span><span class="den">&radic;(1-x²)</span></div></span></div>
+            <div class="formula-row"><span class="math">d/dx(tan⁻¹x) = <div class="frac"><span class="num">1</span><span class="den">1+x²</span></div></span></div>
+            <div class="formula-row">
+                <span>श्रृंखला नियम (Chain Rule):</span>
+                <span class="math"><div class="frac"><span class="num">dy</span><span class="den">dx</span></div> = <div class="frac"><span class="num">dy</span><span class="den">dt</span></div> &times; <div class="frac"><span class="num">dt</span><span class="den">dx</span></div></span>
+            </div>
+        </div>
+
+        <!-- 4. Integrals (Standard) -->
+        <div class="section">
+            <div class="sec-title">4. अनिश्चित समाकलन (Integrals)</div>
+            <div class="formula-row"><span class="math">&int; xⁿ dx = <div class="frac"><span class="num">xⁿ⁺¹</span><span class="den">n+1</span></div></span></div>
+            <div class="formula-row"><span class="math">&int; <div class="frac"><span class="num">1</span><span class="den">x</span></div> dx = log|x|</span></div>
+            <div class="formula-row"><span class="math">&int; eˣ dx = eˣ</span></div>
+            <div class="formula-row"><span class="math">&int; tan x dx = log|sec x|</span></div>
+            <div class="formula-row"><span class="math">&int; cot x dx = log|sin x|</span></div>
+            <div class="formula-row"><span class="math">&int; sec x dx = log|sec x + tan x|</span></div>
+            <div class="formula-row">
+                <span>खंडशः समाकलन (By Parts): ILATE</span><br>
+                <span class="math">&int; uv dx = u&int;v dx - &int; [u' &int;v dx] dx</span>
+            </div>
+            <div class="formula-row" style="text-align:center; display:block;">
+                <span class="math">&int; eˣ [f(x) + f'(x)] dx = eˣ f(x)</span>
+            </div>
+        </div>
+
+        <!-- 5. Special Integrals -->
+        <div class="section">
+            <div class="sec-title">5. विशिष्ट समाकलन (9 Special)</div>
+            <div class="formula-row">
+                <span class="math">&int; <div class="frac"><span class="num">dx</span><span class="den">x² - a²</span></div> = <div class="frac"><span class="num">1</span><span class="den">2a</span></div> log|<div class="frac"><span class="num">x - a</span><span class="den">x + a</span></div>|</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">&int; <div class="frac"><span class="num">dx</span><span class="den">a² - x²</span></div> = <div class="frac"><span class="num">1</span><span class="den">2a</span></div> log|<div class="frac"><span class="num">a + x</span><span class="den">a - x</span></div>|</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">&int; <div class="frac"><span class="num">dx</span><span class="den">x² + a²</span></div> = <div class="frac"><span class="num">1</span><span class="den">a</span></div> tan⁻¹(<div class="frac"><span class="num">x</span><span class="den">a</span></div>)</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">&int; <div class="frac"><span class="num">dx</span><span class="den">&radic;(a² - x²)</span></div> = sin⁻¹(<div class="frac"><span class="num">x</span><span class="den">a</span></div>)</span>
+            </div>
+            <div class="formula-row">
+                <span class="math">&int; <div class="frac"><span class="num">dx</span><span class="den">&radic;(x² ± a²)</span></div> = log|x + &radic;(x² ± a²)|</span>
+            </div>
+        </div>
+
+        <!-- 6. Definite Integrals -->
+        <div class="section">
+            <div class="sec-title">6. निश्चित समाकलन (Definite)</div>
+            <div class="formula-row" style="justify-content:center;">
+                <span class="math">&int;<sub>0</sub><sup>a</sup> f(x) dx = &int;<sub>0</sub><sup>a</sup> f(a - x) dx</span>
+            </div>
+            <div class="formula-row">
+                <span>&int;<sub>-a</sub><sup>a</sup> f(x) dx = 0</span>
+                <span>(यदि f विषम/odd है)</span>
+            </div>
+            <div class="formula-row">
+                <span>&int;<sub>-a</sub><sup>a</sup> f(x) dx = 2&int;<sub>0</sub><sup>a</sup> f(x)</span>
+                <span>(यदि f सम/even है)</span>
+            </div>
+            <div class="formula-row" style="justify-content:center;">
+                <span class="math">&int;<sub>0</sub><sup>&pi;/2</sup> log(sin x) dx = -<div class="frac"><span class="num">&pi;</span><span class="den">2</span></div> log 2</span>
+            </div>
+        </div>
+
+        <!-- 7. Vector Algebra -->
+        <div class="section">
+            <div class="sec-title">7. सदिश बीजगणित (Vectors)</div>
+            <div class="formula-row">
+                <span>परिमाण (Magnitude): |r| = &radic;(x² + y² + z²)</span>
+            </div>
+            <div class="formula-row">
+                <span>इकाई सदिश: <span class="math">â = <div class="frac"><span class="num">a</span><span class="den">|a|</span></div></span></span>
+            </div>
+            <div class="formula-row">
+                <span class="math">a &cdot; b = |a||b| cos&theta;</span> (अदिश गुणन)
+            </div>
+            <div class="formula-row">
+                <span>प्रक्षेप (Projection of a on b): <span class="math"><div class="frac"><span class="num">a &cdot; b</span><span class="den">|b|</span></div></span></span>
+            </div>
+            <div class="formula-row">
+                <span class="math">a &times; b = |a||b| sin&theta; n̂</span> (सदिश गुणन)
+            </div>
+            <div class="formula-row">
+                <span>लम्बवत (Perpendicular): <span class="math">a &cdot; b = 0</span></span>
+            </div>
+            <div class="formula-row">
+                <span>समांतर (Parallel): <span class="math">a &times; b = 0</span></span>
+            </div>
+        </div>
+
+        <!-- 8. 3D Geometry -->
+        <div class="section">
+            <div class="sec-title">8. त्रिविमीय ज्यामिति (3D Geometry)</div>
+            <div class="formula-row">
+                <span>दिक्-कोसाइन (Dir. Cosines): l² + m² + n² = 1</span>
+            </div>
+            <div class="formula-row">
+                <span>दो बिंदुओं के बीच दूरी: &radic;((x₂-x₁)² + ...)</span>
+            </div>
+            <div class="formula-row" style="display:block;">
+                <span>लघुत्तम दूरी (Shortest Distance):</span>
+                <div style="text-align:center; margin-top:5px;">
+                    <span class="math">d = <div class="frac"><span class="num">|(b₁ &times; b₂) &cdot; (a₂ - a₁)|</span><span class="den">|b₁ &times; b₂|</span></div></span>
+                </div>
+            </div>
+            <div class="formula-row">
+                <span>तल का अंतःखंड रूप: <span class="math"><div class="frac"><span class="num">x</span><span class="den">a</span></div> + <div class="frac"><span class="num">y</span><span class="den">b</span></div> + <div class="frac"><span class="num">z</span><span class="den">c</span></div> = 1</span></span>
+            </div>
+        </div>
+
+        <!-- 9. Probability -->
+        <div class="section">
+            <div class="sec-title">9. प्रायिकता (Probability)</div>
+            <div class="formula-row">
+                <span class="math">P(A &cup; B) = P(A) + P(B) - P(A &cap; B)</span>
+            </div>
+            <div class="formula-row">
+                <span>सप्रतिबंध (Conditional): <span class="math">P(A|B) = <div class="frac"><span class="num">P(A &cap; B)</span><span class="den">P(B)</span></div></span></span>
+            </div>
+            <div class="formula-row">
+                <span>स्वतंत्र घटनाएं: <span class="math">P(A &cap; B) = P(A) &cdot; P(B)</span></span>
+            </div>
+            <div class="formula-row">
+                <span>माध्य (Mean): <span class="math">&mu; = &sum; xᵢ pᵢ</span></span>
+            </div>
+            <div class="formula-row">
+                <span>द्विपद बंटन: <span class="math">P(X=r) = ⁿCᵣ pʳ qⁿ⁻ʳ</span></span>
+            </div>
+        </div>
+
+        <!-- 10. Differential Equations -->
+        <div class="section">
+            <div class="sec-title">10. अवकल समीकरण (Diff. Eq.)</div>
+            <div class="formula-row">
+                <span>समघातीय (Homogeneous): y = vx रखें</span>
+            </div>
+            <div class="formula-row">
+                <span>रैखिक (Linear): <span class="math"><div class="frac"><span class="num">dy</span><span class="den">dx</span></div> + Py = Q</span></span>
+            </div>
+            <div class="formula-row" style="justify-content:center;">
+                <span>I.F. (समाकलन गुणक) = <span class="math">e<sup>&int; P dx</sup></span></span>
+            </div>
+            <div class="formula-row" style="justify-content:center;">
+                <span>हल: <span class="math">y(I.F.) = &int; Q(I.F.) dx + c</span></span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

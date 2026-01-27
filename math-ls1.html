@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathematics Class 12 - Final Exam Suggestion 2025</title>
+    <style>
+        /* Base Fonts & Print Settings */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+            .page-break {
+                break-before: always;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 6mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 18pt;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            border-bottom: 3px solid #000;
+            padding-bottom: 5px;
+            column-span: all;
+        }
+
+        .section-header {
+            font-size: 14pt;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0 10px 0;
+            padding: 5px;
+            background-color: #000;
+            color: #fff;
+            column-span: all;
+            text-transform: uppercase;
+            -webkit-print-color-adjust: exact;
+        }
+
+        h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin: 15px 0 5px 0;
+            text-decoration: underline;
+            break-after: avoid;
+            color: #333;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 10pt;
+            font-style: italic;
+            margin-bottom: 15px;
+            column-span: all;
+            color: #444;
+        }
+
+        /* Question Block */
+        .qa-container {
+            break-inside: avoid;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 10.5pt;
+            display: block;
+            margin-bottom: 3px;
+            background-color: #f4f4f4;
+            padding: 4px 6px;
+            border-left: 3px solid #000;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 4px;
+            font-size: 9.5pt;
+            color: #222;
+        }
+
+        /* Structural Elements */
+        strong { font-weight: 700; }
+        ul, ol { margin: 2px 0 2px 16px; padding: 0; }
+        li { margin-bottom: 2px; }
+
+        /* Math Styling Helpers */
+        .equation-box {
+            display: block;
+            margin: 4px 0;
+            padding: 2px;
+            background: #fff;
+            font-family: 'Times New Roman', serif;
+            font-size: 10pt;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .math-frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .math-frac > span {
+            display: block;
+            padding: 0 2px;
+        }
+        .math-frac span.num {
+            border-bottom: 1px solid #000;
+        }
+        
+        /* Matrix Styling */
+        table.matrix {
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin: 0 auto;
+            display: inline-table;
+            vertical-align: middle;
+        }
+        table.matrix td {
+            border: 1px solid #000;
+            padding: 2px 5px;
+            text-align: center;
+            min-width: 15px;
+        }
+        
+        .matrix-simple {
+            display: inline-table;
+            vertical-align: middle;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            border-radius: 4px;
+            padding: 0 2px;
+            margin: 0 2px;
+        }
+        .det-simple {
+            border-radius: 0; /* Determinant straight lines */
+        }
+        .matrix-row { display: table-row; }
+        .matrix-cell { display: table-cell; padding: 1px 3px; text-align: center; font-size: 0.9em; }
+
+        .vector { font-weight: bold; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <h1>Mathematics (गणित) - 2025 Suggestion</h1>
+    <div class="subtitle">Class 12 Bihar Board | Most Probable Questions | Final Revision Set</div>
+
+    <!-- PART A: LONG ANSWERS -->
+    <div class="section-header">PART A: Long Answer Type (5 Marks)</div>
+    
+    <div class="content-wrapper">
+        <!-- Q1 -->
+        <div class="qa-container">
+            <div class="question">Q1. Z = 5x + 10y का अधिकतमीकरण एवं न्यूनतमीकरण करें, जबकि x + 2y &le; 120, x + y &ge; 60, x - 2y &ge; 0, x, y &ge; 0.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong>
+                <ol>
+                    <li>असमिकाओं का ग्राफ खींचें और सुसंगत क्षेत्र (Feasible Region) छायांकित करें।</li>
+                    <li>कोणीय बिंदुओं (Corner Points) के निर्देशांक ज्ञात करें।</li>
+                    <li>Z = 5x + 10y में मान रखकर अधिकतम/न्यूनतम चुनें।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-container">
+            <div class="question">Q2. यदि tan⁻¹x + tan⁻¹y + tan⁻¹z = &pi;/2, तो सिद्ध करें कि yz + zx + xy = 1.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> सूत्र tan⁻¹[(x+y+z - xyz)/(1 - xy - yz - zx)] = &pi;/2 का प्रयोग करें। हर (Denominator) शून्य के बराबर होगा।
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-container">
+            <div class="question">Q3. मान ज्ञात करें: &int;<sub>0</sub><sup>&pi;/2</sup> log(sin x) dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> P4 प्रगुण (&int;f(x) = &int;f(a-x)) का प्रयोग करें। I + I = 2I जोड़ने पर log(sin 2x) - log 2 प्राप्त होगा। उत्तर: -(&pi;/2) log 2.
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-container">
+            <div class="question">Q4. हल करें: (x² - y²) dy/dx = 2xy.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> यह समघातीय (Homogeneous) अवकल समीकरण है। y = vx रखें।
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-container">
+            <div class="question">Q5. गुणनखंड निकालें: 
+                <div style="display:inline-block; vertical-align:middle;">
+                <table class="matrix">
+                    <tr><td>(b+c)²</td><td>a²</td><td>a²</td></tr>
+                    <tr><td>b²</td><td>(c+a)²</td><td>b²</td></tr>
+                    <tr><td>c²</td><td>c²</td><td>(a+b)²</td></tr>
+                </table>
+                </div>
+            </div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> C₁ &rarr; C₁ - C₃ और C₂ &rarr; C₂ - C₃ संक्रिया करें। उभयनिष्ठ बाहर निकालें।
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-container">
+            <div class="question">Q6. dy/dx निकालें, जब x<sup>y</sup> + y<sup>x</sup> = 1.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> u = x<sup>y</sup> और v = y<sup>x</sup> मानकर log लेकर अवकलन करें। du/dx + dv/dx = 0.
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-container">
+            <div class="question">Q7. तीन सिक्कों की उछाल में शीर्षों (Heads) की संख्या का माध्य ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> यादृच्छिक चर X = 0, 1, 2, 3. प्रायिकता P(X) निकालें और &mu; = &sum;XP(X) का प्रयोग करें।
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-container">
+            <div class="question">Q8. मान ज्ञात करें: (î - 3ĵ + 4k̂) &cdot; [(2î - ĵ) &times; (ĵ + k̂)].</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> पहले क्रॉस गुणन (Cross Product) निकालें, फिर डॉट गुणन (Dot Product)।
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-container">
+            <div class="question">Q9. आव्यूह विधि से हल करें: 2x + 3y + 3z = 5, x - 2y + z = -4, 3x - y - 2z = 3.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> AX = B रूप में लिखें। A⁻¹ = (adj A)/|A| निकालें। X = A⁻¹B.
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-container">
+            <div class="question">Q10. हल करें: (1+x²) dy/dx + y = tan⁻¹x.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> रैखिक अवकल समीकरण (LDE)। I.F. = e^(tan⁻¹x).
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-container">
+            <div class="question">Q11. रेखाओं r = (î+2ĵ+k̂) + &lambda;(î-2ĵ+k̂) तथा r = (2î-2ĵ-k̂) + &mu;(î+ĵ+2k̂) के बीच की न्यूनतम दूरी ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> विषम-तलीय (Skew Lines) दूरी का सूत्र: d = |(b₁×b₂)·(a₂-a₁)| / |b₁×b₂|.
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-container">
+            <div class="question">Q12. हल करें: &int;<sub>0</sub><sup>1</sup> x log(1 + 2x) dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> खंडशः समाकलन (Integration by Parts) का प्रयोग करें (ILATE rule).
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-container">
+            <div class="question">Q13. सिद्ध कीजिए (AB)⁻¹ = B⁻¹A⁻¹, जहाँ A और B 3x3 आव्यूह दिए गए हैं।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> LHS के लिए AB का गुणन कर Inverse निकालें। RHS के लिए अलग-अलग Inverse निकालें।
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-container">
+            <div class="question">Q14. यदि (x + y) = sec⁻¹(x - y) तो dy/dx ज्ञात करें।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> sec(x+y) = x-y लिखकर अवकलन करें।
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-container">
+            <div class="question">Q15. हल करें: (1 + tan y)(dx - dy) + 2x dy = 0.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> dx/dy रूप में बदलें और रैखिक अवकल समीकरण (LDE) की जाँच करें।
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-container">
+            <div class="question">Q16. तल 3x + 4y - 5z = 2 के सापेक्ष बिन्दु P(3, 1, -4) का प्रतिबिम्ब ज्ञात कीजिए।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> सूत्र (x-x₁)/a = (y-y₁)/b = (z-z₁)/c = -2(ax₁+by₁+cz₁+d)/(a²+b²+c²) का प्रयोग करें।
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-container">
+            <div class="question">Q17. समाकलन करें: &int; tan⁴ x dx.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> tan²x &middot; (sec²x - 1) के रूप में तोड़ें।
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-container">
+            <div class="question">Q18. वक्र 3x² - y² = 8 पर उन अभिलम्ब रेखाओं का समीकरण ज्ञात करें जो रेखा x + 3y = 4 के समांतर हैं।</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> अभिलम्ब की ढाल = -1/3। वक्र का अवकलन कर स्पर्श बिंदु निकालें।
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-container">
+            <div class="question">Q19. दो पासों को चार बार फेंकने में कम से कम दो बार द्विक (doublets) आने की प्रायिकता क्या है?</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> बरनौली परीक्षण (n=4, p=1/6). P(X&ge;2) = 1 - [P(0)+P(1)].
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-container">
+            <div class="question">Q20. यदि a = î-ĵ+k̂ तथा b = ĵ-k̂, तो c ज्ञात करें ताकि a &times; c = b तथा a &cdot; c = 3.</div>
+            <div class="answer">
+                <strong>संकेत (Hint):</strong> c = xî+yĵ+zk̂ मानकर समीकरण हल करें।
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PART B: SHORT ANSWERS -->
+    <div class="section-header">PART B: Short Answer Type (2 Marks)</div>
+
+    <div class="content-wrapper">
+        
+        <h2>Tier 1: निश्चित प्रश्न (Most Important)</h2>
+
+        <div class="qa-container">
+            <div class="question">1. यदि x = a(1 - cos&theta;) और y = a(&theta; + sin&theta;), तो <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">2. सदिशों 5<span class="vector">i</span>+3<span class="vector">j</span>+4<span class="vector">k</span> और 6<span class="vector">i</span>-8<span class="vector">j</span>-<span class="vector">k</span> के बीच का कोण ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">3. यदि P(A) = 0.8, P(B) = 0.5 तथा P(B/A) = 0.4, तो P(A &cap; B) तथा P(A/B) ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">4. यदि A = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">2</div><div class="matrix-cell">-1</div><div class="matrix-cell">0</div></div><div class="matrix-row"><div class="matrix-cell">3</div><div class="matrix-cell">4</div><div class="matrix-cell">5</div></div></div> तथा B = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">7</div><div class="matrix-cell">-1</div></div><div class="matrix-row"><div class="matrix-cell">2</div><div class="matrix-cell">3</div></div><div class="matrix-row"><div class="matrix-cell">5</div><div class="matrix-cell">0</div></div></div>, तो (AB)' ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">5. p का मान ज्ञात करें ताकि रेखाएँ <span class="math-frac"><span class="num">x-1</span><span class="den">2</span></span> = <span class="math-frac"><span class="num">y-2</span><span class="den">3</span></span> = <span class="math-frac"><span class="num">z+17</span><span class="den">p</span></span> तथा <span class="math-frac"><span class="num">x+4</span><span class="den">2</span></span> = <span class="math-frac"><span class="num">y+9</span><span class="den">2</span></span> = <span class="math-frac"><span class="num">z-1</span><span class="den">2</span></span> परस्पर लम्ब हों।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">6. &int;<sub>0</sub><sup>&pi;/2</sup> <span class="math-frac"><span class="num">&radic;sin x</span><span class="den">&radic;cos x + &radic;sin x</span></span> dx का मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">7. सारणिक <div class="matrix-simple det-simple"><div class="matrix-row"><div class="matrix-cell">1</div><div class="matrix-cell">1</div><div class="matrix-cell">1</div></div><div class="matrix-row"><div class="matrix-cell">a</div><div class="matrix-cell">b</div><div class="matrix-cell">c</div></div><div class="matrix-row"><div class="matrix-cell">a<sup>3</sup></div><div class="matrix-cell">b<sup>3</sup></div><div class="matrix-cell">c<sup>3</sup></div></div></div> का मान निकालें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">8. अवकल समीकरण को हल करें: <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> + y = e<sup>-x</sup>.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">9. निम्नलिखित प्रायिकता बंटन के लिए माध्य (Mean) ज्ञात करें:<br>X: 0, 1, 2, 3<br>P(X): 1/8, 3/8, 3/8, 1/8</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">10. यदि y = (sin x)<sup>cos x</sup>, तो <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">11. अधिकतमीकरण करें Z = 20x + 3y, जबकि 3x + 2y &le; 210, x &ge; 0, y &ge; 0.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">12. यदि <span class="vector">a</span> = 2<span class="vector">i</span> + <span class="vector">j</span> + 3<span class="vector">k</span> तथा <span class="vector">b</span> = 3<span class="vector">i</span> + 5<span class="vector">j</span> - 2<span class="vector">k</span>, तो |<span class="vector">a</span> &times; <span class="vector">b</span>| ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">13. cosec<sup>-1</sup>(2) का मुख्य मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">14. X-अक्ष से बिन्दु (a, b, c) की दूरी ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">15. यदि y = &radic;(sin x<sup>2</sup>) तो <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> ज्ञात करें।</div>
+        </div>
+
+        <h2>Tier 2: उच्च संभावना (Highly Probable)</h2>
+
+        <div class="qa-container">
+            <div class="question">16. हल करें: tan y dx + tan x dy = 0.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">17. समाकलन करें: &int; <span class="math-frac"><span class="num">(log x)<sup>2</sup></span><span class="den">x</span></span> dx.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">18. सिद्ध करें कि tan<sup>-1</sup>x + tan<sup>-1</sup>y = tan<sup>-1</sup><span class="math-frac"><span class="num">x+y</span><span class="den">1-xy</span></span>.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">19. यदि x cos y = sin(x+y), तो <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> निकालें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">20. उस तल का समीकरण ज्ञात करें जिसके x, y और z अक्षों पर अंतःखण्ड क्रमशः 2, 3 और -4 हैं।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">21. यदि A = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">1</div><div class="matrix-cell">y</div></div><div class="matrix-row"><div class="matrix-cell">x<sup>2</sup></div><div class="matrix-cell">y<sup>2</sup></div></div></div>, तो AA' ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">22. आव्यूह A = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">3</div><div class="matrix-cell">2</div></div><div class="matrix-row"><div class="matrix-cell">5</div><div class="matrix-cell">-1</div></div></div> का व्युत्क्रम (Inverse) ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">23. तलों x - 2y + 2z = 6 और 3x - 6y + 6z = 2 के बीच की दूरी ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">24. समाकलन करें: &int; cos<sup>2</sup> x dx.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">25. fog और gof ज्ञात कीजिए यदि f(x) = 8x<sup>3</sup> तथा g(x) = x<sup>1/3</sup> हो।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">26. निम्न से x का मान ज्ञात कीजिए: <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">2x-y</div><div class="matrix-cell">5</div></div><div class="matrix-row"><div class="matrix-cell">3</div><div class="matrix-cell">y</div></div></div> = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">6</div><div class="matrix-cell">5</div></div><div class="matrix-row"><div class="matrix-cell">3</div><div class="matrix-cell">-2</div></div></div>.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">27. रेखाओं <span class="math-frac"><span class="num">x</span><span class="den">2</span></span> = <span class="math-frac"><span class="num">y</span><span class="den">2</span></span> = <span class="math-frac"><span class="num">z</span><span class="den">1</span></span> तथा <span class="math-frac"><span class="num">x</span><span class="den">5</span></span> = <span class="math-frac"><span class="num">y</span><span class="den">4</span></span> = <span class="math-frac"><span class="num">z</span><span class="den">-3</span></span> के बीच का न्यून कोण ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">28. यदि <span class="vector">a</span> = <span class="vector">i</span> - <span class="vector">j</span> + <span class="vector">k</span> तथा <span class="vector">b</span> = 2<span class="vector">i</span> + <span class="vector">j</span> + 3<span class="vector">k</span> तो |<span class="vector">a</span> + <span class="vector">b</span>| का मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">29. यदि &int;<sub>0</sub><sup>a</sup> <span class="math-frac"><span class="num">1</span><span class="den">1+4x<sup>2</sup></span></span> dx = &pi;/8 तो a का मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">30. P(A &cup; B) ज्ञात कीजिए यदि 2P(A) = P(B) = 5/13 और P(A/B) = 2/5.</div>
+        </div>
+
+        <h2>Tier 3: मध्यम संभावना</h2>
+
+        <div class="qa-container">
+            <div class="question">31. &int;<sub>0</sub><sup>&pi;/2</sup> x cos x dx का मान निकालें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">32. वक्र y = x<sup>3</sup> - x + 1 की स्पर्श रेखा की प्रवणता (slope) उस बिन्दु पर ज्ञात करें जिसका x-निर्देशांक 2 है।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">33. हल करें: x<sup>2</sup> <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> = 2xy.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">34. यदि <span class="vector">a</span> = <span class="vector">i</span>+<span class="vector">j</span>+2<span class="vector">k</span> तथा <span class="vector">b</span> = 2<span class="vector">i</span>+<span class="vector">j</span>+2<span class="vector">k</span> तो सदिश (2<span class="vector">a</span> - <span class="vector">b</span>) की दिशा में इकाई सदिश ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">35. सिद्ध करें कि 2tan<sup>-1</sup>(1/3) + tan<sup>-1</sup>(1/7) = &pi;/4.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">36. r = 8cm त्रिज्या वाले वृत्त के क्षेत्रफल के परिवर्तन की दर इसकी त्रिज्या r के सापेक्ष ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">37. दो बिन्दुओं (-2, 4, -5) और (1, 2, 3) को मिलाने वाली रेखा की दिक-कोसाइन (Direction Cosines) ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">38. वह अंतराल ज्ञात करें जिसमें फलन f(x) = 2x<sup>3</sup> + 9x<sup>2</sup> + 12x - 1 ह्रासमान (decreasing) है।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">39. दो पासों को एक साथ फेंका जाता है। अंकों का योगफल 9 या 10 आने की प्रायिकता ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">40. यदि f(x) = 4 - (x-7)<sup>3</sup> तो f<sup>-1</sup>(x) ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">41. क्या फलन f:R &rarr; R आच्छादक (onto) है जबकि f(x) = 2x? कारण दें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">42. सिद्ध करें कि cosec<sup>-1</sup>x + sec<sup>-1</sup>x = &pi;/2, |x| &ge; 1.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">43. tan<sup>-1</sup> <span class="math-frac"><span class="num">2x</span><span class="den">1-x<sup>2</sup></span></span> का sin<sup>-1</sup> <span class="math-frac"><span class="num">2x</span><span class="den">1+x<sup>2</sup></span></span> के सापेक्ष अवकलन करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">44. बिन्दु (3, 0, 0), (0, -1, 0) तथा (0, 0, 2) से गुजरने वाले तल का समीकरण ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">45. समाकलन करें: &int; &radic;(1 - sin 2x) dx.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">46. मूलबिन्दु से एक तल पर डाले गए लम्ब की पाद (2, -1, 3) है। उस तल का समीकरण ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">47. मान ज्ञात करें: (2<span class="vector">i</span> - 3<span class="vector">j</span> + 4<span class="vector">k</span>) &middot; ((7<span class="vector">i</span> + 8<span class="vector">j</span> - 9<span class="vector">k</span>) &times; (9<span class="vector">i</span> + 5<span class="vector">j</span> - 5<span class="vector">k</span>)).</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">48. यदि A = <div class="matrix-simple"><div class="matrix-row"><div class="matrix-cell">a</div><div class="matrix-cell">b</div></div><div class="matrix-row"><div class="matrix-cell">x</div><div class="matrix-cell">y</div></div><div class="matrix-row"><div class="matrix-cell">x<sup>2</sup></div><div class="matrix-cell">y<sup>2</sup></div></div></div> तो AA' ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">49. x-अक्ष और वक्र y = sin x के बीच x = 0 से x = &pi; तक के क्षेत्र का क्षेत्रफल निकालें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">50. &int;<sub>-1</sub><sup>1</sup> sin<sup>21</sup>x cos<sup>10</sup>x dx का मान ज्ञात करें।</div>
+        </div>
+
+        <h2>Tier 4: अन्य महत्वपूर्ण प्रश्न</h2>
+
+        <div class="qa-container">
+            <div class="question">51. समीकरण cos(tan<sup>-1</sup> x) = sin(cot<sup>-1</sup> 3/4) को हल कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">52. समाकलन करें: &int; <span class="math-frac"><span class="num">x<sup>2</sup>+2</span><span class="den">x+1</span></span> dx.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">53. सदिश <span class="vector">v</span> ज्ञात कीजिए जो कि (2<span class="vector">i</span> - <span class="vector">j</span> + 2<span class="vector">k</span>) तथा (4<span class="vector">i</span> - <span class="vector">j</span> + 3<span class="vector">k</span>) पर लम्ब है तथा |<span class="vector">v</span>| = 6.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">54. मान निकालें: lim<sub>n&rarr;&infin;</sub> &sum; <span class="math-frac"><span class="num">r<sup>2</sup></span><span class="den">n<sup>3</sup></span></span>.</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">55. यदि y = (sin x)<sup>log x</sup> तो <span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">56. सारणिक <div class="matrix-simple det-simple"><div class="matrix-row"><div class="matrix-cell">16</div><div class="matrix-cell">9</div><div class="matrix-cell">7</div></div><div class="matrix-row"><div class="matrix-cell">23</div><div class="matrix-cell">16</div><div class="matrix-cell">7</div></div><div class="matrix-row"><div class="matrix-cell">32</div><div class="matrix-cell">19</div><div class="matrix-cell">13</div></div></div> का मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">57. यदि <span class="vector">a</span>, <span class="vector">b</span>, <span class="vector">c</span> इकाई सदिश हैं तथा <span class="vector">a</span>+<span class="vector">b</span>+<span class="vector">c</span> = 0 तो <span class="vector">a</span>&middot;<span class="vector">b</span> + <span class="vector">b</span>&middot;<span class="vector">c</span> + <span class="vector">c</span>&middot;<span class="vector">a</span> का मान ज्ञात कीजिए।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">58. &int;<sub>0</sub><sup>&pi;/2</sup> <span class="math-frac"><span class="num">cot &theta;</span><span class="den">tan &theta; + cot &theta;</span></span> d&theta; का मान ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">59. अवकल समीकरण (1 - x<sup>2</sup>)<span class="math-frac"><span class="num">dy</span><span class="den">dx</span></span> - xy = 1 का समाकलन गुणक (I.F.) ज्ञात करें।</div>
+        </div>
+
+        <div class="qa-container">
+            <div class="question">60. समाकलन करें: &int;<sub>2</sub><sup>8</sup> |x-5| dx.</div>
+        </div>
+    </div>
+
+</body>
+</html>

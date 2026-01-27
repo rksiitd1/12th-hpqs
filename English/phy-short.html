@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Class 12 - Important Short Questions (2 Marks)</title>
+    <style>
+        /* Base Fonts & Print Settings */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 6mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            column-span: all;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 9pt;
+            font-style: italic;
+            margin-bottom: 10px;
+            column-span: all;
+            color: #444;
+        }
+
+        /* Question Block */
+        .qa-container {
+            break-inside: avoid;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dotted #999;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 10.5pt;
+            display: block;
+            margin-bottom: 4px;
+            background-color: #f0f0f0;
+            padding: 3px 5px;
+            border-left: 4px solid #000;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+        }
+
+        /* Structural Elements */
+        strong { font-weight: 700; }
+        p { margin: 2px 0; }
+        ul, ol { margin: 3px 0 5px 16px; padding: 0; }
+        li { margin-bottom: 2px; padding-left: 2px; }
+
+        /* Equation/Box Styling */
+        .equation-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            padding: 4px;
+            background: #fff;
+            border: 1px solid #ddd;
+            font-family: 'Times New Roman', serif;
+            font-size: 9.5pt;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin: 4px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 2px 4px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #eee;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .highlight {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+        }
+
+        /* Subscripts and Superscripts correction */
+        sub { vertical-align: sub; font-size: smaller; }
+        sup { vertical-align: super; font-size: smaller; }
+
+    </style>
+</head>
+<body>
+
+    <h1>Physics - Short Answer Questions</h1>
+    <div class="subtitle">Class 12 Bihar Board | Important Questions & Answers (English Medium) | 2 Marks Each</div>
+
+    <div class="content-wrapper">
+
+        <!-- Q1 -->
+        <div class="qa-container">
+            <div class="question">Q1. Write the Boolean expressions for AND, OR, NOT, NAND, and NOR gates.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The Boolean expressions for various logic gates are:
+                <ul>
+                    <li><strong>AND Gate:</strong> Y = A &cdot; B</li>
+                    <li><strong>OR Gate:</strong> Y = A + B</li>
+                    <li><strong>NOT Gate:</strong> Y = &#256; (A bar)</li>
+                    <li><strong>NAND Gate:</strong> Y = <span style="text-decoration: overline">A &cdot; B</span> (Combination of AND and NOT).</li>
+                    <li><strong>NOR Gate:</strong> Y = <span style="text-decoration: overline">A + B</span> (Combination of OR and NOT).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-container">
+            <div class="question">Q2. State Lenz’s law of electromagnetic induction. How is it related to the conservation of energy?</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Lenz’s Law:</strong> It states that the direction of the induced EMF and induced current is such that it always opposes the cause (change in magnetic flux) that produces it.
+                <br><strong>Conservation of Energy:</strong> The mechanical work done in moving the magnet against this opposing force is converted into electrical energy. Thus, it obeys the law of conservation of energy.
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-container">
+            <div class="question">Q3. What is the principle of a transformer? Mention the energy losses in it.</div>
+            <div class="answer">
+                <strong>Ans:</strong> A transformer works on the principle of <strong>Mutual Induction</strong>. It transfers electrical energy from one circuit to another without changing the frequency.
+                <br><strong>Energy Losses:</strong>
+                <ol>
+                    <li><strong>Copper Loss:</strong> Heat loss due to resistance of coils.</li>
+                    <li><strong>Eddy Current Loss:</strong> Heat loss in the iron core due to induced currents.</li>
+                    <li><strong>Hysteresis Loss:</strong> Energy loss due to repeated magnetization and demagnetization of the core.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-container">
+            <div class="question">Q4. Convert decimal 25 to binary, and binary (1101)<sub>2</sub> to decimal.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                1. <strong>25 to Binary:</strong> Dividing 25 by 2 repeatedly and recording remainders gives <strong>(11001)<sub>2</sub></strong>.
+                <br>2. <strong>(1101)<sub>2</sub> to Decimal:</strong>
+                <div class="equation-box">1&times;2<sup>3</sup> + 1&times;2<sup>2</sup> + 0&times;2<sup>1</sup> + 1&times;2<sup>0</sup></div>
+                <div class="equation-box">= 8 + 4 + 0 + 1 = 13</div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-container">
+            <div class="question">Q5. What is total internal reflection? Write its conditions. Define critical angle.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Total Internal Reflection (TIR):</strong> When a light ray traveling from a denser to a rarer medium hits the interface at an angle greater than the critical angle, it reflects back into the denser medium.
+                <br><strong>Conditions:</strong> 1. Light must travel from denser to rarer medium. 2. Angle of incidence > Critical angle.
+                <br><strong>Critical Angle:</strong> The angle of incidence in the denser medium for which the angle of refraction in the rarer medium becomes 90&deg;.
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-container">
+            <div class="question">Q6. Define electric flux and write Gauss’s Law.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Electric Flux (&phi;):</strong> The total number of electric field lines passing normally through a given surface. Its SI unit is <strong>N m<sup>2</sup> C<sup>-1</sup></strong>.
+                <br><strong>Gauss’s Law:</strong> The total electric flux through a closed surface in vacuum is equal to 1/&epsilon;<sub>0</sub> times the net charge (q) enclosed by the surface.
+                <div class="equation-box">&phi; = &int; E&cdot;dA = q / &epsilon;<sub>0</sub></div>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-container">
+            <div class="question">Q7. Define drift velocity. Write the relation between electric current and drift velocity.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Drift Velocity (v<sub>d</sub>):</strong> The average velocity with which free electrons in a conductor get drifted towards the positive end under the influence of an external electric field. It is of the order of 10<sup>-4</sup> m/s.
+                <br><strong>Relation:</strong> I = n A e v<sub>d</sub>
+                (Where I = Current, n = electron density, A = Area).
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-container">
+            <div class="question">Q8. Write two properties of electromagnetic waves.</div>
+            <div class="answer">
+                <strong>Ans:</strong> Two properties of Electromagnetic (EM) waves are:
+                <ol>
+                    <li>They are <strong>transverse</strong> in nature, meaning electric and magnetic fields oscillate perpendicular to the direction of propagation.</li>
+                    <li>They do not require any material medium for propagation and travel with the speed of light (c = 3 &times; 10<sup>8</sup> m/s) in a vacuum.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-container">
+            <div class="question">Q9. Write two shortcomings of Bohr’s atomic model.</div>
+            <div class="answer">
+                <strong>Ans:</strong> Limitations of Bohr's Model:
+                <ol>
+                    <li>It could only explain the spectrum of single-electron atoms (like Hydrogen) but failed for complex multi-electron atoms.</li>
+                    <li>It could not explain the splitting of spectral lines under magnetic fields (Zeeman effect) and electric fields (Stark effect).</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-container">
+            <div class="question">Q10. Define work function and threshold frequency.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <ul>
+                    <li><strong>Work Function (&phi;<sub>0</sub>):</strong> The minimum amount of energy required by an electron to just escape from a metal surface at zero Kelvin.</li>
+                    <li><strong>Threshold Frequency (&nu;<sub>0</sub>):</strong> The minimum frequency of incident light below which photoelectric emission is not possible, irrespective of the intensity of light.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-container">
+            <div class="question">Q11. Define Angle of Dip and Magnetic Declination.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <ul>
+                    <li><strong>Angle of Dip (Inclination):</strong> The angle made by the earth's total magnetic field with the horizontal direction at any place. It is 90&deg; at poles and 0&deg; at the equator.</li>
+                    <li><strong>Magnetic Declination:</strong> The angle between the geographic meridian and the magnetic meridian at a given place.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-container">
+            <div class="question">Q12. What is a shunt? Write its two uses.</div>
+            <div class="answer">
+                <strong>Ans:</strong> A <strong>shunt</strong> is a low resistance wire connected in parallel to a galvanometer to provide an alternative path for excess current.
+                <br><strong>Uses:</strong>
+                1. To convert a galvanometer into an ammeter.
+                2. To protect the galvanometer coil from damage due to strong currents.
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-container">
+            <div class="question">Q13. Define electric dipole moment. Write the formula for torque on a dipole in a uniform field.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Electric Dipole Moment (p):</strong> It is defined as the product of the magnitude of one of the charges (q) and the distance between them (2l).
+                <div class="equation-box">p = q &times; 2l</div>
+                It is a vector quantity directed from negative to positive charge.
+                <br><strong>Torque:</strong> &tau; = pE sin&theta; (or vector &tau; = p &times; E).
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-container">
+            <div class="question">Q14. State the law of radioactive decay. Define half-life.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Decay Law:</strong> The rate of disintegration of radioactive atoms at any instant is directly proportional to the number of undecayed atoms present at that instant.
+                <div class="equation-box">dN/dt &propto; -N &Rightarrow; N = N<sub>0</sub> e<sup>-&lambda;t</sup></div>
+                <strong>Half-life (T<sub>1/2</sub>):</strong> The time interval in which half of the original radioactive nuclei disintegrate. T<sub>1/2</sub> = 0.693 / &lambda;.
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-container">
+            <div class="question">Q15. Write the necessary conditions for interference of light.</div>
+            <div class="answer">
+                <strong>Ans:</strong> Conditions for interference:
+                <ol>
+                    <li>The two light sources must be <strong>coherent</strong>, i.e., they must maintain a constant phase difference.</li>
+                    <li>The sources should be monochromatic (single wavelength).</li>
+                    <li><strong>Constructive Interference:</strong> Path difference = n&lambda;.</li>
+                    <li><strong>Destructive Interference:</strong> Path difference = (2n+1)&lambda;/2.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-container">
+            <div class="question">Q16. What is modulation? Mention its types.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Modulation:</strong> The process of superimposing a low-frequency audio signal (information) onto a high-frequency carrier wave for transmission over long distances.
+                <br><strong>Types:</strong>
+                1. Amplitude Modulation (AM)
+                2. Frequency Modulation (FM)
+                3. Phase Modulation (PM).
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-container">
+            <div class="question">Q17. What is the principle of a potentiometer? Write two uses.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Principle:</strong> When a constant current flows through a wire of uniform cross-section, the potential drop (V) across any length (l) of the wire is directly proportional to that length (V &propto; l).
+                <br><strong>Uses:</strong>
+                1. To compare the EMFs of two primary cells.
+                2. To measure the internal resistance of a cell.
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-container">
+            <div class="question">Q18. State Biot-Savart’s law.</div>
+            <div class="answer">
+                <strong>Ans:</strong> Biot-Savart’s law gives the magnetic field (dB) due to a small current element (dl) carrying current (I) at a distance (r):
+                <div class="equation-box">dB = (&mu;<sub>0</sub> / 4&pi;) &times; (I dl sin&theta; / r<sup>2</sup>)</div>
+                Where &theta; is the angle between the current element and the position vector.
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-container">
+            <div class="question">Q19. What are eddy currents? Write two applications.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Eddy Currents:</strong> The circulating induced currents produced in a bulk piece of conductor when the magnetic flux linked with it changes.
+                <br><strong>Applications:</strong>
+                1. <strong>Induction Furnace:</strong> To melt metals using heat produced by eddy currents.
+                2. <strong>Magnetic Brakes:</strong> Used in electric trains to stop them smoothly.
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-container">
+            <div class="question">Q20. Distinguish between n-type and p-type semiconductors.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <ul>
+                    <li><strong>n-type:</strong> Formed by doping a pure semiconductor with a <strong>Pentavalent</strong> impurity (e.g., Arsenic). The majority charge carriers are <strong>electrons</strong>.</li>
+                    <li><strong>p-type:</strong> Formed by doping with a <strong>Trivalent</strong> impurity (e.g., Boron). The majority charge carriers are <strong>holes</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q21 -->
+        <div class="qa-container">
+            <div class="question">Q21. Differentiate between diamagnetic, paramagnetic, and ferromagnetic substances.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <ul>
+                    <li><strong>Diamagnetic:</strong> Weakly repelled by magnets (e.g., Water, Copper).</li>
+                    <li><strong>Paramagnetic:</strong> Weakly attracted by magnets (e.g., Aluminum, Oxygen).</li>
+                    <li><strong>Ferromagnetic:</strong> Strongly attracted by magnets (e.g., Iron, Nickel).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q22 -->
+        <div class="qa-container">
+            <div class="question">Q22. What is Lorentz force? Write the expression.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The total force experienced by a charged particle (q) moving with velocity (v) in a region where both electric field (E) and magnetic field (B) are present is called Lorentz force.
+                <div class="equation-box">F = F<sub>e</sub> + F<sub>m</sub> = qE + q(v &times; B)</div>
+            </div>
+        </div>
+
+        <!-- Q23 -->
+        <div class="qa-container">
+            <div class="question">Q23. On what factors does the capacitance of a parallel plate capacitor depend?</div>
+            <div class="answer">
+                <strong>Ans:</strong> The capacitance is given by C = (K &epsilon;<sub>0</sub> A) / d. It depends on:
+                <br>1. <strong>Area of plates (A):</strong> Directly proportional (C &propto; A).
+                <br>2. <strong>Distance between plates (d):</strong> Inversely proportional (C &propto; 1/d).
+                <br>3. <strong>Dielectric constant (K):</strong> Increases with the introduction of a dielectric medium.
+            </div>
+        </div>
+
+        <!-- Q24 -->
+        <div class="qa-container">
+            <div class="question">Q24. State Kirchhoff’s laws.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <br><strong>1. Junction Law:</strong> The algebraic sum of currents meeting at any junction is zero (&Sigma; I = 0). Based on conservation of <strong>charge</strong>.
+                <br><strong>2. Loop Law:</strong> The algebraic sum of changes in potential around any closed loop is zero (&Sigma; V = 0). Based on conservation of <strong>energy</strong>.
+            </div>
+        </div>
+
+        <!-- Q25 -->
+        <div class="qa-container">
+            <div class="question">Q25. State Brewster’s law of polarization.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Brewster’s Law:</strong> When unpolarized light is incident on a transparent medium at a specific angle called the polarizing angle (i<sub>p</sub>), the reflected light is completely plane-polarized.
+                <div class="equation-box">&mu; = tan i<sub>p</sub></div>
+                Where &mu; is the refractive index of the medium.
+            </div>
+        </div>
+
+        <!-- Q26 -->
+        <div class="qa-container">
+            <div class="question">Q26. Define RMS value and Peak value of AC. Write the relation.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>RMS Value (I<sub>rms</sub>):</strong> The root mean square value of alternating current over one complete cycle. It represents the equivalent DC current that produces the same heat.
+                <br><strong>Peak Value (I<sub>0</sub>):</strong> The maximum value attained by the AC current.
+                <br><strong>Relation:</strong> I<sub>rms</sub> = I<sub>0</sub> / &radic;2 = 0.707 I<sub>0</sub>.
+            </div>
+        </div>
+
+        <!-- Q27 -->
+        <div class="qa-container">
+            <div class="question">Q27. What is de Broglie hypothesis? Write the formula for wavelength.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>de Broglie Hypothesis:</strong> It states that every moving material particle (like an electron) is associated with a wave nature, known as matter waves.
+                <br><strong>Wavelength (&lambda;):</strong> Inversely proportional to momentum (p).
+                <div class="equation-box">&lambda; = h / p = h / mv</div>
+                Where h is Planck’s constant.
+            </div>
+        </div>
+
+        <!-- Q28 -->
+        <div class="qa-container">
+            <div class="question">Q28. Differentiate between primary and secondary rainbows.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Primary Rainbow:</strong> Formed by two refractions and <strong>one total internal reflection</strong> inside raindrops. Red is on the outer edge, and it is brighter.
+                <br><strong>Secondary Rainbow:</strong> Formed by two refractions and <strong>two total internal reflections</strong>. Violet is on the outer edge, and it is fainter than the primary rainbow.
+            </div>
+        </div>
+
+        <!-- Q29 -->
+        <div class="qa-container">
+            <div class="question">Q29. Write two main characteristics of laser rays.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The main characteristics of LASER are:
+                <ol>
+                    <li><strong>Monochromatic:</strong> Laser light consists of a single specific wavelength (color).</li>
+                    <li><strong>Coherent:</strong> All the waves are in the same phase.</li>
+                    <li><strong>Highly Directional:</strong> It travels long distances without spreading.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q30 -->
+        <div class="qa-container">
+            <div class="question">Q30. Write the expression for the energy stored in a charged capacitor.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The potential energy (U) stored in the electric field between the plates of a charged capacitor is given by:
+                <div class="equation-box">U = 1/2 CV<sup>2</sup> = Q<sup>2</sup> / 2C = 1/2 QV</div>
+                Where C is capacitance, V is potential difference, and Q is charge.
+            </div>
+        </div>
+
+        <!-- Q31 -->
+        <div class="qa-container">
+            <div class="question">Q31. State Ampere’s circuital law.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Ampere’s Law:</strong> The line integral of the magnetic field (B) around any closed loop in a vacuum is equal to &mu;<sub>0</sub> times the net current (I) enclosed by the loop.
+                <div class="equation-box">&int; B &cdot; dl = &mu;<sub>0</sub> I</div>
+            </div>
+        </div>
+
+        <!-- Q32 -->
+        <div class="qa-container">
+            <div class="question">Q32. Define self-inductance and mutual inductance.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Self-Inductance (L):</strong> The phenomenon of induction of EMF in a coil due to a change of current in the same coil.
+                <br><strong>Mutual Inductance (M):</strong> The phenomenon of induction of EMF in a coil due to a change of current in a neighboring coil.
+                <br>The SI unit for both is <strong>Henry (H)</strong>.
+            </div>
+        </div>
+
+        <!-- Q33 -->
+        <div class="qa-container">
+            <div class="question">Q33. Define electric potential. What is an equipotential surface?</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Electric Potential:</strong> Work done in bringing a unit positive charge from infinity to a point in the electric field.
+                <br><strong>Equipotential Surface:</strong> A surface where the electric potential is the same at all points.
+                <br><strong>Properties:</strong> Work done to move a charge on it is zero; Electric field lines are perpendicular to the surface.
+            </div>
+        </div>
+
+        <!-- Q34 -->
+        <div class="qa-container">
+            <div class="question">Q34. Define wavefront. State Huygens’ principle.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Wavefront:</strong> The locus of all particles of a medium vibrating in the same phase at a given instant.
+                <br><strong>Huygens’ Principle:</strong>
+                1. Every point on a wavefront acts as a source of secondary wavelets.
+                2. These wavelets spread out in all directions with the speed of light.
+            </div>
+        </div>
+
+        <!-- Q35 -->
+        <div class="qa-container">
+            <div class="question">Q35. Define inductive reactance, capacitive reactance, and impedance.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Reactance:</strong> Opposition offered by inductor (X<sub>L</sub> = &omega;L) or capacitor (X<sub>C</sub> = 1/&omega;C) to AC.
+                <br><strong>Impedance (Z):</strong> The total effective resistance offered by an LCR circuit containing resistance, inductance, and capacitance.
+                <div class="equation-box">Z = &radic;(R<sup>2</sup> + (X<sub>L</sub> - X<sub>C</sub>)<sup>2</sup>)</div>
+            </div>
+        </div>
+
+        <!-- Q36 -->
+        <div class="qa-container">
+            <div class="question">Q36. Two thin lenses of power P<sub>1</sub> and P<sub>2</sub> are in contact. Find the combined focal length and power.</div>
+            <div class="answer">
+                <strong>Ans:</strong> For two thin lenses in contact:
+                <br><strong>Combined Power (P):</strong> The algebraic sum of individual powers. P = P<sub>1</sub> + P<sub>2</sub>.
+                <br><strong>Combined Focal Length (f):</strong>
+                <div class="equation-box">1/f = 1/f<sub>1</sub> + 1/f<sub>2</sub></div>
+            </div>
+        </div>
+
+        <!-- Q37 -->
+        <div class="qa-container">
+            <div class="question">Q37. What are ohmic and non-ohmic resistances? Give examples.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Ohmic Resistances:</strong> Conductors that strictly obey Ohm’s law (V &propto; I) at constant temperature. Their V-I graph is linear. Example: Metals like Copper, Silver.
+                <br><strong>Non-Ohmic Resistances:</strong> Components that do not obey Ohm’s law. Their V-I graph is non-linear. Example: Diode, Transistor, Electrolyte.
+            </div>
+        </div>
+
+        <!-- Q38 -->
+        <div class="qa-container">
+            <div class="question">Q38. Define dielectric strength and relative permittivity.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Dielectric Strength:</strong> The maximum electric field that a dielectric medium can withstand without breakdown (insulation failure).
+                <br><strong>Relative Permittivity (K or &epsilon;<sub>r</sub>):</strong> The ratio of the permittivity of the medium (&epsilon;) to the permittivity of free space (&epsilon;<sub>0</sub>).
+            </div>
+        </div>
+
+        <!-- Q39 -->
+        <div class="qa-container">
+            <div class="question">Q39. Explain the difference between nuclear fission and nuclear fusion.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Fission:</strong> The splitting of a heavy nucleus (like Uranium) into two lighter nuclei with the release of energy. (e.g., Nuclear Reactor).
+                <br><strong>Fusion:</strong> The combining of two light nuclei (like Hydrogen) to form a heavier nucleus, releasing tremendous energy. (e.g., Sun's energy).
+            </div>
+        </div>
+
+        <!-- Q40 -->
+        <div class="qa-container">
+            <div class="question">Q40. Explain the terms: FAX, WWW, Sky Waves.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>FAX:</strong> Facsimile telegraphy; electronic reproduction of documents at a distance.
+                <br><strong>WWW:</strong> World Wide Web; a system of interlinked documents accessed via the internet.
+                <br><strong>Sky Waves:</strong> Radio waves reflected by the ionosphere back to earth, used for long-distance communication.
+            </div>
+        </div>
+
+        <!-- Q41 -->
+        <div class="qa-container">
+            <div class="question">Q41. What is a cyclotron? State its limitations.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Cyclotron:</strong> A device used to accelerate positively charged particles (protons, deuterons) to high energies.
+                <br><strong>Limitations:</strong>
+                1. It cannot accelerate uncharged particles like neutrons.
+                2. It cannot accelerate electrons effectively due to relativistic mass increase.
+            </div>
+        </div>
+
+        <!-- Q42 -->
+        <div class="qa-container">
+            <div class="question">Q42. How do you identify the resistance of a carbon resistor using color code?</div>
+            <div class="answer">
+                <strong>Ans:</strong> Using the formula: R = AB &times; 10<sup>C</sup> &pm; D%.
+                <br>Colors correspond to numbers: Black(0), Brown(1), Red(2), Orange(3), Yellow(4), Green(5), Blue(6), Violet(7), Grey(8), White(9).
+                <br>The 4th band is tolerance: Gold (&pm;5%), Silver (&pm;10%).
+            </div>
+        </div>
+
+        <!-- Q43 -->
+        <div class="qa-container">
+            <div class="question">Q43. Define current density. Is it a scalar or a vector?</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Current Density (J):</strong> The electric current flowing per unit cross-sectional area perpendicular to the direction of current flow.
+                <div class="equation-box">J = I / A</div>
+                It is a <strong>vector</strong> quantity, directed along the flow of positive charge. Unit: A/m<sup>2</sup>.
+            </div>
+        </div>
+
+        <!-- Q44 -->
+        <div class="qa-container">
+            <div class="question">Q44. Define mobility of charge carriers.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Mobility (&mu;):</strong> The magnitude of drift velocity (v<sub>d</sub>) acquired by a charge carrier per unit electric field (E).
+                <div class="equation-box">&mu; = v<sub>d</sub> / E</div>
+                Its SI unit is <strong>m<sup>2</sup> V<sup>-1</sup> s<sup>-1</sup></strong>.
+            </div>
+        </div>
+
+        <!-- Q45 -->
+        <div class="qa-container">
+            <div class="question">Q45. Define magnetic moment. Write its SI unit and dimension.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Magnetic Moment (M):</strong> It measures the strength of a magnet or current loop.
+                <br>Formula: M = NIA (Coil) or M = m &times; 2l (Bar magnet).
+                <br>It is a vector quantity.
+                <br><strong>SI Unit:</strong> A m<sup>2</sup> (Ampere-meter square).
+                <br><strong>Dimension:</strong> [AL<sup>2</sup>].
+            </div>
+        </div>
+
+        <!-- Q46 -->
+        <div class="qa-container">
+            <div class="question">Q46. What is the Seebeck effect?</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Seebeck Effect:</strong> When two dissimilar metals are joined to form a loop (thermocouple) and their junctions are kept at different temperatures, an electromotive force (EMF) is induced, causing current to flow. This is also called the thermoelectric effect.
+            </div>
+        </div>
+
+        <!-- Q47 -->
+        <div class="qa-container">
+            <div class="question">Q47. Why does the sky appear blue / Why are danger signals red?</div>
+            <div class="answer">
+                <strong>Ans:</strong> Due to <strong>Scattering</strong> of light (Rayleigh’s Law: Intensity &propto; 1/&lambda;<sup>4</sup>).
+                <br>1. <strong>Blue Sky:</strong> Blue has a shorter wavelength, so it scatters the most by atmospheric particles.
+                <br>2. <strong>Red Signals:</strong> Red has the longest wavelength, so it scatters the least and can be seen from a long distance through fog/smoke.
+            </div>
+        </div>
+
+        <!-- Q48 -->
+        <div class="qa-container">
+            <div class="question">Q48. What is an optical fiber? On what principle does it work?</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Optical Fiber:</strong> A thin fiber made of glass or plastic used to transmit light signals over long distances with negligible energy loss.
+                <br><strong>Principle:</strong> It works on the principle of <strong>Total Internal Reflection (TIR)</strong>. Light reflects repeatedly inside the core.
+            </div>
+        </div>
+
+        <!-- Q49 -->
+        <div class="qa-container">
+            <div class="question">Q49. What is wattless current? Define power factor.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Wattless Current:</strong> In a purely inductive or capacitive circuit (R=0), current flows but the average power consumed is zero. Such current is called wattless current.
+                <br><strong>Power Factor (cos&phi;):</strong> The ratio of true power to apparent power in an AC circuit. cos&phi; = R/Z.
+            </div>
+        </div>
+
+        <!-- Q50 -->
+        <div class="qa-container">
+            <div class="question">Q50. How does the resistivity of a conductor and a semiconductor vary with temperature?</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                1. <strong>Conductors:</strong> Resistivity <strong>increases</strong> with temperature due to increased collision frequency (decreased relaxation time).
+                <br>2. <strong>Semiconductors:</strong> Resistivity <strong>decreases</strong> exponentially with temperature because more charge carriers (electron-hole pairs) are generated.
+            </div>
+        </div>
+
+        <!-- Q51 -->
+        <div class="qa-container">
+            <div class="question">Q51. Explain the working of an LED or Solar Cell.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>LED:</strong> A <strong>forward-biased</strong> p-n junction diode that emits light when electrons and holes recombine, releasing energy as photons.
+                <br><strong>Solar Cell:</strong> An unbiased p-n junction that converts solar energy (light) directly into electrical energy based on the <strong>photovoltaic effect</strong>.
+            </div>
+        </div>
+
+        <!-- Q52 -->
+        <div class="qa-container">
+            <div class="question">Q52. What is the difference between magnification and magnifying power?</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Linear Magnification (m):</strong> Ratio of the size of the image to the size of the object (m = h'/h).
+                <br><strong>Magnifying Power (MP):</strong> Also called Angular Magnification. It is the ratio of the angle subtended by the image at the eye to the angle subtended by the object at the unaided eye.
+            </div>
+        </div>
+
+        <!-- Q53 -->
+        <div class="qa-container">
+            <div class="question">Q53. Write two properties of alpha (&alpha;) and beta (&beta;) rays.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Alpha (&alpha;) Rays:</strong> Helium nuclei (<sub>2</sub>He<sup>4</sup>). They have high ionizing power but low penetrating power.
+                <br><strong>Beta (&beta;) Rays:</strong> Fast-moving electrons (e<sup>-</sup>). They have lower ionizing power than alpha but higher penetrating power (about 100 times more).
+            </div>
+        </div>
+
+        <!-- Q54 -->
+        <div class="qa-container">
+            <div class="question">Q54. State Curie’s law in magnetism.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Curie’s Law:</strong> It states that the magnetic susceptibility (&chi;<sub>m</sub>) of a paramagnetic material is inversely proportional to its absolute temperature (T).
+                <div class="equation-box">&chi;<sub>m</sub> &propto; 1/T</div>
+                Thus, as temperature increases, magnetism decreases.
+            </div>
+        </div>
+
+        <!-- Q55 -->
+        <div class="qa-container">
+            <div class="question">Q55. What do you mean by the resolving power of a microscope?</div>
+            <div class="answer">
+                <strong>Ans:</strong> The ability of a microscope to form separate and distinct images of two very closely placed objects.
+                <br>Formula: R.P. = 2&mu; sin&theta; / 1.22 &lambda;
+                <br>Resolving power increases if the wavelength (&lambda;) of light used is decreased.
+            </div>
+        </div>
+
+        <!-- Q56 -->
+        <div class="qa-container">
+            <div class="question">Q56. What is electrostatic shielding? Give one application.</div>
+            <div class="answer">
+                <strong>Ans:</strong> <strong>Electrostatic Shielding:</strong> The process of protecting a certain region or instrument from the influence of external electric fields.
+                <br><strong>Application:</strong> It is achieved using a hollow conductor (Faraday cage) because the electric field inside a cavity is always zero. e.g., Sitting inside a car during lightning.
+            </div>
+        </div>
+
+        <!-- Q57 -->
+        <div class="qa-container">
+            <div class="question">Q57. Calculate the work done in rotating an electric dipole in an external electric field.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The work done (W) in rotating a dipole from angle &theta;<sub>1</sub> to &theta;<sub>2</sub> in a uniform electric field E is:
+                <div class="equation-box">W = pE (cos&theta;<sub>1</sub> - cos&theta;<sub>2</sub>)</div>
+                If rotated from stable equilibrium (&theta;=0), W = pE(1 - cos&theta;).
+            </div>
+        </div>
+
+        <!-- Q58 -->
+        <div class="qa-container">
+            <div class="question">Q58. Define the mean (average) value of alternating current.</div>
+            <div class="answer">
+                <strong>Ans:</strong> The average value of AC over a full cycle is zero. Hence, it is defined for a <strong>half-cycle</strong>.
+                <br>The mean value of AC over a half-cycle is 2/&pi; times the peak value (I<sub>0</sub>).
+                <div class="equation-box">I<sub>avg</sub> = 0.637 I<sub>0</sub></div>
+            </div>
+        </div>
+
+        <!-- Q59 -->
+        <div class="qa-container">
+            <div class="question">Q59. Define isotopes, isobars, and isotones with examples.</div>
+            <div class="answer">
+                <strong>Ans:</strong>
+                <strong>Isotopes:</strong> Same atomic number (Z), different mass number (A). e.g., <sub>1</sub>H<sup>1</sup>, <sub>1</sub>H<sup>2</sup>.
+                <br><strong>Isobars:</strong> Same mass number (A), different atomic number (Z). e.g., <sub>6</sub>C<sup>14</sup>, <sub>7</sub>N<sup>14</sup>.
+                <br><strong>Isotones:</strong> Same number of neutrons. e.g., <sub>1</sub>H<sup>3</sup> and <sub>2</sub>He<sup>4</sup>.
+            </div>
+        </div>
+
+        <!-- Q60 -->
+        <div class="qa-container">
+            <div class="question">Q60. On what factors does the velocity of electromagnetic waves in a medium depend?</div>
+            <div class="answer">
+                <strong>Ans:</strong> The velocity (v) of EM waves in a medium depends on the electric permittivity (&epsilon;) and magnetic permeability (&mu;) of that medium.
+                <div class="equation-box">v = 1 / &radic;(&mu;&epsilon;)</div>
+                In vacuum, v = c = 3 &times; 10<sup>8</sup> m/s.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

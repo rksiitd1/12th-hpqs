@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Important Mathematics Formula Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Times+New+Roman&display=swap" rel="stylesheet">
+<style>
+    @page {
+        size: A4 portrait;
+        /* Increased top margin as requested, tight side margins */
+        margin-top: 15mm; 
+        margin-bottom: 5mm;
+        margin-left: 5mm;
+        margin-right: 5mm;
+    }
+    :root {
+        --header-bg: #222;
+        --header-text: #fff;
+        --highlight: #f2f2f2;
+    }
+    body {
+        font-family: 'Noto Serif Devanagari', sans-serif;
+        font-size: 8pt; /* Optimized for density */
+        line-height: 1.25;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    /* Main Title Styling */
+    h1 {
+        text-align: center;
+        font-family: 'Times New Roman', 'Noto Serif Devanagari', serif;
+        font-size: 16pt;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #000;
+        padding-bottom: 5px;
+    }
+
+    /* 3-Column Layout */
+    .grid-container {
+        column-count: 3;
+        column-gap: 5mm;
+        column-rule: 0.5px solid #aaa;
+        width: 100%;
+    }
+
+    /* Section Cards */
+    .section {
+        break-inside: avoid;
+        border: 1px solid #333;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        background: #fff;
+        overflow: hidden;
+    }
+    .sec-header {
+        background: var(--header-bg);
+        color: var(--header-text);
+        font-size: 8.5pt;
+        font-weight: 700;
+        padding: 3px 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .sec-body {
+        padding: 4px;
+    }
+
+    /* Math Typography Helpers */
+    .m {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    /* Fraction CSS */
+    .frac {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 0.9em;
+        margin: 0 2px;
+    }
+    .frac .n {
+        border-bottom: 1px solid #000;
+        display: block;
+        padding: 0 1px;
+    }
+    .frac .d {
+        display: block;
+        padding: 0 1px;
+    }
+
+    /* Vector/Hat CSS */
+    .vec { position: relative; display: inline-block; margin-top: 3px; }
+    .vec::after {
+        content: '→';
+        position: absolute;
+        top: -8px; left: 0; right: 0;
+        text-align: center; font-size: 0.7em;
+    }
+    .hat { position: relative; display: inline-block; }
+    .hat::after {
+        content: '^';
+        position: absolute;
+        top: -6px; left: 0; right: 0;
+        text-align: center;
+    }
+
+    /* Highlight Box (Crucial Formulas) */
+    .imp {
+        background-color: var(--highlight);
+        border-left: 3px solid #000;
+        padding: 2px 4px;
+        margin: 3px 0;
+        font-size: 0.95em;
+    }
+
+    /* Table Styling */
+    table { width: 100%; border-collapse: collapse; font-size: 7.5pt; margin-bottom: 3px; }
+    th { background: #e0e0e0; border: 1px solid #888; padding: 1px; font-weight: bold; }
+    td { border: 1px solid #888; text-align: center; padding: 1px; }
+
+    /* List Styling */
+    ul { margin: 0; padding-left: 12px; }
+    li { margin-bottom: 2px; }
+
+    /* Determinant/Matrix Bars */
+    .det-bar { display: inline-block; border-left: 1px solid #000; border-right: 1px solid #000; padding: 0 3px; vertical-align: middle; line-height: 1; }
+</style>
+</head>
+<body>
+
+    <h1>Important Mathematics Formula Sheet</h1>
+
+    <div class="grid-container">
+
+        <!-- 1. Inverse Trig -->
+        <div class="section">
+            <div class="sec-header">1. प्रतिलोम त्रिकोणमितीय फलन (ITF)</div>
+            <div class="sec-body">
+                <table>
+                    <tr><th>फलन</th><th>प्रांत (Domain)</th><th>परिसर (Range)</th></tr>
+                    <tr><td><span class="m">sin⁻¹x</span></td><td>[-1, 1]</td><td>[-π/2, π/2]</td></tr>
+                    <tr><td><span class="m">cos⁻¹x</span></td><td>[-1, 1]</td><td>[0, π]</td></tr>
+                    <tr><td><span class="m">tan⁻¹x</span></td><td>R</td><td>(-π/2, π/2)</td></tr>
+                </table>
+                <div class="imp">
+                    <strong>गुणधर्म (Properties):</strong><br>
+                    • <span class="m">sin⁻¹(-x) = -sin⁻¹x</span><br>
+                    • <span class="m">cos⁻¹(-x) = π - cos⁻¹x</span><br>
+                    • <span class="m">sin⁻¹x + cos⁻¹x = π/2</span>
+                </div>
+                <strong>सूत्र (Formulas):</strong><br>
+                • <span class="m">tan⁻¹x ± tan⁻¹y = tan⁻¹</span><span class="frac"><span class="n">x ± y</span><span class="d">1 ∓ xy</span></span><br>
+                • <span class="m">2tan⁻¹x = sin⁻¹</span><span class="frac"><span class="n">2x</span><span class="d">1+x²</span></span> = <span class="m">cos⁻¹</span><span class="frac"><span class="n">1-x²</span><span class="d">1+x²</span></span>
+            </div>
+        </div>
+
+        <!-- 2. Matrices & Determinants -->
+        <div class="section">
+            <div class="sec-header">2. आव्यूह और सारणिक (Matrices & Det)</div>
+            <div class="sec-body">
+                • <strong>सममित (Symmetric):</strong> <span class="m">A' = A</span><br>
+                • <strong>विषम-सममित (Skew):</strong> <span class="m">A' = -A</span><br>
+                <div class="imp">
+                    <strong>व्युत्क्रम और सहखंडज (Inverse & Adjoint):</strong><br>
+                    1. <span class="m">A(adj A) = |A|I</span><br>
+                    2. <span class="m">|adj A| = |A|ⁿ⁻¹</span> (n = कोटि)<br>
+                    3. <span class="m">(AB)⁻¹ = B⁻¹A⁻¹</span><br>
+                    4. <span class="m">A⁻¹ = </span><span class="frac"><span class="n">1</span><span class="d">|A|</span></span><span class="m">(adj A)</span>
+                </div>
+                <strong>त्रिभुज का क्षेत्रफल (Area):</strong> <span class="frac"><span class="n">1</span><span class="d">2</span></span> <span class="det-bar">x₁ y₁ 1<br>x₂ y₂ 1<br>x₃ y₃ 1</span><br>
+                (यदि क्षेत्रफल = 0, तो बिंदु संरेख (Collinear) हैं)<br>
+                <strong>आव्यूह विधि:</strong> <span class="m">AX = B ⇒ X = A⁻¹B</span>
+            </div>
+        </div>
+
+        <!-- 3. Differentiation -->
+        <div class="section">
+            <div class="sec-header">3. अवकलन (Differentiation)</div>
+            <div class="sec-body">
+                <span class="m">d/dx(xⁿ) = nxⁿ⁻¹</span> | <span class="m">d/dx(eˣ) = eˣ</span><br>
+                <span class="m">d/dx(log x) = 1/x</span> | <span class="m">d/dx(aˣ) = aˣ log a</span><br>
+                <strong>त्रिकोणमितीय (Trig):</strong><br>
+                • <span class="m">tan x → sec²x</span> | <span class="m">cot x → -cosec²x</span><br>
+                • <span class="m">sec x → sec x tan x</span><br>
+                <div class="imp">
+                    <strong>प्रतिलोम त्रिकोणमितीय (Inverse):</strong><br>
+                    • <span class="m">sin⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">√(1-x²)</span></span><br>
+                    • <span class="m">tan⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">1+x²</span></span><br>
+                    • <span class="m">sec⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">|x|√(x²-1)</span></span>
+                </div>
+                <strong>शृंखला नियम (Chain Rule):</strong> <span class="m">dy/dx = dy/dt × dt/dx</span><br>
+                <strong>लघुगणकीय अवकलन:</strong> <span class="m">y=xˣ ⇒ y'=xˣ(1+log x)</span>
+            </div>
+        </div>
+
+        <!-- 4. Applications of Derivatives -->
+        <div class="section">
+            <div class="sec-header">4. अवकलज के अनुप्रयोग (AOD)</div>
+            <div class="sec-body">
+                <strong>स्पर्श रेखा (Tangent):</strong> <span class="m">y-y₁ = m(x-x₁)</span><br>
+                (जहाँ <span class="m">m = dy/dx</span>)<br>
+                <strong>अभिलंब (Normal):</strong> प्रवणता (Slope) = <span class="m">-1/m</span><br>
+                <strong>वर्धमान (Inc):</strong> <span class="m">f'(x) > 0</span> | <strong>ह्रासमान (Dec):</strong> <span class="m">f'(x) < 0</span><br>
+                <div class="imp">
+                    <strong>उच्चतम और निम्नतम (Max & Min):</strong><br>
+                    1. <span class="m">f'(x)=0</span> हल करें (क्रांतिक बिंदु)<br>
+                    2. <span class="m">f''(x)</span> का चिन्ह जाँचें:<br>
+                    • <span class="m">(-)ve</span> ⇒ उच्चतम (Maxima)<br>
+                    • <span class="m">(+)ve</span> ⇒ निम्नतम (Minima)
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Integrals (Indefinite) -->
+        <div class="section">
+            <div class="sec-header">5. अनिश्चित समाकलन (Integrals)</div>
+            <div class="sec-body">
+                <span class="m">∫xⁿdx = </span><span class="frac"><span class="n">xⁿ⁺¹</span><span class="d">n+1</span></span> | <span class="m">∫(1/x)dx = log|x|</span><br>
+                <span class="m">∫tan x = log|sec x|</span> | <span class="m">∫cot x = log|sin x|</span><br>
+                <span class="m">∫sec x = log|sec x + tan x|</span><br>
+                <div class="imp">
+                    <strong>9 विशिष्ट सूत्र (Special Integrals):</strong><br>
+                    1. <span class="m">∫</span><span class="frac"><span class="n">dx</span><span class="d">x²-a²</span></span> = <span class="frac"><span class="n">1</span><span class="d">2a</span></span><span class="m">log</span>|<span class="frac"><span class="n">x-a</span><span class="d">x+a</span></span>|<br>
+                    2. <span class="m">∫</span><span class="frac"><span class="n">dx</span><span class="d">a²-x²</span></span> = <span class="frac"><span class="n">1</span><span class="d">2a</span></span><span class="m">log</span>|<span class="frac"><span class="n">a+x</span><span class="d">a-x</span></span>|<br>
+                    3. <span class="m">∫</span><span class="frac"><span class="n">dx</span><span class="d">x²+a²</span></span> = <span class="frac"><span class="n">1</span><span class="d">a</span></span><span class="m">tan⁻¹</span>(<span class="frac"><span class="n">x</span><span class="d">a</span></span>)<br>
+                    4. <span class="m">∫</span><span class="frac"><span class="n">dx</span><span class="d">√(a²-x²)</span></span> = <span class="m">sin⁻¹</span>(<span class="frac"><span class="n">x</span><span class="d">a</span></span>)<br>
+                    5. <span class="m">∫</span><span class="frac"><span class="n">dx</span><span class="d">√(x²±a²)</span></span> = <span class="m">log|x + √(x²±a²)|</span><br>
+                </div>
+                <strong>खण्डशः (By Parts):</strong> (ILATE नियम)<br>
+                <span class="m">∫uv dx = u∫v dx - ∫(u'∫v dx)dx</span><br>
+                <strong>महत्वपूर्ण रूप:</strong> <span class="m">∫eˣ[f(x)+f'(x)]dx = eˣf(x)</span>
+            </div>
+        </div>
+
+        <!-- 6. Definite Integrals -->
+        <div class="section">
+            <div class="sec-header">6. निश्चित समाकलन (Definite)</div>
+            <div class="sec-body">
+                <strong>प्रमुख गुणधर्म (Properties):</strong><br>
+                <div class="imp">
+                    <strong>P4:</strong> <span class="m">∫₀ᵃ f(x)dx = ∫₀ᵃ f(a-x)dx</span><br>
+                    (अत्यधिक महत्वपूर्ण - King's Property)
+                </div>
+                <strong>P7 (सम/विषम फलन):</strong> <span class="m">∫₋ₐᵃ f(x)dx</span><br>
+                • यदि <span class="m">f(-x) = -f(x)</span> (विषम) ⇒ <span class="m">0</span><br>
+                • यदि <span class="m">f(-x) = f(x)</span> (सम) ⇒ <span class="m">2∫₀ᵃ f(x)dx</span>
+            </div>
+        </div>
+
+        <!-- 7. Application of Integrals -->
+        <div class="section">
+            <div class="sec-header">7. समाकलन के अनुप्रयोग (AOI)</div>
+            <div class="sec-body">
+                <strong>वक्र का क्षेत्रफल (Area):</strong> <span class="m">A = ∫ₐᵇ y dx</span><br>
+                <strong>मानक परिणाम (याद रखें):</strong><br>
+                • वृत्त (Circle) <span class="m">x²+y²=a²</span> ⇒ Area: <span class="m">πa²</span><br>
+                • दीर्घवृत्त (Ellipse) <span class="m">x²/a² + y²/b² = 1</span> ⇒ <span class="m">πab</span>
+            </div>
+        </div>
+
+        <!-- 8. Differential Equations -->
+        <div class="section">
+            <div class="sec-header">8. अवकल समीकरण (Diff. Eq.)</div>
+            <div class="sec-body">
+                1. <strong>पृथक्करणीय (Variable Separable):</strong> <span class="m">∫f(y)dy = ∫g(x)dx</span><br>
+                2. <strong>समघातीय (Homogeneous):</strong> <span class="m">y=vx</span> रखें, <span class="m">dy/dx=v+xv'</span><br>
+                <div class="imp">
+                    3. <strong>रैखिक अवकल समीकरण (LDE):</strong><br>
+                    रूप: <span class="m">dy/dx + Py = Q</span><br>
+                    • समाकलन गुणक (I.F.) = <span class="m">e^∫P dx</span><br>
+                    • हल: <span class="m">y(I.F.) = ∫(Q × I.F.)dx + C</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Vector Algebra -->
+        <div class="section">
+            <div class="sec-header">9. सदिश बीजगणित (Vectors)</div>
+            <div class="sec-body">
+                <strong>इकाई सदिश:</strong> <span class="m"><span class="vec">a</span>̂ = <span class="vec">a</span> / |<span class="vec">a</span>|</span><br>
+                <strong>दिक्-कोसाइन (DC's):</strong> <span class="m">l²+m²+n²=1</span><br>
+                <div class="imp">
+                    <strong>अदिश गुणन (Dot Product):</strong><br>
+                    <span class="m"><span class="vec">a</span>⋅<span class="vec">b</span> = |<span class="vec">a</span>||<span class="vec">b</span>|cosθ</span><br>
+                    • यदि <span class="m"><span class="vec">a</span>⊥<span class="vec">b</span></span> (लंबवत) ⇒ <span class="m"><span class="vec">a</span>⋅<span class="vec">b</span> = 0</span><br>
+                    • प्रक्षेप (Projection of a on b): <span class="m">(<span class="vec">a</span>⋅<span class="vec">b</span>) / |<span class="vec">b</span>|</span>
+                </div>
+                <div class="imp">
+                    <strong>सदिश गुणन (Cross Product):</strong><br>
+                    <span class="m"><span class="vec">a</span>×<span class="vec">b</span> = |<span class="vec">a</span>||<span class="vec">b</span>|sinθ <span class="hat">n</span></span><br>
+                    • यदि <span class="m"><span class="vec">a</span>∥<span class="vec">b</span></span> (समांतर) ⇒ <span class="m"><span class="vec">a</span>×<span class="vec">b</span> = 0</span><br>
+                    • त्रिभुज का क्षेत्रफल: <span class="m">½|<span class="vec">a</span>×<span class="vec">b</span>|</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. 3D Geometry -->
+        <div class="section">
+            <div class="sec-header">10. त्रिविमीय ज्यामिति (3D)</div>
+            <div class="sec-body">
+                <strong>रेखा का समीकरण (Line):</strong><br>
+                सदिश: <span class="m"><span class="vec">r</span> = <span class="vec">a</span> + λ<span class="vec">b</span></span><br>
+                कातीय: <span class="frac"><span class="n">x-x₁</span><span class="d">a</span></span> = <span class="frac"><span class="n">y-y₁</span><span class="d">b</span></span> = <span class="frac"><span class="n">z-z₁</span><span class="d">c</span></span><br>
+                <div class="imp">
+                    <strong>न्यूनतम दूरी (Shortest Distance):</strong><br>
+                    <span class="m">d = </span><span class="frac"><span class="n">|(<span class="vec">b</span>₁×<span class="vec">b</span>₂) ⋅ (<span class="vec">a</span>₂-<span class="vec">a</span>₁)|</span><span class="d">|<span class="vec">b</span>₁×<span class="vec">b</span>₂|</span></span>
+                </div>
+                <strong>समतल (Plane):</strong> <span class="m"><span class="vec">r</span>⋅<span class="hat">n</span> = d</span> (Normal form)<br>
+                अंतःखण्ड रूप: <span class="m">x/a + y/b + z/c = 1</span><br>
+                <strong>बिंदु की समतल से दूरी:</strong> <span class="frac"><span class="n">|Ax₁+By₁+Cz₁+D|</span><span class="d">√(A²+B²+C²)</span></span>
+            </div>
+        </div>
+
+        <!-- 11. Probability -->
+        <div class="section">
+            <div class="sec-header">11. प्रायिकता (Probability)</div>
+            <div class="sec-body">
+                <span class="m">P(A∪B) = P(A) + P(B) - P(A∩B)</span><br>
+                <strong>सप्रतिबंध (Conditional):</strong> <span class="m">P(A|B) = </span><span class="frac"><span class="n">P(A∩B)</span><span class="d">P(B)</span></span><br>
+                <strong>स्वतंत्र घटनाएँ:</strong> <span class="m">P(A∩B) = P(A)⋅P(B)</span><br>
+                <div class="imp">
+                    <strong>बेज़ प्रमेय (Bayes' Theorem):</strong><br>
+                    <span class="m">P(E₁|A) = </span><span class="frac"><span class="n">P(E₁)P(A|E₁)</span><span class="d">∑ P(Eᵢ)P(A|Eᵢ)</span></span>
+                </div>
+                <strong>द्विपद बंटन (Binomial):</strong> <span class="m">P(X=r) = ⁿCᵣ pʳ qⁿ⁻ʳ</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

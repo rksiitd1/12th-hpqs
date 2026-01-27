@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 12 Maths - Complete Formula Sheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 4mm; /* Extreme margins for max content */
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif', serif;
+            font-size: 7.8pt; /* Small but readable */
+            line-height: 1.15;
+            color: #000;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout Grid */
+        .grid-container {
+            column-count: 4;
+            column-gap: 3mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Section Styling */
+        .section {
+            break-inside: avoid;
+            margin-bottom: 5px;
+            border: 0.5px solid #000;
+            padding: 2px;
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: #eee;
+            margin: -2px -2px 2px -2px;
+            padding: 1px 0;
+            text-align: center;
+            border-bottom: 0.5px solid #000;
+        }
+
+        /* Math Typography Classes */
+        .math-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2px;
+            margin-bottom: 1px;
+        }
+        
+        .math {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+
+        .func { font-style: normal; } /* for sin, log, etc */
+        
+        /* Fraction CSS */
+        .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 1px;
+        }
+        .frac > span { display: block; padding: 0; }
+        .frac span.num { border-bottom: 0.5px solid #000; padding-bottom: 0.5px; }
+        .frac span.den { padding-top: 0.5px; }
+
+        /* Integral/Sum Signs */
+        .big { font-size: 1.1em; vertical-align: -2px; }
+        
+        /* Vectors */
+        .vec { font-weight: bold; }
+        .hat { position: relative; }
+        .hat::after { content: "^"; position: absolute; top: -6px; left: 2px; font-size: 0.8em; }
+
+        /* Helper for highlighting */
+        .imp { font-weight: bold; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <div style="text-align:center; font-weight:bold; font-size:12pt; margin-bottom:4px; border-bottom:1px solid #000;">
+        Class 12 Mathematics - Complete NCERT Formula Sheet
+    </div>
+
+    <div class="grid-container">
+
+        <!-- 1. RELATIONS & FUNCTIONS -->
+        <div class="section">
+            <h2>1. Relations & Functions</h2>
+            <div class="math-row">Reflexive: <span class="math">(a,a) &in; R &forall; a &in; A</span></div>
+            <div class="math-row">Symmetric: <span class="math">(a,b) &in; R &rArr; (b,a) &in; R</span></div>
+            <div class="math-row">Transitive: <span class="math">(a,b),(b,c) &in; R &rArr; (a,c) &in; R</span></div>
+            <div class="math-row">One-One: <span class="math">f(x₁) = f(x₂) &rArr; x₁ = x₂</span></div>
+            <div class="math-row">Onto: Range = Codomain</div>
+            <div class="math-row">Comp: <span class="math">(fog)(x) = f(g(x))</span></div>
+            <div class="math-row">Inv: <span class="math">fof⁻¹(x) = x</span></div>
+            <div class="math-row">Binary: <span class="math">a * b</span> Commutative <span class="math">a*b=b*a</span></div>
+        </div>
+
+        <!-- 2. INVERSE TRIG -->
+        <div class="section">
+            <h2>2. Inverse Trigonometry</h2>
+            <div class="math-row"><span class="math">sin⁻¹x + cos⁻¹x = &pi;/2</span></div>
+            <div class="math-row"><span class="math">tan⁻¹x + cot⁻¹x = &pi;/2</span></div>
+            <div class="math-row"><span class="math">sec⁻¹x + cosec⁻¹x = &pi;/2</span></div>
+            <div class="math-row imp"><span class="math">tan⁻¹x + tan⁻¹y = tan⁻¹<span class="frac"><span class="num">x+y</span><span class="den">1-xy</span></span></span></div>
+            <div class="math-row"><span class="math">tan⁻¹x - tan⁻¹y = tan⁻¹<span class="frac"><span class="num">x-y</span><span class="den">1+xy</span></span></span></div>
+            <div class="math-row"><span class="math">2tan⁻¹x = sin⁻¹<span class="frac"><span class="num">2x</span><span class="den">1+x²</span></span> = cos⁻¹<span class="frac"><span class="num">1-x²</span><span class="den">1+x²</span></span></span></div>
+            <div class="math-row"><span class="math">2tan⁻¹x = tan⁻¹<span class="frac"><span class="num">2x</span><span class="den">1-x²</span></span></span></div>
+            <div class="math-row"><span class="math">3sin⁻¹x = sin⁻¹(3x - 4x³)</span></div>
+            <div class="math-row"><span class="math">3cos⁻¹x = cos⁻¹(4x³ - 3x)</span></div>
+        </div>
+
+        <!-- 3. MATRICES & DET -->
+        <div class="section">
+            <h2>3. Matrices & Determinants</h2>
+            <div class="math-row"><span class="math">(AB)' = B'A'</span> | <span class="math">(A')' = A</span></div>
+            <div class="math-row">Symm: <span class="math">A' = A</span> | Skew: <span class="math">A' = -A</span></div>
+            <div class="math-row"><span class="math">A = <span class="frac"><span class="num">1</span><span class="den">2</span></span>(A+A') + <span class="frac"><span class="num">1</span><span class="den">2</span></span>(A-A')</span></div>
+            <div class="math-row">Area &Delta; = <span class="math"><span class="frac"><span class="num">1</span><span class="den">2</span></span> |det(x, y, 1)|</span></div>
+            <div class="math-row">Adj: <span class="math">A(adj A) = |A|I</span></div>
+            <div class="math-row">Inv: <span class="math">A⁻¹ = <span class="frac"><span class="num">1</span><span class="den">|A|</span></span>(adj A)</span></div>
+            <div class="math-row imp"><span class="math">(AB)⁻¹ = B⁻¹A⁻¹</span></div>
+            <div class="math-row">Prop: <span class="math">|adj A| = |A|ⁿ⁻¹</span></div>
+            <div class="math-row"><span class="math">|kA| = kⁿ|A|</span> (n=order)</div>
+            <div class="math-row">Sol: <span class="math">X = A⁻¹B</span> (if <span class="math">|A|&ne;0</span>)</div>
+        </div>
+
+        <!-- 5. CONTINUITY & DIFF -->
+        <div class="section">
+            <h2>5. Differentiation</h2>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(xⁿ) = nxⁿ⁻¹</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(eˣ) = eˣ</span> | <span class="math"><span class="func">d</span>/<span class="func">dx</span>(aˣ) = aˣ<span class="func">log</span>a</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">log</span>x) = 1/x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">sin</span>x) = <span class="func">cos</span>x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">cos</span>x) = -<span class="func">sin</span>x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">tan</span>x) = <span class="func">sec</span>²x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">cot</span>x) = -<span class="func">cosec</span>²x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">sec</span>x) = <span class="func">sec</span>x<span class="func">tan</span>x</span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>/<span class="func">dx</span>(<span class="func">cosec</span>x) = -<span class="func">cosec</span>x<span class="func">cot</span>x</span></div>
+            <div class="math-row">Chain: <span class="math"><span class="frac"><span class="num">dy</span><span class="den">dx</span></span> = <span class="frac"><span class="num">dy</span><span class="den">dt</span></span> &middot; <span class="frac"><span class="num">dt</span><span class="den">dx</span></span></span></div>
+            <div class="math-row">Parametric: <span class="math"><span class="frac"><span class="num">dy</span><span class="den">dx</span></span> = <span class="frac"><span class="num">dy/d&theta;</span><span class="den">dx/d&theta;</span></span></span></div>
+            <div class="math-row">Log: <span class="math">y=uᵛ &rArr; <span class="func">log</span>y = v<span class="func">log</span>u</span></div>
+        </div>
+
+        <!-- 5b. INV TRIG DIFF -->
+        <div class="section">
+            <h2>Diff of Inverse Trig</h2>
+            <div class="math-row"><span class="math"><span class="func">d</span>(<span class="func">sin</span>⁻¹x) = <span class="frac"><span class="num">1</span><span class="den">&radic;(1-x²)</span></span></span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>(<span class="func">cos</span>⁻¹x) = <span class="frac"><span class="num">-1</span><span class="den">&radic;(1-x²)</span></span></span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>(<span class="func">tan</span>⁻¹x) = <span class="frac"><span class="num">1</span><span class="den">1+x²</span></span></span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>(<span class="func">cot</span>⁻¹x) = <span class="frac"><span class="num">-1</span><span class="den">1+x²</span></span></span></div>
+            <div class="math-row"><span class="math"><span class="func">d</span>(<span class="func">sec</span>⁻¹x) = <span class="frac"><span class="num">1</span><span class="den">|x|&radic;(x²-1)</span></span></span></div>
+        </div>
+
+        <!-- 6. AOD -->
+        <div class="section">
+            <h2>6. App. of Derivatives</h2>
+            <div class="math-row">Rate: <span class="math"><span class="frac"><span class="num">dy</span><span class="den">dt</span></span> = <span class="frac"><span class="num">dy</span><span class="den">dx</span></span> &middot; <span class="frac"><span class="num">dx</span><span class="den">dt</span></span></span></div>
+            <div class="math-row">Inc: <span class="math">f'(x) > 0</span> | Dec: <span class="math">f'(x) < 0</span></div>
+            <div class="math-row">Slope (m): <span class="math">m = <span class="frac"><span class="num">dy</span><span class="den">dx</span></span></span> at <span class="math">(x₁,y₁)</span></div>
+            <div class="math-row">Tangent: <span class="math">y - y₁ = m(x - x₁)</span></div>
+            <div class="math-row">Normal: <span class="math">y - y₁ = <span class="frac"><span class="num">-1</span><span class="den">m</span></span>(x - x₁)</span></div>
+            <div class="math-row">Max/Min: Set <span class="math">f'(x)=0</span> find <span class="math">c</span></div>
+            <div class="math-row">Test: <span class="math">f''(c) < 0</span> (Max), <span class="math">f''(c) > 0</span> (Min)</div>
+        </div>
+
+        <!-- 7. INTEGRALS (STD) -->
+        <div class="section">
+            <h2>7. Integrals (Standard)</h2>
+            <div class="math-row"><span class="math">&int;xⁿ dx = <span class="frac"><span class="num">xⁿ⁺¹</span><span class="den">n+1</span></span></span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">1</span><span class="den">x</span></span> dx = <span class="func">log</span>|x|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="func">tan</span>x = <span class="func">log</span>|<span class="func">sec</span>x|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="func">cot</span>x = <span class="func">log</span>|<span class="func">sin</span>x|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="func">sec</span>x = <span class="func">log</span>|<span class="func">sec</span>x+<span class="func">tan</span>x|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="func">cosec</span>x = <span class="func">log</span>|<span class="func">cosec</span>x-<span class="func">cot</span>x|</span></div>
+            <div class="math-row imp"><span class="math">&int;eˣ[f(x)+f'(x)]dx = eˣf(x)</span></div>
+            <div class="math-row">Parts: <span class="math">&int;uv = u&int;v - &int;(u'&int;v)</span> (ILATE)</div>
+        </div>
+
+        <!-- 7b. SPECIAL INTEGRALS -->
+        <div class="section">
+            <h2>9 Special Integrals</h2>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">x²-a²</span></span> = <span class="frac"><span class="num">1</span><span class="den">2a</span></span><span class="func">log</span>|<span class="frac"><span class="num">x-a</span><span class="den">x+a</span></span>|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">a²-x²</span></span> = <span class="frac"><span class="num">1</span><span class="den">2a</span></span><span class="func">log</span>|<span class="frac"><span class="num">a+x</span><span class="den">a-x</span></span>|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">x²+a²</span></span> = <span class="frac"><span class="num">1</span><span class="den">a</span></span><span class="func">tan</span>⁻¹<span class="frac"><span class="num">x</span><span class="den">a</span></span></span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">&radic;(x²-a²)</span></span> = <span class="func">log</span>|x+&radic;...|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">&radic;(x²+a²)</span></span> = <span class="func">log</span>|x+&radic;...|</span></div>
+            <div class="math-row"><span class="math">&int;<span class="frac"><span class="num">dx</span><span class="den">&radic;(a²-x²)</span></span> = <span class="func">sin</span>⁻¹(<span class="frac"><span class="num">x</span><span class="den">a</span></span>)</span></div>
+            <div class="math-row"><span class="math">&int;&radic;(a²-x²)dx = <span class="frac"><span class="num">x</span><span class="den">2</span></span>&radic;... + <span class="frac"><span class="num">a²</span><span class="den">2</span></span><span class="func">sin</span>⁻¹<span class="frac"><span class="num">x</span><span class="den">a</span></span></span></div>
+            <div class="math-row"><span class="math">&int;&radic;(x²-a²)dx = <span class="frac"><span class="num">x</span><span class="den">2</span></span>&radic;... - <span class="frac"><span class="num">a²</span><span class="den">2</span></span><span class="func">log</span>|x+&radic;...|</span></div>
+        </div>
+
+        <!-- 8. DEFINITE INTEGRALS -->
+        <div class="section">
+            <h2>8. Definite Integrals</h2>
+            <div class="math-row"><span class="math">&int;ₐᵇ f(x) = &int;ₐᵇ f(t)</span></div>
+            <div class="math-row"><span class="math">&int;ₐᵇ f(x) = -&int;₆ᵃ f(x)</span></div>
+            <div class="math-row imp"><span class="math">&int;₀ᵃ f(x) = &int;₀ᵃ f(a-x)</span> (King's Prop)</div>
+            <div class="math-row"><span class="math">&int;₋ₐᵃ f(x) = 2&int;₀ᵃ f(x)</span> (Even func)</div>
+            <div class="math-row"><span class="math">&int;₋ₐᵃ f(x) = 0</span> (Odd func: f(-x)=-f(x))</div>
+            <div class="math-row"><span class="math">&int;₀²ᵃ f(x) = 2&int;₀ᵃ f(x)</span> if f(2a-x)=f(x)</div>
+            <div class="math-row"><span class="math">&int;₀^&pi;/2 <span class="func">log</span>(<span class="func">sin</span>x) = -<span class="frac"><span class="num">&pi;</span><span class="den">2</span></span><span class="func">log</span>2</span></div>
+        </div>
+
+        <!-- 8. APPLICATION OF INTEGRALS -->
+        <div class="section">
+            <h2>Area (AOI)</h2>
+            <div class="math-row">Area = <span class="math">&int;ₐᵇ y dx</span> (X-axis)</div>
+            <div class="math-row">Area = <span class="math">&int;ₐᵇ x dy</span> (Y-axis)</div>
+            <div class="math-row">Circle <span class="math">x²+y²=r²</span> Area: <span class="math">&pi;r²</span></div>
+            <div class="math-row">Ellipse <span class="frac"><span class="num">x²</span><span class="den">a²</span></span>+<span class="frac"><span class="num">y²</span><span class="den">b²</span></span>=1 Area: <span class="math">&pi;ab</span></div>
+        </div>
+
+        <!-- 9. DIFF EQ -->
+        <div class="section">
+            <h2>9. Diff. Equations</h2>
+            <div class="math-row">1. Variable Sep: <span class="math">&int;f(y)dy = &int;g(x)dx</span></div>
+            <div class="math-row">2. Homogeneous: Put <span class="math">y=vx</span></div>
+            <div class="math-row">&rArr; <span class="math"><span class="frac"><span class="num">dy</span><span class="den">dx</span></span> = v + x<span class="frac"><span class="num">dv</span><span class="den">dx</span></span></span></div>
+            <div class="math-row">3. Linear: <span class="math"><span class="frac"><span class="num">dy</span><span class="den">dx</span></span> + Py = Q</span></div>
+            <div class="math-row">I.F. = <span class="math">e^&int;Pdx</span></div>
+            <div class="math-row">Sol: <span class="math">y(I.F.) = &int;Q(I.F.)dx + c</span></div>
+        </div>
+
+        <!-- 10. VECTORS -->
+        <div class="section">
+            <h2>10. Vector Algebra</h2>
+            <div class="math-row">Unit: <span class="math">â = <span class="frac"><span class="num">&vec;a</span><span class="den">|&vec;a|</span></span></span></div>
+            <div class="math-row">Mag: <span class="math">|xi+yj+zk| = &radic;(x²+y²+z²)</span></div>
+            <div class="math-row imp">Dot: <span class="math">&vec;a&middot;&vec;b = |a||b|<span class="func">cos</span>&theta; = a₁b₁+...</span></div>
+            <div class="math-row"><span class="math">&vec;a &perp; &vec;b &hArr; &vec;a&middot;&vec;b = 0</span></div>
+            <div class="math-row">Proj <span class="math">&vec;a</span> on <span class="math">&vec;b</span> = <span class="math"><span class="frac"><span class="num">&vec;a&middot;&vec;b</span><span class="den">|&vec;b|</span></span></span></div>
+            <div class="math-row imp">Cross: <span class="math">&vec;a&times;&vec;b = |a||b|<span class="func">sin</span>&theta; n̂</span></div>
+            <div class="math-row">Area &Delta; = <span class="math"><span class="frac"><span class="num">1</span><span class="den">2</span></span>|&vec;a&times;&vec;b|</span></div>
+            <div class="math-row">Area ||gm = <span class="math">|&vec;a&times;&vec;b|</span></div>
+            <div class="math-row">Calc: Use Determinant <span class="math">| i j k |</span></div>
+        </div>
+
+        <!-- 11. 3D GEOMETRY -->
+        <div class="section">
+            <h2>11. 3D Geometry</h2>
+            <div class="math-row">Dir Cosines: <span class="math">l,m,n</span> (&lt; <span class="math">&alpha;,&beta;,&gamma;</span>)</div>
+            <div class="math-row"><span class="math">l=<span class="func">cos</span>&alpha;, l²+m²+n²=1</span></div>
+            <div class="math-row">Line: <span class="math">&vec;r = &vec;a + &lambda;&vec;b</span> (Vector)</div>
+            <div class="math-row"><span class="math"><span class="frac"><span class="num">x-x₁</span><span class="den">a</span></span> = <span class="frac"><span class="num">y-y₁</span><span class="den">b</span></span> = <span class="frac"><span class="num">z-z₁</span><span class="den">c</span></span></span> (Cart)</div>
+            <div class="math-row">Angle: <span class="math"><span class="func">cos</span>&theta; = <span class="frac"><span class="num">|&vec;b₁&middot;&vec;b₂|</span><span class="den">|b₁||b₂|</span></span></span></div>
+            <div class="math-row imp">Shortest Dist (Skew):</div>
+            <div class="math-row"><span class="math">d = <span class="frac"><span class="num">|(&vec;b₁&times;&vec;b₂)&middot;(&vec;a₂-&vec;a₁)|</span><span class="den">|&vec;b₁&times;&vec;b₂|</span></span></span></div>
+            <div class="math-row">Dist (Parallel): <span class="math">d = <span class="frac"><span class="num">|&vec;b&times;(&vec;a₂-&vec;a₁)|</span><span class="den">|&vec;b|</span></span></span></div>
+            <div class="math-row">Plane: <span class="math">&vec;r&middot;&vec;n = d</span> or <span class="math">Ax+By+Cz=D</span></div>
+            <div class="math-row">Intercept: <span class="math"><span class="frac"><span class="num">x</span><span class="den">a</span></span>+<span class="frac"><span class="num">y</span><span class="den">b</span></span>+<span class="frac"><span class="num">z</span><span class="den">c</span></span>=1</span></div>
+            <div class="math-row">Dist pt to plane: <span class="math"><span class="frac"><span class="num">|Ax₁+By₁+Cz₁+D|</span><span class="den">&radic;(A²+B²+C²)</span></span></span></div>
+        </div>
+
+        <!-- 13. PROBABILITY -->
+        <div class="section">
+            <h2>13. Probability</h2>
+            <div class="math-row"><span class="math">P(A&cup;B) = P(A)+P(B)-P(A&cap;B)</span></div>
+            <div class="math-row">Cond: <span class="math">P(A|B) = <span class="frac"><span class="num">P(A&cap;B)</span><span class="den">P(B)</span></span></span></div>
+            <div class="math-row">Indep: <span class="math">P(A&cap;B) = P(A)P(B)</span></div>
+            <div class="math-row">Baye's: <span class="math">P(Eᵢ|A) = <span class="frac"><span class="num">P(Eᵢ)P(A|Eᵢ)</span><span class="den">&sum;P(Eⱼ)P(A|Eⱼ)</span></span></span></div>
+            <div class="math-row">Mean: <span class="math">E(X) = &sum; xᵢ pᵢ</span></div>
+            <div class="math-row">Var: <span class="math">V(X) = E(X²) - [E(X)]²</span></div>
+            <div class="math-row">Bernoulli: <span class="math">P(X=r) = ⁿCᵣ pʳ qⁿ⁻ʳ</span></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

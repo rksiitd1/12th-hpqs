@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 12 Chemistry - Top 20 Long Questions (5 Marks)</title>
+    <style>
+        /* FONTS & PRINT SETUP */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* LAYOUT */
+        h1 {
+            text-align: center;
+            font-size: 16pt;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            column-count: 2;
+            column-gap: 8mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Q&A BLOCKS */
+        .qa-box {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #999;
+            padding-bottom: 10px;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 10.5pt;
+            background-color: #f0f0f0;
+            padding: 4px;
+            border-left: 4px solid #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+        }
+
+        /* TEXT STYLES */
+        strong { font-weight: 700; }
+        p { margin: 4px 0; }
+        ul, ol { margin: 5px 0 5px 20px; padding: 0; }
+        li { margin-bottom: 4px; }
+
+        /* MATH & EQUATIONS (CSS ONLY) */
+        .eq-box {
+            display: block;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            margin: 8px 0;
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 2px;
+            font-size: 0.9em;
+        }
+        .num { border-bottom: 1px solid #000; padding: 0 2px; }
+        .den { padding: 0 2px; }
+
+        sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+        sup { top: -0.5em; } sub { bottom: -0.25em; }
+
+        /* TABLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+            margin: 8px 0;
+        }
+        th, td { border: 1px solid #000; padding: 4px; vertical-align: top; }
+        th { background-color: #e0e0e0; text-align: center; }
+
+        .section-head {
+            text-decoration: underline;
+            font-weight: 600;
+            display: block;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top 20 Long Answer Questions (Chemistry Class 12)</h1>
+
+    <div class="container">
+
+        <!-- Q1 -->
+        <div class="qa-box">
+            <span class="question">Q1. अभिक्रिया की कोटि को परिभाषित करें। प्रथम कोटि की अभिक्रिया के लिए वेग स्थिरांक (k) का व्यंजक प्राप्त करें।</span>
+            <div class="answer">
+                <strong>(i) अभिक्रिया की कोटि (Order of Reaction):</strong><br>
+                किसी रासायनिक अभिक्रिया के वेग नियम (Rate Law) व्यंजक में अभिकारकों की सांद्रता पदों के घातों (powers) के योग को उस अभिक्रिया की कोटि कहते हैं। यह एक प्रायोगिक मान है जो शून्य, भिन्नात्मक या पूर्णांक हो सकता है।
+                <br><br>
+                <strong>(ii) प्रथम कोटि अभिक्रिया का व्यंजक:</strong><br>
+                वह अभिक्रिया जिसका वेग अभिकारक की सांद्रता के प्रथम घात के समानुपाती होता है, प्रथम कोटि की अभिक्रिया कहलाती है।<br>
+                माना अभिक्रिया: R &rarr; P (उत्पाद)<br>
+                समय t पर वेग:
+                <div class="eq-box">Rate = <span class="frac"><span class="num">-d[R]</span><span class="den">dt</span></span> = k[R]</div>
+                चरों को पृथक करने पर (Separating variables):
+                <div class="eq-box"><span class="frac"><span class="num">d[R]</span><span class="den">[R]</span></span> = -k dt</div>
+                दोनों पक्षों का समाकलन (Integration) करने पर:<br>
+                &int; (1/[R]) d[R] = -k &int; dt<br>
+                <div class="eq-box">ln[R] = -kt + I ... (समीकरण 1)</div>
+                जहाँ I समाकलन स्थिरांक है।<br>
+                <strong>प्रारम्भिक स्थिति:</strong> जब t = 0, तो [R] = [R]<sub>0</sub> (प्रारम्भिक सांद्रता)।<br>
+                समीकरण 1 में रखने पर: I = ln[R]<sub>0</sub><br><br>
+                I का मान समीकरण 1 में रखने पर:<br>
+                ln[R] = -kt + ln[R]<sub>0</sub><br>
+                kt = ln[R]<sub>0</sub> - ln[R]<br>
+                k = (1/t) ln([R]<sub>0</sub> / [R])<br>
+                प्राकृतिक लघुगणक (ln) को log<sub>10</sub> में बदलने पर:
+                <div class="eq-box">k = <span class="frac"><span class="num">2.303</span><span class="den">t</span></span> log <span class="frac"><span class="num">[R]<sub>0</sub></span><span class="den">[R]</span></span></div>
+                यही प्रथम कोटि अभिक्रिया के लिए अभीष्ट व्यंजक है।
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-box">
+            <span class="question">Q2. लोहा (Iron) के मुख्य अयस्क का नाम लिखें। वात्या भट्ठी (Blast Furnace) का उपयोग करते हुए अयस्क से लोहा के निष्कर्षण का वर्णन करें।</span>
+            <div class="answer">
+                <strong>मुख्य अयस्क:</strong> हेमेटाइट (Haematite) - Fe<sub>2</sub>O<sub>3</sub>।<br>
+                <strong>निष्कर्षण का सिद्धांत:</strong> सांद्रित अयस्क का कोक (कार्बन) द्वारा अपचयन किया जाता है। यह प्रक्रिया एक विशाल इस्पात के टॉवर में की जाती है जिसे <strong>वात्या भट्ठी</strong> कहते हैं।
+                <br>
+                <strong>विधि एवं अभिक्रियाएँ:</strong><br>
+                निस्तापित अयस्क, कोक (Coke) और चूना पत्थर (Limestone) का मिश्रण (8:4:1) भट्ठी में ऊपर से डाला जाता है। नीचे से गर्म हवा का झोंका भेजा जाता है। तापमान के आधार पर भट्ठी में निम्नलिखित क्षेत्र होते हैं:
+                <ol>
+                    <li>
+                        <strong>दहन क्षेत्र (Combustion Zone - सबसे नीचे):</strong> यहाँ कोक जलकर ऊष्मा देता है (ताप ~2170 K)।
+                        <br>C + O<sub>2</sub> &rarr; CO<sub>2</sub> + ऊष्मा
+                    </li>
+                    <li>
+                        <strong>अपचयन क्षेत्र (Reduction Zone - ऊपरी भाग):</strong> यहाँ तापमान कम (500-900 K) होता है। ऊपर उठती हुई कार्बन मोनोऑक्साइड (CO) गैस हेमेटाइट अयस्क को लोहे में अपचयित कर देती है।
+                        <div class="eq-box">Fe<sub>2</sub>O<sub>3</sub> + 3CO &rarr; 2Fe + 3CO<sub>2</sub></div>
+                    </li>
+                    <li>
+                        <strong>धातुमल निर्माण (Slag Formation):</strong> चूना पत्थर (CaCO<sub>3</sub>) अपघटित होकर CaO देता है, जो सिलिका (SiO<sub>2</sub>) अशुद्धि के साथ क्रिया कर धातुमल बनाता है।
+                        <div class="eq-box">CaO + SiO<sub>2</sub> &rarr; CaSiO<sub>3</sub> (धातुमल)</div>
+                    </li>
+                </ol>
+                अंत में, भट्ठी के तल से पिघला हुआ लोहा (Pig Iron) प्राप्त होता है।
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-box">
+            <span class="question">Q3. सम्पर्क विधि (Contact Process) द्वारा गंधकाम्ल (Sulphuric Acid) के उत्पादन का वर्णन करें। संबंधित अभिक्रियाएँ लिखें।</span>
+            <div class="answer">
+                सम्पर्क विधि सल्फ्यूरिक अम्ल के औद्योगिक निर्माण की आधुनिक विधि है। इसके मुख्य चरण निम्नलिखित हैं:
+                <ol>
+                    <li>
+                        <strong>सल्फर डाइऑक्साइड का उत्पादन:</strong> सल्फर या आयरन पायराइट्स को वायु में जलाने पर SO<sub>2</sub> गैस प्राप्त होती है।
+                        <br>S + O<sub>2</sub> &rarr; SO<sub>2</sub>
+                    </li>
+                    <li>
+                        <strong>SO<sub>2</sub> का SO<sub>3</sub> में परिवर्तन (महत्वपूर्ण चरण):</strong><br>
+                        शुद्ध SO<sub>2</sub> और O<sub>2</sub> के मिश्रण को <strong>वैनेडियम पेंटाऑक्साइड (V<sub>2</sub>O<sub>5</sub>)</strong> उत्प्रेरक के ऊपर से 720K ताप और 2 bar दाब पर गुजारा जाता है। यह एक ऊष्माक्षेपी अभिक्रिया है।
+                        <div class="eq-box">2SO<sub>2</sub> + O<sub>2</sub> &#8652; 2SO<sub>3</sub> ; &Delta;H = -ve</div>
+                    </li>
+                    <li>
+                        <strong>ओलियम का निर्माण:</strong> SO<sub>3</sub> गैस को सीधे जल में नहीं घोला जाता क्योंकि इससे घना कोहरा बनता है। इसे 98% सांद्र H<sub>2</sub>SO<sub>4</sub> में अवशोषित कराकर <strong>ओलियम (H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>)</strong> प्राप्त करते हैं।
+                        <br>SO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>
+                    </li>
+                    <li>
+                        <strong>तनुकरण:</strong> ओलियम में उचित मात्रा में जल मिलाकर वांछित सांद्रता का अम्ल प्राप्त कर लिया जाता है।
+                        <br>H<sub>2</sub>S<sub>2</sub>O<sub>7</sub> + H<sub>2</sub>O &rarr; 2H<sub>2</sub>SO<sub>4</sub>
+                    </li>
+                </ol>
+                <strong>रासायनिक गुण:</strong><br>
+                (i) <strong>कॉपर से क्रिया:</strong> Cu + 2H<sub>2</sub>SO<sub>4</sub> &rarr; CuSO<sub>4</sub> + SO<sub>2</sub> + 2H<sub>2</sub>O<br>
+                (ii) <strong>ऑक्जेलिक अम्ल से क्रिया:</strong> (COOH)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; CO + CO<sub>2</sub> + H<sub>2</sub>O
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-box">
+            <span class="question">Q4. हैबर विधि द्वारा अमोनिया निर्माण का सिद्धान्त लिखें। यह कॉपर सल्फेट (CuSO<sub>4</sub>) घोल से किस प्रकार अभिक्रिया करता है?</span>
+            <div class="answer">
+                <strong>सिद्धान्त:</strong>
+                हैबर विधि में वायुमंडलीय नाइट्रोजन (N<sub>2</sub>) और हाइड्रोजन (H<sub>2</sub>) के 1:3 मिश्रण को उत्प्रेरक की उपस्थिति में गर्म करके अमोनिया बनाई जाती है।
+                <div class="eq-box">N<sub>2</sub>(g) + 3H<sub>2</sub>(g) &#8652; 2NH<sub>3</sub>(g) + ऊष्मा</div>
+                चूँकि यह अभिक्रिया उत्क्रमणीय और ऊष्माक्षेपी है, अतः ला-शातेलिए (Le-Chatelier) के नियम के अनुसार अधिक उत्पादन के लिए निम्नलिखित अनुकूल परिस्थितियाँ आवश्यक हैं:
+                <ol>
+                    <li><strong>निम्न ताप:</strong> अभिक्रिया ऊष्माक्षेपी है, इसलिए कम ताप (लगभग 700 K) पर अमोनिया अधिक बनती है।</li>
+                    <li><strong>उच्च दाब:</strong> अभिक्रिया में आयतन कम हो रहा है, अतः उच्च दाब (लगभग 200 atm) आवश्यक है।</li>
+                    <li><strong>उत्प्रेरक:</strong> अभिक्रिया की गति बढ़ाने के लिए आयरन ऑक्साइड (Fe<sub>2</sub>O<sub>3</sub>) उत्प्रेरक और K<sub>2</sub>O या Al<sub>2</sub>O<sub>3</sub> (वर्धक) का प्रयोग किया जाता है।</li>
+                </ol>
+                <strong>CuSO<sub>4</sub> के साथ अभिक्रिया:</strong><br>
+                जब अमोनिया के जलीय विलयन (NH<sub>4</sub>OH) को कॉपर सल्फेट के विलयन में मिलाया जाता है, तो टेट्राएमीन कॉपर(II) सल्फेट बनने के कारण विलयन का रंग <strong>गहरा नीला (Deep Blue)</strong> हो जाता है।
+                <div class="eq-box">Cu<sup>2+</sup>(aq) + 4NH<sub>3</sub>(aq) &rarr; [Cu(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup></div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-box">
+            <span class="question">Q5. परासरण दाब (Osmotic Pressure) को परिभाषित करें। सिद्ध करें कि परासरण दाब एक अणुसंख्य गुणधर्म है।</span>
+            <div class="answer">
+                <strong>(i) परासरण (Osmosis):</strong> जब विलायक के अणु अर्द्ध-पारगम्य झिल्ली (SPM) से होकर शुद्ध विलायक से विलयन की ओर प्रवाहित होते हैं, तो यह प्रक्रिया परासरण कहलाती है।
+                <br>
+                <strong>(ii) परासरण दाब:</strong> वह न्यूनतम बाहरी दाब जिसे विलयन पर आरोपित करने से विलायक का अर्द्ध-पारगम्य झिल्ली के द्वारा विलयन में प्रवेश पूरी तरह रुक जाता है, <strong>परासरण दाब (&pi;)</strong> कहलाता है।
+                <br><br>
+                <strong>(iii) अणुसंख्य गुणधर्म का प्रमाण:</strong><br>
+                वान्ट हॉफ (Van't Hoff) ने सिद्ध किया कि तनु विलयनों के लिए परासरण दाब गैसीय नियमों का पालन करता है।
+                समीकरण के अनुसार:
+                <div class="eq-box">&pi; = CRT</div>
+                जहाँ C विलयन की मोलर सांद्रता, R गैस स्थिरांक और T परम ताप है।<br>
+                चूँकि सांद्रता C = n / V (मोल प्रति लीटर), अतः:
+                <div class="eq-box">&pi; = <span class="frac"><span class="num">n</span><span class="den">V</span></span> RT</div>
+                यहाँ n विलेय के मोलों की संख्या है। स्थिर ताप (T) और आयतन (V) पर, परासरण दाब (&pi;) सीधे विलेय के कणों की संख्या (n) के समानुपाती होता है (&pi; &propto; n)।<br>
+                परिभाषा के अनुसार, जो गुणधर्म विलेय के कणों की संख्या पर निर्भर करते हैं, वे <strong>अणुसंख्य गुणधर्म (Colligative Properties)</strong> कहलाते हैं। अतः परासरण दाब एक अणुसंख्य गुणधर्म है।
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-box">
+            <span class="question">Q6. आप प्राथमिक (1&deg;), द्वितीयक (2&deg;) एवं तृतीयक (3&deg;) अल्कोहल में कैसे विभेद करेंगे?</span>
+            <div class="answer">
+                प्राथमिक, द्वितीयक और तृतीयक अल्कोहलों में विभेद करने के लिए <strong>ल्युकास परीक्षण (Lucas Test)</strong> सबसे सरल और प्रचलित विधि है।
+                <br>
+                <strong>ल्युकास अभिकर्मक:</strong> सांद्र हाइड्रोक्लोरिक अम्ल (Conc. HCl) और निर्जल जिंक क्लोराइड (Anhydrous ZnCl<sub>2</sub>) का सम-मोलर मिश्रण।
+                <br>
+                <strong>सिद्धान्त:</strong> अल्कोहल ल्युकास अभिकर्मक के साथ क्रिया करके एल्किल क्लोराइड बनाते हैं। एल्किल क्लोराइड जल में अघुलनशील होते हैं, जिससे विलयन में धुंधलापन (Turbidity) उत्पन्न होता है।
+                <br>ROH + HCl &rarr; R-Cl + H<sub>2</sub>O
+                <br><br>
+                <strong>प्रेक्षण (Observation):</strong>
+                <ol>
+                    <li>
+                        <strong>तृतीयक (3&deg;) अल्कोहल:</strong> ये सबसे अधिक क्रियाशील होते हैं। अभिकर्मक मिलाते ही <strong>तुरंत (immediately)</strong> धुंधलापन उत्पन्न हो जाता है।
+                    </li>
+                    <li>
+                        <strong>द्वितीयक (2&deg;) अल्कोहल:</strong> ये मध्यम क्रियाशील होते हैं। अभिकर्मक मिलाने के लगभग <strong>5 मिनट बाद</strong> धुंधलापन उत्पन्न होता है।
+                    </li>
+                    <li>
+                        <strong>प्राथमिक (1&deg;) अल्कोहल:</strong> ये कमरे के ताप पर सबसे कम क्रियाशील होते हैं। सामान्य ताप पर कोई धुंधलापन नहीं आता। धुंधलापन केवल गर्म करने पर ही उत्पन्न होता है।
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-box">
+            <span class="question">Q7. रासायनिक परीक्षणों द्वारा निम्नलिखित युग्मों में विभेद करें: (a) एसिटल्डिहाइड और एसीटोन, (b) फॉर्मिक अम्ल और एसिटिक अम्ल।</span>
+            <div class="answer">
+                <strong>(a) एसिटल्डिहाइड (CH<sub>3</sub>CHO) और एसीटोन (CH<sub>3</sub>COCH<sub>3</sub>):</strong>
+                एसिटल्डिहाइड एक एल्डिहाइड है जबकि एसीटोन एक कीटोन है। एल्डिहाइड आसानी से ऑक्सीकृत हो जाते हैं, कीटोन नहीं।
+                <table>
+                    <tr><th>परीक्षण</th><th>एसिटल्डिहाइड</th><th>एसीटोन</th></tr>
+                    <tr><td><strong>टोलेन परीक्षण (Tollen's Test)</strong></td><td>यह अमोनियामय सिल्वर नाइट्रेट को अपचयित करके <strong>सिल्वर दर्पण</strong> (काला अवक्षेप) देता है।</td><td>यह टोलेन अभिकर्मक के साथ कोई क्रिया नहीं करता।</td></tr>
+                    <tr><td><strong>फेलिंग विलयन (Fehling's Solution)</strong></td><td>गर्म करने पर क्यूप्रस ऑक्साइड (Cu<sub>2</sub>O) का <strong>लाल अवक्षेप</strong> देता है।</td><td>यह फेलिंग विलयन के साथ कोई क्रिया नहीं करता।</td></tr>
+                </table>
+                <br>
+                <strong>(b) फॉर्मिक अम्ल (HCOOH) और एसिटिक अम्ल (CH<sub>3</sub>COOH):</strong>
+                फॉर्मिक अम्ल एकमात्र ऐसा कार्बोक्सिलिक अम्ल है जिसमें एल्डिहाइड समूह (-CHO) के गुण भी पाए जाते हैं (क्योंकि इसमें H-C=O समूह है)।
+                <table>
+                    <tr><th>परीक्षण</th><th>फॉर्मिक अम्ल</th><th>एसिटिक अम्ल</th></tr>
+                    <tr><td><strong>टोलेन परीक्षण</strong></td><td>यह टोलेन अभिकर्मक को अपचयित करके <strong>सिल्वर दर्पण</strong> देता है।</td><td>एसिटिक अम्ल यह परीक्षण नहीं देता।</td></tr>
+                    <tr><td><strong>मर्क्यूरिक क्लोराइड (HgCl<sub>2</sub>)</strong></td><td>यह HgCl<sub>2</sub> को सफेद अवक्षेप (Hg<sub>2</sub>Cl<sub>2</sub>) में बदल देता है।</td><td>यह HgCl<sub>2</sub> के साथ कोई क्रिया नहीं करता।</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-box">
+            <span class="question">Q8. कार्बोहाइड्रेट क्या हैं? इनका वर्गीकरण उदाहरण सहित करें।</span>
+            <div class="answer">
+                <strong>परिभाषा:</strong>
+                कार्बोहाइड्रेट प्रकाशिक सक्रिय (Optically active) पॉलीहाइड्रॉक्सी एल्डिहाइड या पॉलीहाइड्रॉक्सी कीटोन होते हैं, या वे पदार्थ होते हैं जो जल-अपघटन (Hydrolysis) करने पर ऐसी इकाइयाँ प्रदान करते हैं। इनका सामान्य सूत्र अक्सर C<sub>x</sub>(H<sub>2</sub>O)<sub>y</sub> होता है। ये हमारे भोजन में ऊर्जा के मुख्य स्रोत हैं।
+                <br><br>
+                <strong>वर्गीकरण (जल-अपघटन के आधार पर):</strong>
+                <ol>
+                    <li>
+                        <strong>मोनोसैकेराइड (Monosaccharides):</strong><br>
+                        ये सबसे सरल कार्बोहाइड्रेट हैं। इनका जल-अपघटन करके इन्हें और अधिक सरल इकाइयों में नहीं तोड़ा जा सकता।
+                        <br><em>उदाहरण:</em> ग्लूकोज (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>), फ्रुक्टोज, राइबोज।
+                    </li>
+                    <li>
+                        <strong>ऑलिगोसैकेराइड (Oligosaccharides):</strong><br>
+                        ये जल-अपघटन पर 2 से 10 मोनोसैकेराइड इकाइयाँ देते हैं। जो दो इकाइयाँ देते हैं उन्हें डिसैकेराइड कहते हैं।
+                        <br><em>उदाहरण:</em> सुक्रोज (चीनी) &rarr; ग्लूकोज + फ्रुक्टोज; माल्टोज।
+                    </li>
+                    <li>
+                        <strong>पॉलिसैकेराइड (Polysaccharides):</strong><br>
+                        ये उच्च अणुभार वाले बहुलक (Polymers) होते हैं। जल-अपघटन पर ये बहुत बड़ी संख्या में (100 से हजारों) मोनोसैकेराइड इकाइयाँ देते हैं। ये स्वाद में मीठे नहीं होते (Non-sugars)।
+                        <br><em>उदाहरण:</em> स्टार्च (Starch), सेल्यूलोज (Cellulose), ग्लाइकोजन।
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-box">
+            <span class="question">Q9. अभिक्रिया वेग को प्रभावित करने वाले कारकों (विशेषकर ताप) की विवेचना करें।</span>
+            <div class="answer">
+                <strong>अभिक्रिया वेग:</strong> किसी भी रासायनिक अभिक्रिया की गति (इकाई समय में सांद्रता में परिवर्तन) कई कारकों पर निर्भर करती है:
+                <ol>
+                    <li>
+                        <strong>अभिकारकों की सांद्रता:</strong><br>
+                        अभिकारकों की सांद्रता बढ़ाने पर अणुओं की संख्या बढ़ती है, जिससे प्रभावी टक्करों की संभावना बढ़ जाती है। फलस्वरूप अभिक्रिया का वेग बढ़ जाता है। (Rate &propto; [Conc]<sup>n</sup>).
+                    </li>
+                    <li>
+                        <strong>ताप का प्रभाव (Temperature):</strong><br>
+                        ताप अभिक्रिया वेग को सबसे अधिक प्रभावित करता है। ताप बढ़ाने पर अणुओं की गतिज ऊर्जा बढ़ती है, जिससे सक्रियण ऊर्जा (Activation Energy) को पार करने वाले अणुओं की संख्या बढ़ जाती है।<br>
+                        सामान्यतः, प्रति 10&deg;C ताप बढ़ाने पर अभिक्रिया का वेग लगभग <strong>दोगुना</strong> हो जाता है।
+                        <br><strong>आर्हेनियस समीकरण:</strong> ताप और वेग स्थिरांक में संबंध निम्न है:
+                        <div class="eq-box">k = A e<sup>-E<sub>a</sub> / RT</sup></div>
+                        जहाँ k वेग स्थिरांक, E<sub>a</sub> सक्रियण ऊर्जा और T परम ताप है।
+                    </li>
+                    <li>
+                        <strong>उत्प्रेरक (Catalyst):</strong><br>
+                        उत्प्रेरक एक वैकल्पिक पथ प्रदान करता है जिसकी सक्रियण ऊर्जा कम होती है, जिससे अभिक्रिया तेजी से संपन्न होती है।
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-box">
+            <span class="question">Q10. आयोडीन के मुख्य स्रोत क्या हैं? समुद्री घास से आयोडीन के निष्कासन का वर्णन करें।</span>
+            <div class="answer">
+                <strong>मुख्य स्रोत:</strong>
+                आयोडीन मुख्य रूप से संयुक्त अवस्था में पाया जाता है। इसके मुख्य स्रोत हैं:
+                1. समुद्री घास (Sea weeds) - जैसे लेमिनेरिया।
+                2. चिली साल्टपीटर (NaNO<sub>3</sub>) - इसमें NaIO<sub>3</sub> अशुद्धि के रूप में होता है।
+                3. प्राकृतिक ब्राइन (Natural Brine)।
+                <br><br>
+                <strong>समुद्री घास से निष्कर्षण की विधि:</strong>
+                यह आयोडीन उत्पादन की एक पुरानी लेकिन महत्वपूर्ण विधि है।
+                <ol>
+                    <li>
+                        <strong>राख (Kelp) बनाना:</strong> समुद्री घास को समुद्र से निकालकर सुखाया जाता है और फिर गहरे गड्ढों में सावधानी से जलाया जाता है ताकि आयोडीन वाष्पित न हो। प्राप्त राख को <strong>'केल्प' (Kelp)</strong> कहते हैं, जिसमें 0.4% से 1.3% तक आयोडीन होता है।
+                    </li>
+                    <li>
+                        <strong>क्रिस्टलीकरण:</strong> केल्प को जल में घोलकर विलयन को सांद्रित किया जाता है। कम घुलनशील लवण (जैसे NaCl, KCl, sulfates) क्रिस्टलीकृत होकर अलग हो जाते हैं। शेष बचे गाढ़े द्रव को <strong>मातृ द्रव (Mother Liquor)</strong> कहते हैं। इसमें आयोडाइड (NaI, KI) की मात्रा अधिक होती है।
+                    </li>
+                    <li>
+                        <strong>रासायनिक आसवन:</strong> मातृ द्रव में सल्फ्यूरिक अम्ल (H<sub>2</sub>SO<sub>4</sub>) और मैंगनीज डाइऑक्साइड (MnO<sub>2</sub>) मिलाकर लोहे के पात्र (Retort) में गर्म करते हैं। इससे आयोडीन वाष्प के रूप में मुक्त होती है, जिसे एल्युडेल (Aludel) में ठंडा करके ठोस आयोडीन प्राप्त करते हैं।
+                        <div class="eq-box">2NaI + MnO<sub>2</sub> + 3H<sub>2</sub>SO<sub>4</sub> &rarr; MnSO<sub>4</sub> + 2NaHSO<sub>4</sub> + 2H<sub>2</sub>O + I<sub>2</sub></div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-box">
+            <span class="question">Q11. क्वथनांक का उन्नयन क्या है? क्वथनांक उन्नयन और विलेय के आणविक द्रव्यमान के बीच संबंध स्थापित करें।</span>
+            <div class="answer">
+                <strong>(i) क्वथनांक का उन्नयन (Elevation in Boiling Point):</strong><br>
+                शुद्ध विलायक का एक निश्चित क्वथनांक होता है। जब इसमें कोई अवाष्पशील विलेय (Non-volatile solute) मिलाया जाता है, तो विलयन का वाष्प दाब कम हो जाता है। वाष्प दाब को वायुमंडलीय दाब के बराबर करने के लिए विलयन को अधिक ताप तक गर्म करना पड़ता है।<br>
+                अतः, विलयन का क्वथनांक (T<sub>b</sub>) शुद्ध विलायक के क्वथनांक (T<sub>b</sub><sup>0</sup>) से अधिक होता है। इस अंतर को ही क्वथनांक का उन्नयन (&Delta;T<sub>b</sub>) कहते हैं।
+                <div class="eq-box">&Delta;T<sub>b</sub> = T<sub>b</sub> - T<sub>b</sub><sup>0</sup></div>
+                <strong>(ii) आणविक द्रव्यमान से संबंध:</strong><br>
+                राउल्ट के नियमनुसार, तनु विलयन के लिए क्वथनांक का उन्नयन विलयन की मोललता (m) के समानुपाती होता है।
+                <br>&Delta;T<sub>b</sub> = K<sub>b</sub> &times; m
+                <br>(K<sub>b</sub> = मोलल उन्नयन स्थिरांक)
+                <br>
+                मोललता (m) = <span class="frac"><span class="num">विलेय के मोल</span><span class="den">विलायक का भार (kg)</span></span> = <span class="frac"><span class="num">w<sub>2</sub>/M<sub>2</sub></span><span class="den">w<sub>1</sub>/1000</span></span>
+                <br>
+                समीकरण में मान रखने पर:
+                <br>&Delta;T<sub>b</sub> = K<sub>b</sub> &times; <span class="frac"><span class="num">w<sub>2</sub> &times; 1000</span><span class="den">M<sub>2</sub> &times; w<sub>1</sub></span></span>
+                <br>
+                अतः विलेय का आणविक द्रव्यमान (M<sub>2</sub>):
+                <div class="eq-box">M<sub>2</sub> = <span class="frac"><span class="num">K<sub>b</sub> &times; w<sub>2</sub> &times; 1000</span><span class="den">&Delta;T<sub>b</sub> &times; w<sub>1</sub></span></span></div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-box">
+            <span class="question">Q12. ओस्टवाल्ड विधि द्वारा नाइट्रिक अम्ल (HNO<sub>3</sub>) के उत्पादन का वर्णन करें।</span>
+            <div class="answer">
+                नाइट्रिक अम्ल का औद्योगिक निर्माण ओस्टवाल्ड विधि द्वारा किया जाता है। यह विधि अमोनिया के उत्प्रेरकीय ऑक्सीकरण पर आधारित है। प्रक्रिया तीन मुख्य कक्षों में संपन्न होती है:
+                <ol>
+                    <li>
+                        <strong>परिवर्तक कक्ष (Catalytic Converter):</strong><br>
+                        इसमें शुद्ध अमोनिया और वायु (1:9 अनुपात) के मिश्रण को प्लैटिनम की जाली (Pt-Rh gauge) के ऊपर से 500 K ताप और 9 bar दाब पर गुजारा जाता है। यहाँ अमोनिया ऑक्सीकृत होकर नाइट्रिक ऑक्साइड (NO) बनाती है।
+                        <div class="eq-box">4NH<sub>3</sub> + 5O<sub>2</sub> &rarr; 4NO + 6H<sub>2</sub>O + ऊष्मा</div>
+                    </li>
+                    <li>
+                        <strong>ऑक्सीकरण कक्ष (Oxidation Chamber):</strong><br>
+                        प्राप्त NO गैस को ठंडा करके ऑक्सीकरण टॉवर में भेजा जाता है जहाँ यह बची हुई ऑक्सीजन से क्रिया करके नाइट्रोजन डाइऑक्साइड (NO<sub>2</sub>) में बदल जाती है।
+                        <div class="eq-box">2NO + O<sub>2</sub> &rightleftharpoons; 2NO<sub>2</sub> (भूरी गैस)</div>
+                    </li>
+                    <li>
+                        <strong>अवशोषण टॉवर (Absorption Tower):</strong><br>
+                        NO<sub>2</sub> गैस को अवशोषण कक्ष में भेजा जाता है जिसमें क्वार्ट्ज पत्थर भरे होते हैं और ऊपर से पानी की फुहार गिरती है। NO<sub>2</sub> जल में अवशोषित होकर नाइट्रिक अम्ल बनाती है।
+                        <div class="eq-box">3NO<sub>2</sub> + H<sub>2</sub>O &rarr; 2HNO<sub>3</sub> + NO</div>
+                    </li>
+                </ol>
+                बची हुई NO गैस को पुनः चक्रित किया जाता है और प्राप्त तनु अम्ल को आसवन द्वारा सांद्रित कर लिया जाता है।
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-box">
+            <span class="question">Q13. एल्युमिनियम के मुख्य अयस्क का नाम लिखें। बॉक्साइट से एल्युमिनियम के निष्कर्षण के सिद्धांत एवं विधि को लिखें।</span>
+            <div class="answer">
+                <strong>मुख्य अयस्क:</strong> बॉक्साइट (Bauxite) - सूत्र: Al<sub>2</sub>O<sub>3</sub>&cdot;2H<sub>2</sub>O।<br>
+                एल्युमिनियम का निष्कर्षण दो मुख्य चरणों में किया जाता है:
+                <br>
+                <strong>1. बॉक्साइट का सांद्रण (बेयर विधि - Bayer's Process):</strong><br>
+                अयस्क में सिलिका (SiO<sub>2</sub>) और आयरन ऑक्साइड जैसी अशुद्धियाँ होती हैं।
+                <ul>
+                    <li>बॉक्साइट को सांद्र NaOH विलयन के साथ गर्म (Digestion) करते हैं। एल्युमिना घुलनशील सोडियम एल्युमिनेट बनाता है, जबकि अशुद्धियाँ नीचे बैठ जाती हैं।</li>
+                    <li>Al<sub>2</sub>O<sub>3</sub> + 2NaOH &rarr; 2NaAlO<sub>2</sub> + H<sub>2</sub>O</li>
+                    <li>विलयन को छानकर, CO<sub>2</sub> प्रवाहित कर पुनः Al(OH)<sub>3</sub> अवक्षेपित करते हैं और फिर तेज गर्म (Calcination) करके शुद्ध एल्युमिना (Al<sub>2</sub>O<sub>3</sub>) प्राप्त करते हैं।</li>
+                </ul>
+                <strong>2. एल्युमिना का वैद्युत अपघटन (हॉल-हेरॉल्ट विधि):</strong><br>
+                शुद्ध एल्युमिना विद्युत का कुचालक है और इसका गलनांक बहुत उच्च (2050&deg;C) होता है।
+                <ul>
+                    <li>इसमें <strong>क्रायोलाइट (Na<sub>3</sub>AlF<sub>6</sub>)</strong> और फ्लोरस्पार (CaF<sub>2</sub>) मिलाया जाता है जो मिश्रण की चालकता बढ़ाते हैं और गलनांक को कम (900&deg;C) करते हैं।</li>
+                    <li>इस पिघले मिश्रण का ग्रेफाइट इलेक्ट्रोडों द्वारा वैद्युत अपघटन किया जाता है।</li>
+                    <li><strong>कैथोड (Carbon Lining):</strong> Al<sup>3+</sup> + 3e<sup>-</sup> &rarr; Al (पिघली धातु नीचे जमा होती है)।</li>
+                    <li><strong>एनोड (Graphite Rods):</strong> C + O<sup>2-</sup> &rarr; CO तथा CO<sub>2</sub> (गैस निकलती है)।</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-box">
+            <span class="question">Q14. (i) एल्डोल संघनन, (ii) कैनिजारो अभिक्रिया को समझाएं।</span>
+            <div class="answer">
+                <strong>(i) एल्डोल संघनन (Aldol Condensation):</strong><br>
+                यह अभिक्रिया उन एल्डिहाइड या कीटोन द्वारा दी जाती है जिनमें कम से कम एक <strong>&alpha;-हाइड्रोजन</strong> परमाणु (क्रियात्मक समूह के पास वाले कार्बन पर हाइड्रोजन) उपस्थित होता है।<br>
+                जब ऐसे यौगिकों को तनु क्षार (जैसे dilute NaOH, Na<sub>2</sub>CO<sub>3</sub>) के साथ उपचारित किया जाता है, तो उनके दो अणु आपस में जुड़कर (संघनित होकर) &beta;-हाइड्रॉक्सी एल्डिहाइड (जिसे 'एल्डोल' कहते हैं) या &beta;-हाइड्रॉक्सी कीटोन बनाते हैं।
+                <br><em>उदाहरण:</em> एसिटल्डिहाइड (CH<sub>3</sub>CHO) के दो अणु:
+                <div class="eq-box">2CH<sub>3</sub>CHO <span style="font-size:0.8em">&rarr;(dil NaOH)&rarr;</span> CH<sub>3</sub>-CH(OH)-CH<sub>2</sub>-CHO</div>
+                (उत्पाद: 3-हाइड्रॉक्सी ब्यूटेनल या एल्डोल)
+
+                <br><br>
+                <strong>(ii) कैनिजारो अभिक्रिया (Cannizzaro Reaction):</strong><br>
+                यह अभिक्रिया उन एल्डिहाइड द्वारा दी जाती है जिनमें <strong>&alpha;-हाइड्रोजन नहीं होता</strong> (जैसे फॉर्मल्डिहाइड HCHO, बेंजल्डिहाइड C<sub>6</sub>H<sub>5</sub>CHO)।<br>
+                जब इन्हें सांद्र क्षार (Conc. NaOH या KOH) के साथ गर्म किया जाता है, तो ये स्वतः ऑक्सीकरण-अपचयन (Disproportionation) प्रदर्शित करते हैं। इसमें एल्डिहाइड का एक अणु अल्कोहल में अपचयित हो जाता है और दूसरा अणु कार्बोक्सिलिक अम्ल के लवण में ऑक्सीकृत हो जाता है।
+                <br><em>उदाहरण:</em>
+                <div class="eq-box">2HCHO + Conc. NaOH &rarr; CH<sub>3</sub>OH + HCOONa</div>
+                (मेथनॉल + सोडियम फॉर्मेट)
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-box">
+            <span class="question">Q15. वैद्युत-रासायनिक सेल (गैल्वेनिक सेल) की बनावट और क्रियाविधि का वर्णन करें।</span>
+            <div class="answer">
+                <strong>परिभाषा:</strong> वह युक्ति जो एक स्वतः प्रवर्तित रेडॉक्स अभिक्रिया की रासायनिक ऊर्जा को विद्युत ऊर्जा में परिवर्तित करती है, वैद्युत-रासायनिक सेल (या गैल्वेनिक/वोल्टाइक सेल) कहलाती है। इसका सबसे सामान्य उदाहरण <strong>डेनियल सेल (Daniel Cell)</strong> है।
+                <br><br>
+                <strong>बनावट (Construction):</strong>
+                <ol>
+                    <li><strong>एनोड (ऋणात्मक ध्रुव):</strong> एक बीकर में ZnSO<sub>4</sub> का विलयन होता है जिसमें जिंक (Zn) की छड़ डूबी रहती है। यहाँ ऑक्सीकरण होता है।</li>
+                    <li><strong>कैथोड (धनात्मक ध्रुव):</strong> दूसरे बीकर में CuSO<sub>4</sub> का विलयन होता है जिसमें कॉपर (Cu) की छड़ डूबी रहती है। यहाँ अपचयन होता है।</li>
+                    <li><strong>लवण सेतु (Salt Bridge):</strong> यह उल्टे U-आकार की नली होती है जिसमें KCl या KNO<sub>3</sub> का अगर-अगर (agar-agar) में बना जेल भरा होता है। यह दोनों विलयनों को जोड़ता है और उनकी विद्युत उदासीनता बनाए रखता है।</li>
+                </ol>
+                <strong>क्रियाविधि (Working):</strong>
+                दोनों इलेक्ट्रोडों को वोल्टमीटर से जोड़ने पर:
+                <ul>
+                    <li>जिंक इलेक्ट्रोड पर जिंक परमाणु इलेक्ट्रॉन त्याग कर Zn<sup>2+</sup> आयन बनाते हैं (ऑक्सीकरण)।
+                        <br>Zn(s) &rarr; Zn<sup>2+</sup>(aq) + 2e<sup>-</sup></li>
+                    <li>इलेक्ट्रॉन बाहरी परिपथ से बहकर कॉपर इलेक्ट्रोड तक पहुँचते हैं।</li>
+                    <li>कॉपर इलेक्ट्रोड पर विलयन से Cu<sup>2+</sup> आयन इलेक्ट्रॉन ग्रहण कर कॉपर धातु में बदल जाते हैं (अपचयन)।
+                        <br>Cu<sup>2+</sup>(aq) + 2e<sup>-</sup> &rarr; Cu(s)</li>
+                </ul>
+                <strong>पूर्ण सेल अभिक्रिया:</strong> Zn + Cu<sup>2+</sup> &rarr; Zn<sup>2+</sup> + Cu (विभव = 1.1 V)
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-box">
+            <span class="question">Q16. वाष्प दाब के आपेक्षिक अवनमन के लिए राउल्ट का नियम लिखें।</span>
+            <div class="answer">
+                <strong>वाष्प दाब का अवनमन:</strong> जब किसी वाष्पशील विलायक में कोई अवाष्पशील विलेय मिलाया जाता है, तो विलयन की सतह पर विलायक के अणुओं की संख्या कम हो जाती है, जिससे वाष्प दाब कम हो जाता है।
+                <br><br>
+                <strong>राउल्ट का नियम (Raoult's Law):</strong><br>
+                "किसी निश्चित ताप पर, अवाष्पशील विलेय वाले विलयन के लिए <strong>वाष्प दाब का आपेक्षिक अवनमन</strong> (Relative Lowering of Vapour Pressure) विलयन में उपस्थित <strong>विलेय के मोल प्रभाज</strong> (Mole Fraction) के बराबर होता है।"
+                <br><br>
+                <strong>गणितीय रूप:</strong>
+                यदि शुद्ध विलायक का वाष्प दाब P<sup>0</sup> है और विलयन का वाष्प दाब P<sub>s</sub> है, तो:
+                <div class="eq-box"><span class="frac"><span class="num">P<sup>0</sup> - P<sub>s</sub></span><span class="den">P<sup>0</sup></span></span> = X<sub>solute</sub></div>
+                जहाँ X<sub>solute</sub> विलेय का मोल प्रभाज है (X<sub>A</sub> = n / (n+N))।
+                <br><br>
+                <strong>विलेय का अणुभार ज्ञात करना:</strong><br>
+                तनु विलयनों के लिए (n << N), हम n+N &asymp; N मान सकते हैं।
+                <br>
+                (P<sup>0</sup> - P<sub>s</sub>) / P<sup>0</sup> = n / N = (w/m) / (W/M)
+                <br>
+                जहाँ: w=विलेय का भार, m=विलेय का अणुभार, W=विलायक का भार, M=विलायक का अणुभार।
+                <br>
+                अतः विलेय का अणुभार:
+                <div class="eq-box">m = <span class="frac"><span class="num">w &times; M</span><span class="den">W</span></span> &times; <span class="frac"><span class="num">P<sup>0</sup></span><span class="den">P<sup>0</sup> - P<sub>s</sub></span></span></div>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-box">
+            <span class="question">Q17. प्रयोगशाला में एनिलीन बनाने की विधि का वर्णन करें।</span>
+            <div class="answer">
+                <strong>सिद्धान्त:</strong>
+                प्रयोगशाला में एनिलीन (C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>) का निर्माण <strong>नाइट्रोबेंजीन (C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub>)</strong> के अम्लीय माध्यम में अपचयन द्वारा किया जाता है। अपचयक के रूप में दानेदार टिन (Sn) और सांद्र हाइड्रोक्लोरिक अम्ल (HCl) का उपयोग किया जाता है।
+                <br><br>
+                <strong>रासायनिक अभिक्रियाएँ:</strong>
+                <ol>
+                    <li>
+                        नाइट्रोबेंजीन, Sn और HCl की क्रिया से उत्पन्न नवजात हाइड्रोजन द्वारा एनिलीन में अपचयित हो जाता है।
+                        <div class="eq-box">C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> + 6[H] <span style="font-size:0.8em">&rarr;(Sn/HCl)&rarr;</span> C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + 2H<sub>2</sub>O</div>
+                    </li>
+                    <li>
+                        चूँकि अभिक्रिया माध्यम अम्लीय है, एनिलीन HCl के साथ क्रिया करके लवण 'एनिलीनियम हाइड्रोक्लोराइड' (C<sub>6</sub>H<sub>5</sub>NH<sub>3</sub><sup>+</sup>Cl<sup>-</sup>) बनाती है।
+                    </li>
+                    <li>
+                        मुक्त एनिलीन प्राप्त करने के लिए, इस लवण को सांद्र कास्टिक सोडा (NaOH) विलयन के साथ गर्म किया जाता है।
+                        <br>C<sub>6</sub>H<sub>5</sub>NH<sub>3</sub>Cl + NaOH &rarr; C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + NaCl + H<sub>2</sub>O
+                    </li>
+                </ol>
+                <strong>विधि:</strong> एक गोल पेंदी के फ्लास्क में नाइट्रोबेंजीन और टिन के टुकड़े लेकर उसमें सांद्र HCl डालते हैं। अभिक्रिया पूर्ण होने पर, मिश्रण का भाप आसवन (Steam Distillation) करते हैं जिससे शुद्ध एनिलीन (तेलीय द्रव) अलग हो जाती है।
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-box">
+            <span class="question">Q18. लायोफिलिक और लायोफोबिक सॉल में अंतर स्पष्ट करें। पायस क्या है?</span>
+            <div class="answer">
+                <strong>(i) अंतर (Differences):</strong>
+                <table>
+                    <tr>
+                        <th>गुण</th>
+                        <th>लायोफिलिक (द्रव-रागी)</th>
+                        <th>लायोफोबिक (द्रव-विरागी)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>निर्माण</strong></td>
+                        <td>ये परिक्षेपण माध्यम में पदार्थ को सीधे मिलाने या गर्म करने से आसानी से बन जाते हैं।</td>
+                        <td>ये आसानी से नहीं बनते। इन्हें बनाने के लिए विशेष विधियों की आवश्यकता होती है।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>स्थायित्व</strong></td>
+                        <td>ये अधिक स्थायी होते हैं। वैद्युत अपघट्य मिलाने पर आसानी से अवक्षेपित नहीं होते।</td>
+                        <td>ये कम स्थायी होते हैं। थोड़ी सी अशुद्धि या वैद्युत अपघट्य मिलाने पर स्कंदित हो जाते हैं।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>प्रकृति</strong></td>
+                        <td>ये उत्क्रमणीय (Reversible) होते हैं। सुखाने के बाद द्रव मिलाकर पुनः सॉल बनाया जा सकता है।</td>
+                        <td>ये अनुत्क्रमणीय (Irreversible) होते हैं। एक बार स्कंदित होने पर पुनः सॉल नहीं बनते।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>उदाहरण</strong></td>
+                        <td>गोंद, स्टार्च, जिलेटिन, रबर।</td>
+                        <td>सोने का सॉल, सल्फर सॉल, फेरिक हाइड्रॉक्साइड Fe(OH)<sub>3</sub>।</td>
+                    </tr>
+                </table>
+                <br>
+                <strong>(ii) पायस (Emulsion):</strong><br>
+                पायस वह कोलाइडल तंत्र है जिसमें परिक्षिप्त प्रावस्था (Dispersed Phase) और परिक्षेपण माध्यम (Dispersion Medium) <strong>दोनों द्रव</strong> होते हैं जो आपस में अमिश्रणीय होते हैं। स्थायित्व के लिए इनमें 'पायसीकारक' (Emulsifier) मिलाया जाता है।
+                <br><em>उदाहरण:</em> दूध (वसा का जल में पायस), मक्खन (जल का वसा में पायस), कोल्ड क्रीम।
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-box">
+            <span class="question">Q19. क्लोरोफॉर्म बनाने की प्रयोगशाला विधि का वर्णन करें। एसीटोन से अभिक्रिया लिखें।</span>
+            <div class="answer">
+                <strong>प्रयोगशाला विधि:</strong>
+                प्रयोगशाला में क्लोरोफॉर्म (CHCl<sub>3</sub>) बनाने के लिए विरंजक चूर्ण (Bleaching Powder) की एथिल अल्कोहल या एसीटोन के साथ जल की उपस्थिति में क्रिया कराई जाती है।
+                <br>
+                <strong>रासायनिक चरण (एसीटोन से):</strong>
+                <ol>
+                    <li>
+                        <strong>क्लोरिन का मुक्त होना:</strong> विरंजक चूर्ण जल से क्रिया करके नवजात क्लोरीन और चूने का पानी बनाता है।
+                        <br>CaOCl<sub>2</sub> + H<sub>2</sub>O &rarr; Ca(OH)<sub>2</sub> + Cl<sub>2</sub>
+                    </li>
+                    <li>
+                        <strong>क्लोरीनीकरण (Chlorination):</strong> क्लोरीन एसीटोन के साथ क्रिया करके ट्राइक्लोरोएसीटोन बनाता है।
+                        <br>CH<sub>3</sub>COCH<sub>3</sub> + 3Cl<sub>2</sub> &rarr; CCl<sub>3</sub>COCH<sub>3</sub> + 3HCl
+                    </li>
+                    <li>
+                        <strong>जल-अपघटन (Hydrolysis):</strong> ट्राइक्लोरोएसीटोन चूने के पानी (Ca(OH)<sub>2</sub>) के साथ आसवित होकर क्लोरोफॉर्म देता है।
+                        <div class="eq-box">2CCl<sub>3</sub>COCH<sub>3</sub> + Ca(OH)<sub>2</sub> &rarr; 2CHCl<sub>3</sub> + (CH<sub>3</sub>COO)<sub>2</sub>Ca</div>
+                        (क्लोरोफॉर्म + कैल्शियम एसीटेट)
+                    </li>
+                </ol>
+                <strong>एसीटोन के साथ अभिक्रिया:</strong><br>
+                कास्टिक पोटाश (KOH) की उपस्थिति में क्लोरोफॉर्म एसीटोन के साथ संघनित होकर एक जटिल यौगिक <strong>'क्लोरीटोन' (Chloretone)</strong> बनाता है। क्लोरीटोन का उपयोग एक उच्च कोटि की निद्राकारी (Hypnotic) औषधि के रूप में किया जाता है।
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-box">
+            <span class="question">Q20. साबुन क्या है? इसकी शोधन क्रिया (Cleansing Action) समझाएं।</span>
+            <div class="answer">
+                <strong>साबुन (Soap):</strong>
+                साबुन दीर्घ शृंखला वाले वसीय अम्लों (Long chain fatty acids) जैसे स्टीयरिक अम्ल, ओलिक अम्ल या पामिटिक अम्ल के सोडियम या पोटैशियम लवण होते हैं।
+                <br><em>सामान्य सूत्र:</em> R-COONa (जैसे सोडियम स्टीयरेट C<sub>17</sub>H<sub>35</sub>COONa)।
+                <br><br>
+                <strong>शोधन क्रिया (Cleansing Action):</strong><br>
+                साबुन के अणु के दो मुख्य भाग होते हैं:
+                <ol>
+                    <li><strong>जल-रागी (Hydrophilic) शीर्ष:</strong> यह आयनिक भाग (COO<sup>-</sup>Na<sup>+</sup>) होता है जो जल में घुलनशील है लेकिन तेल में अघुलनशील।</li>
+                    <li><strong>जल-विरागी (Hydrophobic) पूंछ:</strong> यह लंबी हाइड्रोकार्बन शृंखला होती है जो जल को प्रतिकर्षित करती है लेकिन तेल/वसा (गंदगी) में घुलनशील है।</li>
+                </ol>
+                <strong>मिसेल निर्माण (Micelle Formation):</strong><br>
+                जब गंदे कपड़ों को साबुन के पानी में डुबोया जाता है, तो साबुन के अणु मैल (तेल/ग्रीस) के चारों ओर व्यवस्थित हो जाते हैं। हाइड्रोकार्बन पूंछ तेल की बूंद के अंदर धंस जाती है और आयनिक शीर्ष बाहर पानी की ओर निकला रहता है। इस गोलाकार संरचना को <strong>मिसेल</strong> कहते हैं।
+                <br>
+                पानी को हिलाने या कपड़े को रगड़ने पर, ये मिसेल मैल को कपड़े की सतह से खींचकर पानी में ले आते हैं और पायस (emulsion) बना लेते हैं। इस प्रकार मैल पानी के साथ बह जाता है और कपड़ा साफ हो जाता है।
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

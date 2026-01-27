@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Class 12 Maths Formula Sheet (Bihar/NCERT)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Times+New+Roman&display=swap" rel="stylesheet">
+<style>
+    @page { size: A4 portrait; margin: 4mm; }
+    body {
+        font-family: 'Noto Serif Devanagari', 'Times New Roman', serif;
+        font-size: 8pt; /* Small font for max density */
+        line-height: 1.15;
+        margin: 0; padding: 0;
+        color: #000;
+        background: #fff;
+    }
+    h1 {
+        text-align: center;
+        font-size: 14pt;
+        margin: 0 0 4px 0;
+        border-bottom: 2px solid #000;
+        padding-bottom: 2px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .container {
+        column-count: 3;
+        column-gap: 4mm;
+        column-rule: 0.5px solid #888;
+        width: 100%;
+        height: 100%;
+    }
+    .section {
+        break-inside: avoid;
+        margin-bottom: 4px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 2px;
+    }
+    h2 {
+        font-size: 9pt;
+        background: #000;
+        color: #fff;
+        padding: 1px 4px;
+        margin: 2px 0;
+        font-weight: 700;
+        border-radius: 2px;
+    }
+    .math { font-family: 'Times New Roman', serif; font-style: italic; font-weight: bold; }
+    .txt { font-size: 7.5pt; }
+    
+    /* Math Structures */
+    .frac {
+        display: inline-block; vertical-align: middle; text-align: center; font-size: 0.85em;
+    }
+    .frac .n { display: block; border-bottom: 1px solid #000; padding: 0 1px; }
+    .frac .d { display: block; padding: 0 1px; }
+    
+    .vec:after { content: '→'; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); font-size:0.7em; }
+    .vec { position: relative; display: inline-block; }
+    .cap:after { content: '^'; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); }
+    .cap { position: relative; display: inline-block; }
+
+    .matrix {
+        display: inline-flex; flex-direction: column; vertical-align: middle;
+        border-left: 1px solid #000; border-right: 1px solid #000;
+        padding: 0 2px; font-size: 0.8em; margin: 0 2px;
+    }
+    .det {
+        display: inline-flex; flex-direction: column; vertical-align: middle;
+        border-left: 1px solid #000; border-right: 1px solid #000;
+        padding: 0 2px; font-size: 0.8em; margin: 0 2px;
+    }
+    .det-lines { border-top: none; border-bottom: none; } /* Only side bars for det */
+
+    /* Utilities */
+    .row { display: flex; justify-content: space-between; }
+    .hl { background-color: #eee; border-left: 2px solid #444; padding-left: 3px; }
+    ul { padding-left: 12px; margin: 0; }
+    li { margin: 1px 0; }
+    
+    table { width: 100%; border-collapse: collapse; font-size: 7.5pt; }
+    td, th { border: 1px solid #ddd; padding: 1px 3px; text-align: center; }
+</style>
+</head>
+<body>
+
+    <h1>Class 12 गणित (Maths) Formula Sheet 2025</h1>
+
+    <div class="container">
+
+        <!-- 1. Relations & Functions (Brief) -->
+        <div class="section">
+            <h2>1. सम्बन्ध एवं फलन (Relations & Functions)</h2>
+            <div class="txt">
+            • <strong>स्वतुल्य (Reflexive):</strong> <span class="math">(a,a) ∈ R</span>, <span class="math">∀ a ∈ A</span><br>
+            • <strong>सममित (Symmetric):</strong> <span class="math">(a,b)∈R ⇒ (b,a)∈R</span><br>
+            • <strong>संक्रामक (Transitive):</strong> <span class="math">(a,b)∈R, (b,c)∈R ⇒ (a,c)∈R</span><br>
+            • <strong>Binary Operation:</strong> <span class="math">a∗b</span>; Identity <span class="math">e</span>: <span class="math">a∗e=a=e∗a</span>
+            </div>
+        </div>
+
+        <!-- 2. Inverse Trig -->
+        <div class="section">
+            <h2>2. प्रतिलोम त्रिकोणमितीय (Inverse Trig)</h2>
+            <table>
+                <tr style="background:#f0f0f0"><th>फलन</th><th>प्रान्त (Domain)</th><th>परिसर (Range)</th></tr>
+                <tr><td><span class="math">sin⁻¹x</span></td><td>[-1, 1]</td><td>[-π/2, π/2]</td></tr>
+                <tr><td><span class="math">cos⁻¹x</span></td><td>[-1, 1]</td><td>[0, π]</td></tr>
+                <tr><td><span class="math">tan⁻¹x</span></td><td>R</td><td>(-π/2, π/2)</td></tr>
+                <tr><td><span class="math">sec⁻¹x</span></td><td>R - (-1,1)</td><td>[0,π] - {π/2}</td></tr>
+            </table>
+            <div class="hl" style="margin-top:2px;">
+                <span class="math">sin⁻¹(-x) = -sin⁻¹x</span> | <span class="math">cos⁻¹(-x) = π - cos⁻¹x</span><br>
+                <span class="math">sin⁻¹x + cos⁻¹x = π/2</span> (also for tan/cot, sec/cosec)<br>
+                <span class="math">tan⁻¹x + tan⁻¹y = tan⁻¹</span><span class="frac"><span class="n">x+y</span><span class="d">1-xy</span></span> (if xy<1)
+            </div>
+            <span class="math">2tan⁻¹x = sin⁻¹</span><span class="frac"><span class="n">2x</span><span class="d">1+x²</span></span> = <span class="math">cos⁻¹</span><span class="frac"><span class="n">1-x²</span><span class="d">1+x²</span></span>
+        </div>
+
+        <!-- 3. Matrices & Det -->
+        <div class="section">
+            <h2>3. आव्यूह और सारणिक (Matrices & Det)</h2>
+            • <strong>सममित (Symmetric):</strong> <span class="math">A' = A</span><br>
+            • <strong>विषम-सममित (Skew-Sym):</strong> <span class="math">A' = -A</span><br>
+            <div class="hl">
+                <strong>Adjoint & Inverse (Most Imp):</strong><br>
+                1. <span class="math">A(adj A) = |A| I</span><br>
+                2. <span class="math">|adj A| = |A|ⁿ⁻¹</span> (n = order)<br>
+                3. <span class="math">(AB)⁻¹ = B⁻¹A⁻¹</span> | <span class="math">(A')⁻¹ = (A⁻¹)'</span><br>
+                4. <span class="math">A⁻¹ = </span><span class="frac"><span class="n">1</span><span class="d">|A|</span></span><span class="math">(adj A)</span> (if <span class="math">|A|≠0</span>)<br>
+            </div>
+            • <strong>Area of Δ:</strong> <span class="math">½ |x₁(y₂-y₃) + x₂(y₃-y₁) + ...|</span><br>
+            Using Det: <span class="math">Area = ½ |det|</span>. Collinear if Area = 0.<br>
+            • <strong>Linear Eq:</strong> <span class="math">AX = B ⇒ X = A⁻¹B</span>
+        </div>
+
+        <!-- 4. Continuity & Diff -->
+        <div class="section">
+            <h2>4. सांतत्य तथा अवकलनीयता (Cont & Diff)</h2>
+            • <strong>Continuity:</strong> <span class="math">LHL = RHL = f(a)</span><br>
+            • <strong>Chain Rule:</strong> <span class="math">dy/dx = dy/dt × dt/dx</span><br>
+            • <strong>Product:</strong> <span class="math">(uv)' = u'v + uv'</span><br>
+            • <strong>Quotient:</strong> <span class="math">(u/v)' = </span><span class="frac"><span class="n">u'v - uv'</span><span class="d">v²</span></span><br>
+            
+            <div class="row" style="font-size:7.5pt">
+                <span><span class="math">d(xⁿ) = nxⁿ⁻¹</span></span>
+                <span><span class="math">d(eˣ) = eˣ</span></span>
+                <span><span class="math">d(aˣ) = aˣln a</span></span>
+            </div>
+            <div class="row" style="font-size:7.5pt">
+                <span><span class="math">d(ln x) = 1/x</span></span>
+                <span><span class="math">d(√x) = 1/2√x</span></span>
+                <span><span class="math">d(1/x) = -1/x²</span></span>
+            </div>
+            
+            <strong>Trig Derivatives:</strong><br>
+            <span class="math">tan x → sec²x</span> | <span class="math">cot x → -cosec²x</span><br>
+            <span class="math">sec x → sec x tan x</span> | <span class="math">cosec x → -cosec x cot x</span><br>
+            
+            <div class="hl">
+                <strong>Inverse Trig Diff:</strong><br>
+                <span class="math">sin⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">√(1-x²)</span></span> &nbsp; | &nbsp; 
+                <span class="math">tan⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">1+x²</span></span><br>
+                <span class="math">sec⁻¹x → </span><span class="frac"><span class="n">1</span><span class="d">|x|√(x²-1)</span></span>
+            </div>
+            <strong>Log Diff:</strong> If <span class="math">y=xˣ</span>, <span class="math">dy/dx = xˣ(1+ln x)</span><br>
+            <strong>Parametric:</strong> <span class="math">dy/dx = (dy/dθ) / (dx/dθ)</span>
+        </div>
+
+        <!-- 5. AOD -->
+        <div class="section">
+            <h2>5. अवकलज के अनुप्रयोग (AOD)</h2>
+            • <strong>Rate Measure:</strong> <span class="math">dy/dt</span><br>
+            • <strong>Tangent Slope (m):</strong> <span class="math">dy/dx</span> at point.<br>
+            • <strong>Normal Slope:</strong> <span class="math">-1/m</span><br>
+            • <strong>Eq:</strong> <span class="math">y-y₁ = m(x-x₁)</span><br>
+            • <strong>Approximation:</strong> <span class="math">f(x+Δx) ≈ f(x) + f'(x)Δx</span><br>
+            <div class="hl">
+                <strong>Maxima/Minima (महत्तम/न्यूनतम):</strong><br>
+                1. <span class="math">f'(x)=0</span> find critical pts.<br>
+                2. Check <span class="math">f''(x)</span>.<br>
+                • <span class="math">f''(x) < 0</span> ⇒ Maxima (महत्तम)<br>
+                • <span class="math">f''(x) > 0</span> ⇒ Minima (न्यूनतम)
+            </div>
+            • <strong>Increasing:</strong> <span class="math">f'(x) > 0</span> | <strong>Decreasing:</strong> <span class="math">f'(x) < 0</span>
+        </div>
+
+        <!-- 6. Integrals (Indefinite) -->
+        <div class="section">
+            <h2>6. अनिश्चित समाकलन (Indefinite Int)</h2>
+            <span class="math">∫xⁿ dx = xⁿ⁺¹/(n+1)</span> | <span class="math">∫(1/x) = ln|x|</span><br>
+            <span class="math">∫aˣ dx = aˣ/ln a</span><br>
+            <span class="math">∫tan x = ln|sec x|</span> | <span class="math">∫cot x = ln|sin x|</span><br>
+            <span class="math">∫sec x = ln|sec x + tan x|</span><br>
+            <span class="math">∫cosec x = ln|cosec x - cot x|</span><br>
+            
+            <div class="hl">
+                <strong>9 Special Forms (विशिष्ट समाकलन):</strong><br>
+                1. <span class="math">∫</span><span class="frac"><span class="n">dx</span><span class="d">x²-a²</span></span> = <span class="frac"><span class="n">1</span><span class="d">2a</span></span><span class="math">ln</span>|<span class="frac"><span class="n">x-a</span><span class="d">x+a</span></span>|<br>
+                2. <span class="math">∫</span><span class="frac"><span class="n">dx</span><span class="d">a²-x²</span></span> = <span class="frac"><span class="n">1</span><span class="d">2a</span></span><span class="math">ln</span>|<span class="frac"><span class="n">a+x</span><span class="d">a-x</span></span>|<br>
+                3. <span class="math">∫</span><span class="frac"><span class="n">dx</span><span class="d">x²+a²</span></span> = <span class="frac"><span class="n">1</span><span class="d">a</span></span><span class="math">tan⁻¹</span>(<span class="frac"><span class="n">x</span><span class="d">a</span></span>)<br>
+                4. <span class="math">∫</span><span class="frac"><span class="n">dx</span><span class="d">√(a²-x²)</span></span> = <span class="math">sin⁻¹(x/a)</span><br>
+                5. <span class="math">∫</span><span class="frac"><span class="n">dx</span><span class="d">√(x²±a²)</span></span> = <span class="math">ln|x + √(x²±a²)|</span><br>
+                6. <span class="math">∫√(a²-x²)dx = </span><span class="frac"><span class="n">x</span><span class="d">2</span></span><span class="math">√...</span> + <span class="frac"><span class="n">a²</span><span class="d">2</span></span><span class="math">sin⁻¹</span><span class="frac"><span class="n">x</span><span class="d">a</span></span>
+            </div>
+            <strong>Parts (ILATE):</strong> <span class="math">∫uv = u∫v - ∫(u'∫v)</span><br>
+            <strong>Classic:</strong> <span class="math">∫eˣ[f(x)+f'(x)]dx = eˣf(x)</span>
+        </div>
+
+        <!-- 7. Definite Integrals & AOI -->
+        <div class="section">
+            <h2>7. निश्चित समाकलन (Definite) & AOI</h2>
+            <strong>Properties (गुणधर्म):</strong><br>
+            <span class="math">P₄: ∫₀ᵃ f(x)dx = ∫₀ᵃ f(a-x)dx</span> (King Prop)<br>
+            <span class="math">P₇: ∫₋ₐᵃ f(x)dx</span> = 0 (if Odd); <span class="math">2∫₀ᵃ f(x)</span> (if Even)<br>
+            
+            <strong>Limit of Sum:</strong> <span class="math">∫ₐᵇ f(x)dx = lim(h→0) h ∑ f(a+rh)</span><br>
+            
+            <div class="hl">
+                <strong>Area (क्षेत्रफल):</strong><br>
+                • Circle <span class="math">x²+y²=a²</span> Area = <span class="math">πa²</span><br>
+                • Ellipse <span class="math">x²/a² + y²/b² = 1</span> Area = <span class="math">πab</span><br>
+                • Curve & x-axis: <span class="math">∫ₐᵇ y dx</span>
+            </div>
+        </div>
+
+        <!-- 8. Differential Equations -->
+        <div class="section">
+            <h2>8. अवकल समीकरण (Diff Eq.)</h2>
+            <strong>1. Variable Separable:</strong> <span class="math">∫f(y)dy = ∫g(x)dx</span><br>
+            <strong>2. Homogeneous (समघात):</strong> Put <span class="math">y=vx</span>, <span class="math">y'=v+xv'</span><br>
+            <div class="hl">
+                <strong>3. Linear (रैखिक) - LDE:</strong><br>
+                Type 1: <span class="math">dy/dx + Py = Q</span><br>
+                • <span class="math">I.F. = e^{∫P dx}</span><br>
+                • Sol: <span class="math">y(I.F.) = ∫(Q × I.F.)dx + C</span><br>
+                Type 2: <span class="math">dx/dy + Px = Q</span> (Rev I.F.)
+            </div>
+        </div>
+
+        <!-- 9. Vector Algebra -->
+        <div class="section">
+            <h2>9. सदिश बीजगणित (Vector Algebra)</h2>
+            • <span class="math">|<span class="vec">a</span>| = √(x²+y²+z²)</span><br>
+            • Unit: <span class="math"><span class="cap">a</span> = <span class="vec">a</span> / |<span class="vec">a</span>|</span><br>
+            • Dir Cosines: <span class="math">l,m,n</span> where <span class="math">l²+m²+n²=1</span><br>
+            
+            <div class="hl">
+                <strong>Dot Product (अदिश गुणन):</strong><br>
+                <span class="math"><span class="vec">a</span>⋅<span class="vec">b</span> = |a||b|cosθ</span><br>
+                • If <span class="math"><span class="vec">a</span>⊥<span class="vec">b</span> ⇒ <span class="vec">a</span>⋅<span class="vec">b</span> = 0</span><br>
+                • Projection (<span class="vec">a</span> on <span class="vec">b</span>): <span class="math">(<span class="vec">a</span>⋅<span class="vec">b</span>) / |<span class="vec">b</span>|</span>
+            </div>
+            
+            <div class="hl">
+                <strong>Cross Product (सदिश गुणन):</strong><br>
+                <span class="math"><span class="vec">a</span>×<span class="vec">b</span> = |a||b|sinθ <span class="cap">n</span></span><br>
+                • If <span class="math"><span class="vec">a</span>||<span class="vec">b</span> ⇒ <span class="vec">a</span>×<span class="vec">b</span> = 0</span><br>
+                • Area (Δ): <span class="math">½|<span class="vec">a</span>×<span class="vec">b</span>|</span> | Area (||gm): <span class="math">|<span class="vec">a</span>×<span class="vec">b</span>|</span>
+            </div>
+        </div>
+
+        <!-- 10. 3D Geometry -->
+        <div class="section">
+            <h2>10. त्रिविमीय ज्यामिति (3D Geometry)</h2>
+            <strong>Direction Cosines:</strong> <span class="math">l=a/√(a²+b²+c²)</span> etc.<br>
+            
+            <strong>Line (रेखा):</strong><br>
+            Vector: <span class="math"><span class="vec">r</span> = <span class="vec">a</span> + λ<span class="vec">b</span></span><br>
+            Cartesian: <span class="frac"><span class="n">x-x₁</span><span class="d">a</span></span> = <span class="frac"><span class="n">y-y₁</span><span class="d">b</span></span> = <span class="frac"><span class="n">z-z₁</span><span class="d">c</span></span><br>
+            
+            <strong>Plane (समतल):</strong><br>
+            Vector: <span class="math"><span class="vec">r</span>⋅<span class="cap">n</span> = d</span> (Normal form)<br>
+            Cartesian: <span class="math">Ax + By + Cz + D = 0</span><br>
+            Intercept: <span class="math">x/a + y/b + z/c = 1</span><br>
+            
+            <div class="hl">
+                <strong>Shortest Distance (Skew Lines):</strong><br>
+                <span class="math">d = </span><span class="frac"><span class="n">|(<span class="vec">b</span>₁×<span class="vec">b</span>₂) ⋅ (<span class="vec">a</span>₂-<span class="vec">a</span>₁)|</span><span class="d">|<span class="vec">b</span>₁×<span class="vec">b</span>₂|</span></span>
+            </div>
+            <strong>Angle:</strong> <span class="math">cosθ = </span><span class="frac"><span class="n">|<span class="vec">a</span>⋅<span class="vec">b</span>|</span><span class="d">|a||b|</span></span> (for lines use b vector, for planes use n vector).
+        </div>
+
+        <!-- 11. Probability -->
+        <div class="section">
+            <h2>11. प्रायिकता (Probability)</h2>
+            • <span class="math">P(A∪B) = P(A) + P(B) - P(A∩B)</span><br>
+            • <strong>Conditional:</strong> <span class="math">P(A|B) = P(A∩B) / P(B)</span><br>
+            • <strong>Independent:</strong> <span class="math">P(A∩B) = P(A)⋅P(B)</span><br>
+            
+            <div class="hl">
+                <strong>Bayes' Theorem:</strong><br>
+                <span class="math">P(E₁|A) = </span><span class="frac"><span class="n">P(E₁)P(A|E₁)</span><span class="d">∑ P(Eᵢ)P(A|Eᵢ)</span></span>
+            </div>
+            
+            <strong>Distribution (बंटन):</strong><br>
+            Mean (<span class="math">μ</span>) = <span class="math">∑xᵢpᵢ</span> | Var (<span class="math">σ²</span>) = <span class="math">∑xᵢ²pᵢ - (μ)²</span><br>
+            <strong>Binomial (द्विपद):</strong> <span class="math">P(X=r) = ⁿCᵣ pʳ qⁿ⁻ʳ</span>
+        </div>
+
+        <!-- Extra Tips -->
+        <div class="section" style="background:#f9f9f9; border:1px dashed #000; padding:2px;">
+            <strong>Exam Tips (परीक्षा सुझाव):</strong>
+            <ul style="padding-left:10px;">
+                <li><span class="math">∫eˣ(f(x)+f'(x))dx</span> is the most repeated MCQ.</li>
+                <li>LPP: Corner Point Method check all vertices.</li>
+                <li>If <span class="math">f(-x)=-f(x)</span> answer is 0 in Definite Int.</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

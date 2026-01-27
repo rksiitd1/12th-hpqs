@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Maths Class 12 Formula Sheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 5mm; /* Very tight margins for max space */
+            }
+            body {
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 8.5pt; /* Compact font size */
+            line-height: 1.25;
+            color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 14pt;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+        }
+
+        .container {
+            column-count: 3;
+            column-gap: 5mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        .section {
+            break-inside: avoid;
+            margin-bottom: 8px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 4px;
+            background-color: #fff;
+        }
+
+        .sec-title {
+            font-weight: 700;
+            text-align: center;
+            background: #eee;
+            margin: -4px -4px 4px -4px;
+            padding: 2px;
+            border-bottom: 1px solid #ccc;
+            font-size: 9pt;
+        }
+
+        .formula-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3px;
+            border-bottom: 1px dotted #eee;
+        }
+        
+        .formula-row:last-child { border-bottom: none; }
+
+        .math {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        /* Helpers */
+        .vec { font-weight: bold; }
+        .center { text-align: center; display: block; }
+    </style>
+</head>
+<body>
+
+    <h1>Important Formulas (Class 12 Math)</h1>
+
+    <div class="container">
+
+        <!-- INTEGRATION -->
+        <div class="section">
+            <div class="sec-title">समाकलन (Integration)</div>
+            <div class="formula-row"><span class="math">&int; x^n dx</span> <span class="math">= x^{n+1}/(n+1)</span></div>
+            <div class="formula-row"><span class="math">&int; (1/x) dx</span> <span class="math">= log|x|</span></div>
+            <div class="formula-row"><span class="math">&int; e^x dx</span> <span class="math">= e^x</span></div>
+            <div class="formula-row"><span class="math">&int; a^x dx</span> <span class="math">= a^x / log a</span></div>
+            <div class="formula-row"><span class="math">&int; tan x dx</span> <span class="math">= log|sec x|</span></div>
+            <div class="formula-row"><span class="math">&int; cot x dx</span> <span class="math">= log|sin x|</span></div>
+            <div class="formula-row"><span class="math">&int; sec x dx</span> <span class="math">= log|sec x + tan x|</span></div>
+            <div class="formula-row"><span class="math">&int; (1/&radic;(a²-x²))</span> <span class="math">= sin⁻¹(x/a)</span></div>
+            <div class="formula-row"><span class="math">&int; (1/(a²+x²))</span> <span class="math">= (1/a)tan⁻¹(x/a)</span></div>
+            <div class="formula-row"><span class="math">&int; (1/&radic;(x²-a²))</span> <span class="math">= log|x + &radic;(x²-a²)|</span></div>
+            <div class="formula-row"><span class="math">&int; &radic;(a²-x²) dx</span> <span class="math">= (x/2)&radic;... + (a²/2)sin⁻¹(x/a)</span></div>
+        </div>
+
+        <!-- INTEGRATION PROPERTIES -->
+        <div class="section">
+            <div class="sec-title">निश्चित समाकलन (Properties)</div>
+            <div class="math center">&int;₀ᵃ f(x) dx = &int;₀ᵃ f(a-x) dx</div>
+            <div class="math center">&int;₋ₐᵃ f(x) dx = 0 (यदि विषम/odd)</div>
+            <div class="math center">&int;₋ₐᵃ f(x) dx = 2&int;₀ᵃ f(x) (यदि सम/even)</div>
+            <div class="sec-title" style="margin-top:4px;">ILATE Rule (By Parts)</div>
+            <div class="math center">&int;uv = u&int;v - &int;(u'&int;v)dx</div>
+        </div>
+
+        <!-- DERIVATIVES -->
+        <div class="section">
+            <div class="sec-title">अवकलन (Differentiation)</div>
+            <div class="formula-row"><span class="math">d/dx(x^n)</span> <span class="math">= nx^{n-1}</span></div>
+            <div class="formula-row"><span class="math">d/dx(sin x)</span> <span class="math">= cos x</span></div>
+            <div class="formula-row"><span class="math">d/dx(cos x)</span> <span class="math">= -sin x</span></div>
+            <div class="formula-row"><span class="math">d/dx(log x)</span> <span class="math">= 1/x</span></div>
+            <div class="formula-row"><span class="math">d/dx(a^x)</span> <span class="math">= a^x log a</span></div>
+            <div class="formula-row"><span class="math">d/dx(sin⁻¹x)</span> <span class="math">= 1/&radic;(1-x²)</span></div>
+            <div class="formula-row"><span class="math">d/dx(tan⁻¹x)</span> <span class="math">= 1/(1+x²)</span></div>
+            <div class="formula-row"><span class="math">d/dx(sec⁻¹x)</span> <span class="math">= 1/(|x|&radic;(x²-1))</span></div>
+        </div>
+
+        <!-- DIFFERENTIAL EQUATIONS -->
+        <div class="section">
+            <div class="sec-title">अवकल समीकरण (Diff. Eq.)</div>
+            <strong>1. Homogeneous:</strong> Put <span class="math">y = vx</span>
+            <br>
+            <strong>2. Linear (LDE):</strong> <span class="math">dy/dx + Py = Q</span>
+            <div class="formula-row"><span class="math">I.F.</span> <span class="math">= e^{&int; P dx}</span></div>
+            <div class="formula-row">Sol: <span class="math">y(I.F.) = &int; Q(I.F.) dx + c</span></div>
+        </div>
+
+        <!-- VECTORS -->
+        <div class="section">
+            <div class="sec-title">सदिश बीजगणित (Vectors)</div>
+            <div class="formula-row">Unit Vector: <span class="math">â = &vec;a / |&vec;a|</span></div>
+            <div class="formula-row">Dot: <span class="math">&vec;a &cdot; &vec;b = |a||b|cos&theta;</span></div>
+            <div class="formula-row">Cross: <span class="math">&vec;a &times; &vec;b = |a||b|sin&theta; n̂</span></div>
+            <div class="formula-row">Projection of <span class="math">&vec;a</span> on <span class="math">&vec;b</span>: <span class="math">(&vec;a &cdot; &vec;b) / |&vec;b|</span></div>
+            <div class="formula-row">Perpendicular: <span class="math">&vec;a &cdot; &vec;b = 0</span></div>
+            <div class="formula-row">Parallel: <span class="math">&vec;a &times; &vec;b = 0</span></div>
+            <div>Area of &Delta;: <span class="math">(1/2) |&vec;a &times; &vec;b|</span></div>
+        </div>
+
+        <!-- 3D GEOMETRY -->
+        <div class="section">
+            <div class="sec-title">त्रिविमीय ज्यामिति (3D Geo)</div>
+            <strong>Direction Cosines (l, m, n):</strong>
+            <div class="math center">l = cos&alpha;, m = cos&beta;, n = cos&gamma;</div>
+            <div class="math center">l² + m² + n² = 1</div>
+            <strong>Distance Formula:</strong>
+            <div class="math center">&radic;((x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²)</div>
+            <strong>Angle between Lines:</strong>
+            <div class="math center">cos&theta; = |a₁a₂ + b₁b₂ + c₁c₂| / &radic;...&radic;...</div>
+            <strong>Shortest Distance (Skew Lines):</strong>
+            <div class="math center">d = |(&vec;b₁ &times; &vec;b₂) &cdot; (&vec;a₂ - &vec;a₁)| / |&vec;b₁ &times; &vec;b₂|</div>
+            <strong>Equation of Plane (Intercept):</strong>
+            <div class="math center">x/a + y/b + z/c = 1</div>
+        </div>
+
+        <!-- INVERSE TRIGONOMETRY -->
+        <div class="section">
+            <div class="sec-title">प्रतिलोम त्रिकोणमिति (ITF)</div>
+            <div class="formula-row"><span class="math">sin⁻¹x + cos⁻¹x</span> <span class="math">= &pi;/2</span></div>
+            <div class="formula-row"><span class="math">tan⁻¹x + cot⁻¹x</span> <span class="math">= &pi;/2</span></div>
+            <div class="math center">tan⁻¹x + tan⁻¹y = tan⁻¹((x+y)/(1-xy))</div>
+            <div class="math center">2tan⁻¹x = tan⁻¹((2x)/(1-x²))</div>
+            <div class="math center">2tan⁻¹x = sin⁻¹((2x)/(1+x²))</div>
+        </div>
+
+        <!-- MATRICES & DETERMINANTS -->
+        <div class="section">
+            <div class="sec-title">आव्यूह (Matrices)</div>
+            <div class="formula-row"><span class="math">(AB)' = B'A'</span></div>
+            <div class="formula-row"><span class="math">(AB)⁻¹ = B⁻¹A⁻¹</span></div>
+            <div class="formula-row">Inverse: <span class="math">A⁻¹ = (1/|A|) adj A</span></div>
+            <div class="formula-row">Area of &Delta;: <span class="math">(1/2) |det(x,y,1)|</span></div>
+            <div class="formula-row">Singular Matrix: <span class="math">|A| = 0</span></div>
+        </div>
+
+        <!-- PROBABILITY -->
+        <div class="section">
+            <div class="sec-title">प्रायिकता (Probability)</div>
+            <div class="math center">P(A &cup; B) = P(A) + P(B) - P(A &cap; B)</div>
+            <div class="math center">P(A|B) = P(A &cap; B) / P(B)</div>
+            <strong>Independent Events:</strong>
+            <div class="math center">P(A &cap; B) = P(A) &cdot; P(B)</div>
+            <strong>Mean (Expectation):</strong>
+            <div class="math center">&mu; = &sum; xᵢ P(xᵢ)</div>
+        </div>
+
+        <!-- RELATIONS & FUNCTIONS -->
+        <div class="section">
+            <div class="sec-title">संबंध और फलन</div>
+            <div class="formula-row">Reflexive: <span class="math">(a,a) &in; R</span></div>
+            <div class="formula-row">Symmetric: <span class="math">(a,b) &rArr; (b,a)</span></div>
+            <div class="formula-row">Transitive: <span class="math">(a,b),(b,c) &rArr; (a,c)</span></div>
+            <div class="formula-row">Fog: <span class="math">fog(x) = f(g(x))</span></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

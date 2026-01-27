@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Class 12 - Important Long Questions (5 Marks)</title>
+    <style>
+        /* Base Fonts & Print Settings */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 15mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif', serif; /* Prioritize Latin font for English */
+            font-size: 10.5pt;
+            line-height: 1.45;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 8mm;
+            column-rule: 0.5px solid #ccc;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 18pt;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            column-span: all;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 10pt;
+            font-style: italic;
+            margin-bottom: 15px;
+            column-span: all;
+            color: #444;
+        }
+
+        /* Question Block */
+        .qa-container {
+            break-inside: avoid;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #999;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 11pt;
+            display: block;
+            margin-bottom: 6px;
+            background-color: #f0f0f0;
+            padding: 4px 6px;
+            border-left: 4px solid #000;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+            font-size: 10.5pt;
+        }
+
+        /* Structural Elements */
+        strong { font-weight: 700; }
+        p { margin: 4px 0; }
+        ul, ol { margin: 4px 0 6px 18px; padding: 0; }
+        li { margin-bottom: 3px; padding-left: 2px; }
+        
+        /* Subscript/Superscript Fixes */
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        sup { top: -0.5em; }
+        sub { bottom: -0.25em; }
+
+        /* Equation/Box Styling */
+        .equation-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6px 0;
+            padding: 5px;
+            background: #fff;
+            border: 1px solid #ddd;
+            font-family: 'Times New Roman', serif;
+            font-size: 11pt;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+            margin: 6px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 3px 5px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #eee;
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Physics - Long Answer Questions</h1>
+    <div class="subtitle">Class 12 Bihar Board | Detailed 5-Marks Solutions | Top 20 Questions</div>
+
+    <div class="content-wrapper">
+
+        <!-- Q1 -->
+        <div class="qa-container">
+            <div class="question">Q1. Establish the refraction formula for a spherical surface OR derive the 'Lens Maker’s Formula' 1/f = (μ - 1)(1/R<sub>1</sub> - 1/R<sub>2</sub>) for a thin lens.</div>
+            <div class="answer">
+                <strong>Introduction:</strong> The Lens Maker's Formula relates the focal length of a lens to the refractive index of its material and the radii of curvature of its two surfaces.
+                <br><strong>Derivation:</strong>
+                Consider a thin lens placed in air (μ<sub>1</sub>). The refractive index of the lens material is μ<sub>2</sub>. Let R<sub>1</sub> and R<sub>2</sub> be the radii of curvature.
+                <ol>
+                    <li><strong>Refraction at 1st Surface:</strong> An object O on the principal axis forms an image I<sub>1</sub> due to the first surface. By the spherical refraction formula:
+                        <div class="equation-box">μ<sub>2</sub>/v<sub>1</sub> - μ<sub>1</sub>/u = (μ<sub>2</sub> - μ<sub>1</sub>)/R<sub>1</sub> ... (i)</div>
+                    </li>
+                    <li><strong>Refraction at 2nd Surface:</strong> The image I<sub>1</sub> acts as a virtual object for the second surface. The final image I is formed after refraction from μ<sub>2</sub> to μ<sub>1</sub>:
+                        <div class="equation-box">μ<sub>1</sub>/v - μ<sub>2</sub>/v<sub>1</sub> = (μ<sub>1</sub> - μ<sub>2</sub>)/R<sub>2</sub> ... (ii)</div>
+                    </li>
+                </ol>
+                Adding equations (i) and (ii):
+                <br>(μ<sub>2</sub>/v<sub>1</sub> - μ<sub>1</sub>/u) + (μ<sub>1</sub>/v - μ<sub>2</sub>/v<sub>1</sub>) = (μ<sub>2</sub> - μ<sub>1</sub>) [1/R<sub>1</sub> - 1/R<sub>2</sub>]
+                <br>μ<sub>1</sub> (1/v - 1/u) = (μ<sub>2</sub> - μ<sub>1</sub>) [1/R<sub>1</sub> - 1/R<sub>2</sub>]
+                <br>Since 1/v - 1/u = 1/f (Lens formula) and μ<sub>2</sub>/μ<sub>1</sub> = μ, we get:
+                <div class="equation-box">1/f = (μ - 1)(1/R<sub>1</sub> - 1/R<sub>2</sub>)</div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-container">
+            <div class="question">Q2. State and explain Kirchhoff's Laws. Apply these laws to obtain the condition for a balanced Wheatstone Bridge.</div>
+            <div class="answer">
+                <strong>Kirchhoff's Two Laws:</strong>
+                <ol>
+                    <li><strong>Junction Law (1st Law):</strong> The algebraic sum of all currents meeting at any junction in an electrical circuit is zero (ΣI = 0). This is based on the <em>Conservation of Charge</em>.</li>
+                    <li><strong>Loop Law (2nd Law):</strong> The algebraic sum of changes in potential (product of current and resistance plus EMFs) around any closed loop is zero (ΣIR + ΣE = 0). This is based on the <em>Conservation of Energy</em>.</li>
+                </ol>
+                <strong>Wheatstone Bridge Principle:</strong>
+                Consider four resistors P, Q, R, and S forming a quadrilateral with a galvanometer (G) in the middle.
+                <br><strong>Balanced Condition:</strong> No current flows through the galvanometer (I<sub>g</sub> = 0).
+                <ul>
+                    <li>In closed loop ABDA (Loop Law): I<sub>1</sub>P - I<sub>2</sub>R = 0 &rArr; I<sub>1</sub>P = I<sub>2</sub>R ... (1)</li>
+                    <li>In closed loop BCDB (Loop Law): I<sub>1</sub>Q - I<sub>2</sub>S = 0 &rArr; I<sub>1</sub>Q = I<sub>2</sub>S ... (2)</li>
+                </ul>
+                Dividing equation (1) by (2):
+                <div class="equation-box">P / Q = R / S</div>
+                This is the required condition for a balanced Wheatstone Bridge.
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-container">
+            <div class="question">Q3. Derive an expression for the capacitance of a Parallel Plate Capacitor with air or a dielectric medium between the plates.</div>
+            <div class="answer">
+                <strong>Principle:</strong> A capacitor is a device capable of storing a sufficient amount of charge without changing its dimensions.
+                <br><strong>Construction:</strong> It consists of two parallel metal plates separated by a distance 'd'. Each plate has area 'A'. One plate carries +Q charge, while the other acquires -Q by induction and is grounded.
+                <br><strong>Derivation:</strong>
+                <br>1. Surface charge density: σ = Q/A
+                <br>2. Electric field between plates (by Gauss's Law): E = σ/ε<sub>0</sub> = Q / (Aε<sub>0</sub>)
+                <br>3. Potential difference (V): We know V = E × d
+                <br>&rArr; V = (Qd) / (Aε<sub>0</sub>)
+                <br>4. Capacitance (C): By definition C = Q/V
+                <br>C = Q / [ (Qd) / (Aε<sub>0</sub>) ]
+                <div class="equation-box">C = (ε<sub>0</sub> A) / d</div>
+                <strong>Effect of Dielectric:</strong> If a medium of dielectric constant K is filled between the plates, the capacitance increases by K times: <strong>C' = (Kε<sub>0</sub>A)/d</strong>.
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-container">
+            <div class="question">Q4. Describe the construction and working of a Compound Microscope. Derive the expression for its Magnifying Power.</div>
+            <div class="answer">
+                <strong>Construction:</strong> It consists of two convex lenses mounted in a metal tube.
+                <ul>
+                    <li><strong>Objective Lens:</strong> The lens facing the object, having a small focal length and aperture.</li>
+                    <li><strong>Eyepiece:</strong> The lens facing the eye, having a larger focal length and aperture.</li>
+                </ul>
+                <strong>Working:</strong> The objective lens forms a real, inverted, and magnified image of the object. This image acts as an object for the eyepiece. The eyepiece magnifies it further to form a final virtual and inverted image.
+                <br><strong>Magnifying Power (M):</strong>
+                If m<sub>o</sub> is the magnification of the objective and m<sub>e</sub> is of the eyepiece, total magnification M = m<sub>o</sub> × m<sub>e</sub>.
+                <br>When the final image is formed at the Least Distance of Distinct Vision (D):
+                <div class="equation-box">M = -(v<sub>o</sub> / u<sub>o</sub>) (1 + D / f<sub>e</sub>)</div>
+                Where v<sub>o</sub> is the image distance from the objective and u<sub>o</sub> is the object distance.
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-container">
+            <div class="question">Q5. What is a P-N Junction Diode? Explain its working as a Full Wave Rectifier with a circuit diagram.</div>
+            <div class="answer">
+                <strong>P-N Junction Diode:</strong> When a p-type semiconductor is joined to an n-type semiconductor, the contact surface is called a p-n junction. It allows current to flow primarily in one direction.
+                <br><strong>Full Wave Rectifier:</strong> A device that converts both halves of the AC cycle into DC.
+                <br><strong>Construction:</strong> It uses a center-tap transformer and two diodes (D<sub>1</sub> and D<sub>2</sub>). The ends of the secondary coil are connected to the diodes.
+                <br><strong>Working:</strong>
+                <ul>
+                    <li><strong>Positive Half Cycle:</strong> Diode D<sub>1</sub> becomes forward biased and conducts, while D<sub>2</sub> is reverse biased (off).</li>
+                    <li><strong>Negative Half Cycle:</strong> Diode D<sub>2</sub> becomes forward biased and conducts, while D<sub>1</sub> is reverse biased (off).</li>
+                </ul>
+                <strong>Conclusion:</strong> Current flows through the load resistor in the same direction during both half-cycles, producing a continuous DC output.
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-container">
+            <div class="question">Q6. State and prove Gauss's Theorem. Use it to find the electric field due to an infinitely long uniformly charged wire.</div>
+            <div class="answer">
+                <strong>Statement:</strong> "The total electric flux (ϕ) passing through any closed surface in a vacuum is 1/ε<sub>0</sub> times the total charge (q) enclosed by that surface."
+                <div class="equation-box">ϕ = ∮ E·dS = q / ε<sub>0</sub></div>
+                <strong>Application (Infinite Wire):</strong>
+                Consider an infinitely long wire with linear charge density λ.
+                <br>1. Imagine a cylindrical Gaussian surface of radius 'r' and length 'l' coaxial with the wire.
+                <br>2. Due to symmetry, the electric field E is constant in magnitude and perpendicular to the curved surface at every point.
+                <br>3. Total flux ϕ = E × (Area of curved surface) = E (2πrl)
+                <br>4. By Gauss's Law: E(2πrl) = q/ε<sub>0</sub>
+                <br>Since q = λl, we have E(2πrl) = (λl)/ε<sub>0</sub>
+                <div class="equation-box">E = λ / (2π ε<sub>0</sub> r)</div>
+                Thus, the electric field is inversely proportional to distance (E ∝ 1/r).
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-container">
+            <div class="question">Q7. What is Interference of light? Derive an expression for Fringe Width in Young's Double Slit Experiment (YDSE).</div>
+            <div class="answer">
+                <strong>Interference:</strong> The phenomenon where the superposition of two light waves of the same frequency travelling in the same direction results in redistribution of light intensity (maxima and minima) is called interference.
+                <br><strong>Expression for Fringe Width:</strong>
+                Let 'd' be the distance between two slits S<sub>1</sub> and S<sub>2</sub>, and 'D' be the distance of the screen.
+                <br>The path difference between waves reaching a point P at distance 'y' from the center is Δx = yd/D.
+                <br><strong>For Bright Fringe (Constructive):</strong> Path difference must be an integral multiple of wavelength (λ).
+                <br>yd/D = nλ &rArr; y<sub>n</sub> = (nλ D)/d
+                <br><strong>Fringe Width (β):</strong> The distance between two consecutive bright fringes.
+                <br>β = y<sub>n+1</sub> - y<sub>n</sub>
+                <div class="equation-box">β = (λ D) / d</div>
+                It is clear that fringe width is directly proportional to wavelength (λ).
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-container">
+            <div class="question">Q8. State Huygens' Wave Theory. Using this principle, verify the laws of Reflection or Refraction of light.</div>
+            <div class="answer">
+                <strong>Huygens' Principle:</strong>
+                <ol>
+                    <li>Light travels in the form of waves. The locus of all particles vibrating in the same phase is called a <strong>Wavefront</strong>.</li>
+                    <li>Every point on a wavefront acts as a source of new disturbance, called <em>secondary wavelets</em>, which spread out in all directions with the speed of light.</li>
+                </ol>
+                <strong>Verification of Reflection:</strong>
+                Consider a plane wavefront AB incident obliquely on a reflecting surface.
+                <br>At time t, one end B of the wavefront touches the surface, while the other end A reflects and travels forward. We use geometry to compare the incident and reflected triangles formed.
+                <br>The two triangles are proven to be congruent, leading to the conclusion that the angle of incidence (i) is equal to the angle of reflection (r) (&angle;i = &angle;r). This verifies the law of reflection.
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-container">
+            <div class="question">Q9. What is an Electric Dipole? Derive an expression for the Electric Field Intensity at a point on the Axial Position of a dipole.</div>
+            <div class="answer">
+                <strong>Electric Dipole:</strong> A system of two equal and opposite charges (-q and +q) separated by a very small distance (2l) is called an electric dipole.
+                <br><strong>Derivation:</strong>
+                Consider a point P on the axis at a distance 'r' from the center O of the dipole.
+                <ul>
+                    <li>Field due to +q at P (E<sub>1</sub>): Outwards, E<sub>1</sub> = (1/4πε<sub>0</sub>) [q / (r-l)<sup>2</sup>]</li>
+                    <li>Field due to -q at P (E<sub>2</sub>): Inwards, E<sub>2</sub> = (1/4πε<sub>0</sub>) [q / (r+l)<sup>2</sup>]</li>
+                </ul>
+                Resultant Field E = E<sub>1</sub> - E<sub>2</sub> (directed along +q).
+                <br>Solving: E = (q/4πε<sub>0</sub>) [4rl / (r<sup>2</sup>-l<sup>2</sup>)<sup>2</sup>]
+                <br>If r >> l, neglecting l<sup>2</sup>:
+                <div class="equation-box">E = (1 / 4πε<sub>0</sub>) × (2p / r<sup>3</sup>)</div>
+                Where p = q × 2l is the dipole moment.
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-container">
+            <div class="question">Q10. What is a Transformer? Describe its principle, construction, and working. Mention the energy losses in it.</div>
+            <div class="answer">
+                <strong>Introduction:</strong> A transformer is a device based on the principle of Mutual Induction used to transform (increase or decrease) AC voltage.
+                <br><strong>Construction:</strong> It consists of a <em>Laminated Core</em> made of soft iron strips stacked together. Two separate coils (Primary N<sub>p</sub> and Secondary N<sub>s</sub>) of copper wire are wound over it.
+                <br><strong>Working:</strong> When AC flows through the primary coil, a changing magnetic flux is produced in the core. This flux links with the secondary coil, inducing an EMF in it.
+                <div class="equation-box">V<sub>s</sub> / V<sub>p</sub> = N<sub>s</sub> / N<sub>p</sub> = k</div>
+                <strong>Energy Losses:</strong> (1) Flux Leakage (2) Copper Loss (Heat I<sup>2</sup>R) (3) Eddy Current Loss (reduced by laminating the core) (4) Hysteresis Loss.
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-container">
+            <div class="question">Q11. State Biot-Savart Law. Use it to derive the expression for the magnetic field on the axis of a current-carrying circular loop.</div>
+            <div class="answer">
+                <strong>Biot-Savart Law:</strong> The magnetic field dB at a point due to a current element dl is directly proportional to current I, length dl, sine of angle (sinθ), and inversely proportional to the square of the distance r.
+                <br>dB = (μ<sub>0</sub>/4π) [(I dl sinθ) / r<sup>2</sup>]
+                <br><strong>Field on Axis of Circular Loop:</strong>
+                Let I be the current in a loop of radius R. P is a point on the axis at distance x from center.
+                <br>The magnetic field due to any element has two components: perpendicular to axis (dB cosφ) and along the axis (dB sinφ).
+                <br>Due to symmetry, perpendicular components cancel out, and axial components add up.
+                <br>Integrating to find total field:
+                <div class="equation-box">B = (μ<sub>0</sub> I R<sup>2</sup>) / [2(R<sup>2</sup> + x<sup>2</sup>)<sup>3/2</sup>]</div>
+                If the coil has N turns, multiply by N. At the center (x=0), B = (μ<sub>0</sub>NI)/2R.
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-container">
+            <div class="question">Q12. Write the postulates of Bohr's Atomic Model. Derive the expression for the radius of the nth orbit of a Hydrogen atom.</div>
+            <div class="answer">
+                <strong>Postulates:</strong>
+                <ol>
+                    <li>Electrons revolve around the nucleus only in certain orbits where their angular momentum is an integral multiple of h/2π (mvr = nh/2π). These are called stationary orbits.</li>
+                    <li>Electrons do not radiate energy while revolving in stationary orbits.</li>
+                    <li>Energy is emitted as a photon when an electron jumps from a higher energy level (E<sub>2</sub>) to a lower level (E<sub>1</sub>) (hν = E<sub>2</sub> - E<sub>1</sub>).</li>
+                </ol>
+                <strong>Expression for Radius:</strong>
+                For a stable orbit, Centripetal Force = Electrostatic Force
+                <br>mv<sup>2</sup>/r = (1/4πε<sub>0</sub>) (Ze<sup>2</sup>/r<sup>2</sup>)
+                <br>Substituting 'v' from the angular momentum condition:
+                <div class="equation-box">r<sub>n</sub> = (ε<sub>0</sub> n<sup>2</sup> h<sup>2</sup>) / (π m Z e<sup>2</sup>)</div>
+                Thus, radius is directly proportional to the square of the orbit number (r ∝ n<sup>2</sup>).
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-container">
+            <div class="question">Q13. What do you mean by the Root Mean Square (RMS) value of alternating current? Derive an expression for it.</div>
+            <div class="answer">
+                <strong>Definition:</strong> The square root of the mean of the squares of the alternating current over one complete cycle is called the RMS value. It is the equivalent DC value that produces the same amount of heat in a resistor in the same time.
+                <br><strong>Derivation:</strong>
+                Let the AC current be I = I<sub>0</sub> sin(ωt).
+                <br>The mean of the square of current over one cycle (period T) is:
+                <br>Mean(I<sup>2</sup>) = (1/T) ∫ I<sub>0</sub><sup>2</sup> sin<sup>2</sup>(ωt) dt
+                <br>Mathematically, the average value of sin<sup>2</sup>(ωt) over a cycle is 1/2.
+                <br>So, Mean(I<sup>2</sup>) = I<sub>0</sub><sup>2</sup> / 2
+                <br>Taking the square root gives the RMS value:
+                <div class="equation-box">I<sub>rms</sub> = I<sub>0</sub> / √2 ≈ 0.707 I<sub>0</sub></div>
+                This means the RMS value is approximately 70.7% of the peak value.
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-container">
+            <div class="question">Q14. Derive the expression for the Time Period of oscillation of a bar magnet suspended freely in a uniform magnetic field.</div>
+            <div class="answer">
+                <strong>Principle:</strong> When a bar magnet (dipole moment M) suspended in a magnetic field (B) is displaced by a small angle θ, a restoring torque acts on it.
+                <br>Torque τ = -MB sinθ
+                <br>For small angles, sinθ ≈ θ. So, τ = -MBθ.
+                <br>From Newton's law for rotation, τ = Iα (where I is Moment of Inertia and α is angular acceleration).
+                <br>Thus, Iα = -MBθ &rArr; α = -(MB/I)θ
+                <br>This is the equation of Simple Harmonic Motion (SHM) where α = -ω<sup>2</sup>θ.
+                <br>Comparing, ω<sup>2</sup> = MB/I &rArr; ω = √(MB/I)
+                <br>Time Period T = 2π/ω:
+                <div class="equation-box">T = 2π √(I / MB)</div>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-container">
+            <div class="question">Q15. What is the Photoelectric Effect? Establish Einstein's Photoelectric Equation and explain the laws using it.</div>
+            <div class="answer">
+                <strong>Photoelectric Effect:</strong> The emission of electrons from a metal surface when light of sufficiently high frequency falls on it is called the photoelectric effect.
+                <br><strong>Einstein's Equation:</strong>
+                Einstein used Planck's Quantum Theory. Light consists of energy packets (photons) with energy E = hν.
+                <br>When a photon hits the surface, its energy is used in two ways:
+                <ol>
+                    <li>To eject the electron from the surface (Work Function, ϕ<sub>0</sub>).</li>
+                    <li>To provide Kinetic Energy (K<sub>max</sub>) to the ejected electron.</li>
+                </ol>
+                By Conservation of Energy: hν = ϕ<sub>0</sub> + K<sub>max</sub>
+                <div class="equation-box">K<sub>max</sub> = hν - ϕ<sub>0</sub></div>
+                If ν<sub>0</sub> is the threshold frequency, then ϕ<sub>0</sub> = hν<sub>0</sub>. Thus, K<sub>max</sub> = h(ν - ν<sub>0</sub>).
+                This explains that if ν < ν<sub>0</sub>, K<sub>max</sub> becomes negative, meaning no emission occurs.
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-container">
+            <div class="question">Q16. Describe the principle, construction, and working of a Moving Coil Galvanometer. Derive the expression for its current sensitivity.</div>
+            <div class="answer">
+                <strong>Principle:</strong> A current-carrying coil placed in a uniform magnetic field experiences a torque that tends to rotate it.
+                <br><strong>Construction:</strong> It consists of a coil of fine copper wire suspended between the poles of a strong magnet. The poles are concave, and a soft iron cylinder is placed inside to make the field <em>Radial</em>.
+                <br><strong>Working:</strong> When current I flows, the torque acting is τ = NIAB (since field is radial, sinθ = 1).
+                <br>A restoring torque τ' = kα is produced in the suspension wire due to twist (k = torsional constant).
+                <br>At equilibrium: NIAB = kα &rArr; α = (NAB/k)I
+                <br>This shows deflection is proportional to current.
+                <br><strong>Current Sensitivity:</strong> S = α/I = NAB/k.
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-container">
+            <div class="question">Q17. What is a Transistor? Describe the working of an n-p-n transistor with a diagram.</div>
+            <div class="answer">
+                <strong>Introduction:</strong> A transistor is a three-terminal semiconductor device used as an amplifier and switch. It has three parts: Emitter, Base, and Collector.
+                <br><strong>Working of n-p-n Transistor:</strong>
+                It has a thin p-type layer (Base) sandwiched between two n-type blocks.
+                <br>Biasing conditions:
+                <ol>
+                    <li>Emitter-Base junction is <em>Forward Biased</em>.</li>
+                    <li>Collector-Base junction is <em>Reverse Biased</em>.</li>
+                </ol>
+                Electrons from the Emitter (n-type) move towards the Base. Since the Base is very thin and lightly doped, about 95% of electrons cross it and reach the Collector. Only 2-5% recombine with holes in the Base, causing a weak Base current (I<sub>B</sub>).
+                <br><strong>Current Equation:</strong> I<sub>E</sub> = I<sub>B</sub> + I<sub>C</sub> (Emitter Current = Base Current + Collector Current).
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-container">
+            <div class="question">Q18. What is Mutual Induction? Derive the expression for the Mutual Inductance of two long co-axial solenoids.</div>
+            <div class="answer">
+                <strong>Mutual Induction:</strong> The phenomenon where a changing current in one coil induces an EMF in a neighboring coil due to the change in magnetic flux linked with it.
+                <br><strong>Derivation:</strong>
+                Consider two long co-axial solenoids S<sub>1</sub> (Primary) and S<sub>2</sub> (Secondary). Both have length 'l' and Area 'A'. Number of turns are N<sub>1</sub> and N<sub>2</sub>.
+                <br>When current I<sub>1</sub> flows in S<sub>1</sub>, magnetic field: B<sub>1</sub> = (μ<sub>0</sub> N<sub>1</sub> I<sub>1</sub>) / l
+                <br>This flux passes through S<sub>2</sub>. Total flux linkage in S<sub>2</sub>:
+                <br>ϕ<sub>2</sub> = N<sub>2</sub> (B<sub>1</sub> A) = N<sub>2</sub> [(μ<sub>0</sub> N<sub>1</sub> I<sub>1</sub>) / l] A
+                <br>By definition, ϕ<sub>2</sub> = M I<sub>1</sub>. Comparing both equations:
+                <div class="equation-box">M = (μ<sub>0</sub> N<sub>1</sub> N<sub>2</sub> A) / l</div>
+                This is for air core. If a core of permeability μ<sub>r</sub> is used, M = (μ<sub>0</sub> μ<sub>r</sub> N<sub>1</sub> N<sub>2</sub> A) / l.
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-container">
+            <div class="question">Q19. What are Energy Bands in solids? Classify conductors, insulators, and semiconductors based on band theory.</div>
+            <div class="answer">
+                <strong>Energy Bands:</strong> In solids, due to the close proximity of atoms, electron energy levels merge to form continuous ranges called Energy Bands. The two main bands are Valence Band (VB) and Conduction Band (CB). The gap between them is the <em>Forbidden Energy Gap (E<sub>g</sub>)</em>.
+                <br><strong>Classification:</strong>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Energy Gap (E<sub>g</sub>)</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Conductors</strong></td>
+                        <td>Overlapping (E<sub>g</sub> ≈ 0)</td>
+                        <td>VB and CB overlap. Electrons can move freely to CB. Example: Copper, Silver.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Insulators</strong></td>
+                        <td>Very Large (E<sub>g</sub> > 3 eV)</td>
+                        <td>Gap is huge. Electrons cannot jump from VB to CB. Example: Wood, Glass.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Semiconductors</strong></td>
+                        <td>Small (E<sub>g</sub> < 3 eV)</td>
+                        <td>Insulators at 0K, but at higher temperatures, some electrons jump to CB. Example: Silicon, Germanium.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-container">
+            <div class="question">Q20. State the Radioactive Decay Law. Prove that N = N<sub>0</sub> e<sup>-λt</sup>. Define Half-Life.</div>
+            <div class="answer">
+                <strong>Rutherford-Soddy Law:</strong> "The rate of disintegration of radioactive atoms at any instant is directly proportional to the number of undecayed atoms present at that instant."
+                <br><strong>Derivation:</strong>
+                Let N be the number of atoms at time t. According to the law:
+                <br>dN/dt ∝ -N &rArr; dN/dt = -λN
+                <br>(λ is decay constant, negative sign implies decrease).
+                <br>Separating variables: dN/N = -λ dt
+                <br>Integrating: ∫ dN/N = -λ ∫ dt &rArr; ln N = -λt + C
+                <br>At t=0, N = N<sub>0</sub> (Initial number). So C = ln N<sub>0</sub>.
+                <br>ln N = -λt + ln N<sub>0</sub> &rArr; ln (N/N<sub>0</sub>) = -λt
+                <div class="equation-box">N = N<sub>0</sub> e<sup>-λt</sup></div>
+                <strong>Half-Life (T<sub>half</sub>):</strong> The time required for half of the radioactive substance to disintegrate. T<sub>half</sub> = 0.693 / λ.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

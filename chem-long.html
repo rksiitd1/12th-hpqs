@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemistry Class 12 - Important Long Questions</title>
+    <style>
+        /* Base Fonts & Print Settings */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 12mm;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        body {
+            font-family: 'Noto Serif Devanagari', 'Noto Serif', serif;
+            font-size: 10.5pt;
+            line-height: 1.45;
+            color: #000;
+            background: #fff;
+            text-align: justify;
+        }
+
+        /* 2-Column Layout */
+        .content-wrapper {
+            column-count: 2;
+            column-gap: 8mm;
+            column-rule: 0.5px solid #ddd;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 5px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            column-span: all;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 10pt;
+            font-style: italic;
+            margin-bottom: 15px;
+            column-span: all;
+        }
+
+        /* Question Block */
+        .qa-container {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #999;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 10.5pt;
+            display: block;
+            margin-bottom: 6px;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-left: 3px solid #000;
+        }
+
+        .answer {
+            display: block;
+            margin-left: 2px;
+        }
+
+        /* Structural Elements */
+        strong { font-weight: 700; }
+        p { margin: 3px 0; }
+        ul, ol { margin: 4px 0 6px 18px; padding: 0; }
+        li { margin-bottom: 3px; padding-left: 2px; }
+
+        /* Equation Styling (Pure CSS Math) */
+        .equation-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px 0;
+            padding: 6px;
+            background: #fff;
+            border: 1px solid #eee;
+            font-family: 'Times New Roman', serif;
+            font-size: 11pt;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Fraction CSS */
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 0 3px;
+            font-size: 0.9em;
+        }
+        .num {
+            border-bottom: 1px solid #000;
+            padding: 0 2px;
+        }
+        .den {
+            padding: 0 2px;
+        }
+
+        /* Math Symbols */
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        sup { top: -0.5em; }
+        sub { bottom: -0.25em; }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+            margin: 5px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 3px 5px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #eee;
+            text-align: center;
+        }
+        .section-title {
+            text-decoration: underline;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>महत्वपूर्ण दीर्घ उत्तरीय प्रश्न (Chemistry)</h1>
+    <div class="subtitle">Class 12 Bihar Board | Top 20 Most Probable Questions | 5 Marks Format</div>
+
+    <div class="content-wrapper">
+
+        <!-- Q1 -->
+        <div class="qa-container">
+            <div class="question">Q1. अभिक्रिया की कोटि को परिभाषित करें। प्रथम कोटि की अभिक्रिया के लिए वेग स्थिरांक (k) का व्यंजक प्राप्त करें।</div>
+            <div class="answer">
+                <strong>(i) अभिक्रिया की कोटि (Order of Reaction):</strong><br>
+                किसी अभिक्रिया के वेग नियम (Rate Law) व्यंजक में अभिकारकों की सांद्रता के घातों (powers) के योग को उस अभिक्रिया की कोटि कहते हैं।
+                <br><br>
+                <strong>(ii) प्रथम कोटि अभिक्रिया का व्यंजक:</strong><br>
+                माना एक प्रथम कोटि की अभिक्रिया निम्न है:<br>
+                <div style="text-align: center; font-style: italic;">R &rarr; P (उत्पाद)</div>
+                वेग नियम के अनुसार:
+                <div class="equation-box">
+                    Rate = 
+                    <span class="frac"><span class="num">-d[R]</span><span class="den">dt</span></span>
+                    = k[R]<sup>1</sup>
+                </div>
+                चरों को पृथक करने पर (Separating variables):
+                <div class="equation-box">
+                    <span class="frac"><span class="num">d[R]</span><span class="den">[R]</span></span>
+                    = -k dt
+                </div>
+                दोनों पक्षों का समाकलन (Integration) करने पर:<br>
+                &int; (1/[R]) d[R] = -k &int; dt<br>
+                <div class="equation-box">ln[R] = -kt + I ... (1)</div>
+                <em>प्रारम्भिक स्थिति में:</em> जब t = 0, तो [R] = [R]<sub>0</sub>।<br>
+                अतः I = ln[R]<sub>0</sub><br><br>
+                I का मान समीकरण 1 में रखने पर:<br>
+                ln[R] = -kt + ln[R]<sub>0</sub><br>
+                kt = ln[R]<sub>0</sub> - ln[R]<br>
+                <div class="equation-box">
+                    k = 
+                    <span class="frac"><span class="num">1</span><span class="den">t</span></span>
+                    ln
+                    <span class="frac"><span class="num">[R]<sub>0</sub></span><span class="den">[R]</span></span>
+                </div>
+                ln को log<sub>10</sub> में बदलने पर:
+                <div class="equation-box">
+                    k = 
+                    <span class="frac"><span class="num">2.303</span><span class="den">t</span></span>
+                    log
+                    <span class="frac"><span class="num">[R]<sub>0</sub></span><span class="den">[R]</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="qa-container">
+            <div class="question">Q2. लोहा (Iron) के मुख्य अयस्क का नाम लिखें। वात्या भट्ठी का उपयोग करते हुए अयस्क से लोहा के निष्कर्षण का वर्णन करें।</div>
+            <div class="answer">
+                <strong>मुख्य अयस्क:</strong> हेमेटाइट (Fe<sub>2</sub>O<sub>3</sub>)।<br>
+                <strong>निष्कर्षण:</strong> सांद्रित अयस्क, कोक और चूना पत्थर को वात्या भट्ठी में गर्म करते हैं।
+                <br><strong>वात्या भट्ठी में अभिक्रियाएँ:</strong>
+                <ol>
+                    <li>
+                        <span class="section-title">दहन क्षेत्र (नीचे):</span><br>
+                        C + O<sub>2</sub> &rarr; CO<sub>2</sub> (+ ऊष्मा)
+                    </li>
+                    <li>
+                        <span class="section-title">अवशोषण क्षेत्र (मध्य):</span><br>
+                        CO<sub>2</sub> + C &rarr; 2CO (- ऊष्मा)
+                    </li>
+                    <li>
+                        <span class="section-title">अपचयन क्षेत्र (ऊपर, 500-900K):</span><br>
+                        CO हेमेटाइट को लोहे में अपचयित करता है।
+                        <div class="equation-box">Fe<sub>2</sub>O<sub>3</sub> + 3CO &rarr; 2Fe + 3CO<sub>2</sub></div>
+                    </li>
+                    <li>
+                        <span class="section-title">धातुमल निर्माण:</span><br>
+                        CaO + SiO<sub>2</sub> &rarr; CaSiO<sub>3</sub> (धातुमल)
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="qa-container">
+            <div class="question">Q3. सम्पर्क विधि (Contact Process) द्वारा गंधकाम्ल के उत्पादन का वर्णन करें।</div>
+            <div class="answer">
+                <strong>सिद्धान्त एवं चरण:</strong>
+                <ol>
+                    <li>
+                        सल्फर का दहन:<br>
+                        S + O<sub>2</sub> &rarr; SO<sub>2</sub>
+                    </li>
+                    <li>
+                        <strong>उत्प्रेरकीय ऑक्सीकरण (मुख्य चरण):</strong><br>
+                        V<sub>2</sub>O<sub>5</sub>, 720K, 2 bar पर।
+                        <div class="equation-box">2SO<sub>2</sub> + O<sub>2</sub> &#8652; 2SO<sub>3</sub></div>
+                    </li>
+                    <li>
+                        ओलियम निर्माण:<br>
+                        SO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; H<sub>2</sub>S<sub>2</sub>O<sub>7</sub>
+                    </li>
+                    <li>
+                        तनुकरण:<br>
+                        H<sub>2</sub>S<sub>2</sub>O<sub>7</sub> + H<sub>2</sub>O &rarr; 2H<sub>2</sub>SO<sub>4</sub>
+                    </li>
+                </ol>
+                <strong>अभिक्रियाएँ:</strong><br>
+                कॉपर: Cu + 2H<sub>2</sub>SO<sub>4</sub> &rarr; CuSO<sub>4</sub> + SO<sub>2</sub> + 2H<sub>2</sub>O<br>
+                ऑक्जेलिक अम्ल: (COOH)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; CO + CO<sub>2</sub> + H<sub>2</sub>O
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="qa-container">
+            <div class="question">Q4. हैबर विधि द्वारा अमोनिया निर्माण का सिद्धान्त लिखें। यह CuSO<sub>4</sub> घोल से कैसे अभिक्रिया करता है?</div>
+            <div class="answer">
+                <strong>सिद्धान्त:</strong>
+                <div class="equation-box">N<sub>2</sub>(g) + 3H<sub>2</sub>(g) &#8652; 2NH<sub>3</sub>(g); &Delta;H = -ve</div>
+                अनुकूल परिस्थितियाँ:
+                <ul>
+                    <li><strong>ताप:</strong> ~700 K</li>
+                    <li><strong>दाब:</strong> ~200 atm</li>
+                    <li><strong>उत्प्रेरक:</strong> Fe<sub>2</sub>O<sub>3</sub> + K<sub>2</sub>O/Al<sub>2</sub>O<sub>3</sub></li>
+                </ul>
+                <strong>CuSO<sub>4</sub> के साथ अभिक्रिया:</strong><br>
+                अमोनिया कॉपर सल्फेट विलयन को गहरा नीला कर देता है।
+                <div class="equation-box">Cu<sup>2+</sup> + 4NH<sub>3</sub> &rarr; [Cu(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup> (नीला)</div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="qa-container">
+            <div class="question">Q5. परासरण दाब (Osmotic Pressure) को परिभाषित करें। सिद्ध करें कि यह एक अणुसंख्य गुणधर्म है।</div>
+            <div class="answer">
+                <strong>(i) परिभाषा:</strong> वह बाहरी दाब जो अर्द्ध-पारगम्य झिल्ली से विलायक के प्रवाह को रोकने के लिए विलयन पर लगाया जाता है।
+                <br><br>
+                <strong>(ii) प्रमाण:</strong><br>
+                वान्ट हॉफ समीकरण (तनु विलयन के लिए):
+                <div class="equation-box">&pi; = CRT</div>
+                चूँकि C = n/V, अतः:
+                <div class="equation-box">
+                    &pi; = 
+                    <span class="frac"><span class="num">n</span><span class="den">V</span></span>
+                    RT
+                </div>
+                यहाँ &pi; केवल विलेय के मोलों की संख्या (n) पर निर्भर करता है, न कि उसकी प्रकृति पर। अतः यह एक अणुसंख्य गुणधर्म है।
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="qa-container">
+            <div class="question">Q6. आप प्राथमिक (1&deg;), द्वितीयक (2&deg;) एवं तृतीयक (3&deg;) अल्कोहल में कैसे विभेद करेंगे?</div>
+            <div class="answer">
+                <strong>ल्युकास परीक्षण (Lucas Test):</strong><br>
+                अभिकर्मक: सांद्र HCl + निर्जल ZnCl<sub>2</sub>।<br>
+                अल्कोहल एल्किल हैलाइड बनाकर 'धुंधलापन' (Turbidity) देता है।
+                <ol>
+                    <li><strong>3&deg; अल्कोहल:</strong> तुरंत धुंधलापन देता है।</li>
+                    <li><strong>2&deg; अल्कोहल:</strong> लगभग 5 मिनट बाद धुंधलापन देता है।</li>
+                    <li><strong>1&deg; अल्कोहल:</strong> साधारण ताप पर कोई अभिक्रिया नहीं।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="qa-container">
+            <div class="question">Q7. विभेद करें: (a) एसिटल्डिहाइड और एसीटोन, (b) फॉर्मिक अम्ल और एसिटिक अम्ल।</div>
+            <div class="answer">
+                <strong>(a) एसिटल्डिहाइड (Ald) vs एसीटोन (Ket):</strong>
+                <table>
+                    <tr><th>परीक्षण</th><th>एसिटल्डिहाइड</th><th>एसीटोन</th></tr>
+                    <tr><td>टोलेन</td><td>सिल्वर दर्पण देता है</td><td>नहीं देता</td></tr>
+                    <tr><td>फेलिंग</td><td>लाल अवक्षेप देता है</td><td>नहीं देता</td></tr>
+                </table>
+                <br>
+                <strong>(b) फॉर्मिक अम्ल vs एसिटिक अम्ल:</strong>
+                <table>
+                    <tr><th>परीक्षण</th><th>फॉर्मिक अम्ल</th><th>एसिटिक अम्ल</th></tr>
+                    <tr><td>टोलेन</td><td>सिल्वर दर्पण देता है</td><td>नहीं देता</td></tr>
+                    <tr><td>HgCl<sub>2</sub></td><td>सफेद अवक्षेप देता है</td><td>नहीं देता</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="qa-container">
+            <div class="question">Q8. कार्बोहाइड्रेट क्या हैं? इनका वर्गीकरण करें।</div>
+            <div class="answer">
+                <strong>परिभाषा:</strong> प्रकाशिक सक्रिय पॉलीहाइड्रॉक्सी एल्डिहाइड या कीटोन जो जल-अपघटन पर ऐसी ही इकाइयाँ देते हैं।
+                <br><strong>वर्गीकरण:</strong>
+                <ol>
+                    <li><strong>मोनोसैकेराइड:</strong> जल-अपघटन नहीं होता। उदा: ग्लूकोज, फ्रुक्टोज।</li>
+                    <li><strong>ऑलिगोसैकेराइड:</strong> 2-10 इकाइयाँ देते हैं। उदा: सुक्रोज, माल्टोज।</li>
+                    <li><strong>पॉलिसैकेराइड:</strong> बहुत सारी इकाइयाँ देते हैं। उदा: स्टार्च, सेल्यूलोज।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="qa-container">
+            <div class="question">Q9. अभिक्रिया वेग को प्रभावित करने वाले कारकों (विशेषकर ताप) की विवेचना करें।</div>
+            <div class="answer">
+                <strong>अभिक्रिया वेग:</strong> इकाई समय में सांद्रता में परिवर्तन।
+                <br><strong>कारक:</strong>
+                <ol>
+                    <li><strong>सांद्रता:</strong> अणु बढ़ने से टक्करें बढ़ती हैं &rarr; वेग बढ़ता है।</li>
+                    <li>
+                        <strong>ताप:</strong> ताप बढ़ाने पर गतिज ऊर्जा बढ़ती है। (10&deg;C वृद्धि = वेग 2 गुना)।
+                        <br><strong>आर्हेनियस समीकरण:</strong>
+                        <div class="equation-box">k = A e<sup>-E<sub>a</sub> / RT</sup></div>
+                    </li>
+                    <li><strong>उत्प्रेरक:</strong> सक्रियण ऊर्जा (E<sub>a</sub>) कम करके वेग बढ़ाता है।</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="qa-container">
+            <div class="question">Q10. आयोडीन के मुख्य स्रोत क्या हैं? समुद्री घास से आयोडीन के निष्कासन का वर्णन करें।</div>
+            <div class="answer">
+                <strong>स्रोत:</strong> समुद्री घास (लेमिनेरिया), चिली साल्टपीटर।
+                <br><strong>विधि:</strong>
+                <ol>
+                    <li>घास जलाकर 'केल्प' (राख) बनाते हैं।</li>
+                    <li>जल में घोलकर क्रिस्टलीकरण द्वारा अन्य लवण हटाते हैं। शेष द्रव 'मातृ द्रव' कहलाता है।</li>
+                    <li>मातृ द्रव + MnO<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; आयोडीन।</li>
+                </ol>
+                <div class="equation-box">2NaI + MnO<sub>2</sub> + 3H<sub>2</sub>SO<sub>4</sub> &rarr; MnSO<sub>4</sub> + I<sub>2</sub> &uarr;</div>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="qa-container">
+            <div class="question">Q11. क्वथनांक का उन्नयन क्या है? अणुभार से संबंध लिखें।</div>
+            <div class="answer">
+                <strong>(i) क्वथनांक उन्नयन (&Delta;T<sub>b</sub>):</strong> अवाष्पशील विलेय मिलाने पर क्वथनांक में वृद्धि।
+                <div class="equation-box">&Delta;T<sub>b</sub> = T<sub>b</sub> - T<sub>b</sub><sup>0</sup></div>
+                <strong>(ii) अणुभार से संबंध:</strong><br>
+                राउल्ट के नियम से: &Delta;T<sub>b</sub> = K<sub>b</sub> &times; m
+                <div class="equation-box">
+                    m = 
+                    <span class="frac"><span class="num">w<sub>2</sub> &times; 1000</span><span class="den">M<sub>2</sub> &times; w<sub>1</sub></span></span>
+                </div>
+                अतः विलेय का अणुभार (M<sub>2</sub>):
+                <div class="equation-box">
+                    M<sub>2</sub> = 
+                    <span class="frac"><span class="num">K<sub>b</sub> &times; w<sub>2</sub> &times; 1000</span><span class="den">&Delta;T<sub>b</sub> &times; w<sub>1</sub></span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="qa-container">
+            <div class="question">Q12. ओस्टवाल्ड विधि द्वारा नाइट्रिक अम्ल (HNO<sub>3</sub>) का उत्पादन।</div>
+            <div class="answer">
+                <strong>चरण:</strong>
+                <ol>
+                    <li>
+                        <strong>अमोनिया ऑक्सीकरण:</strong> Pt जाली, 500K पर।
+                        <div class="equation-box">4NH<sub>3</sub> + 5O<sub>2</sub> &rarr; 4NO + 6H<sub>2</sub>O</div>
+                    </li>
+                    <li>
+                        <strong>NO का ऑक्सीकरण:</strong>
+                        <div class="equation-box">2NO + O<sub>2</sub> &rarr; 2NO<sub>2</sub></div>
+                    </li>
+                    <li>
+                        <strong>जल में अवशोषण:</strong>
+                        <div class="equation-box">3NO<sub>2</sub> + H<sub>2</sub>O &rarr; 2HNO<sub>3</sub> + NO</div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="qa-container">
+            <div class="question">Q13. बॉक्साइट से एल्युमिनियम के निष्कर्षण की विधि।</div>
+            <div class="answer">
+                <strong>अयस्क:</strong> बॉक्साइट (Al<sub>2</sub>O<sub>3</sub>.2H<sub>2</sub>O)।
+                <br><strong>विधि:</strong>
+                <ol>
+                    <li><strong>बेयर विधि:</strong> NaOH द्वारा बॉक्साइट से शुद्ध एल्युमिना (Al<sub>2</sub>O<sub>3</sub>) प्राप्त करते हैं।</li>
+                    <li>
+                        <strong>हॉल-हेरॉल्ट विधि:</strong> Al<sub>2</sub>O<sub>3</sub> + क्रायोलाइट (Na<sub>3</sub>AlF<sub>6</sub>) का वैद्युत अपघटन।
+                        <br>
+                        <em>कैथोड:</em> Al<sup>3+</sup> + 3e<sup>-</sup> &rarr; Al (धातु)<br>
+                        <em>एनोड:</em> C + O<sup>2-</sup> &rarr; CO/CO<sub>2</sub>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="qa-container">
+            <div class="question">Q14. (i) एल्डोल संघनन, (ii) कैनिजारो अभिक्रिया।</div>
+            <div class="answer">
+                <strong>(i) एल्डोल संघनन:</strong> &alpha;-H युक्त एल्डिहाइड तनु क्षार की उपस्थिति में संघनित होते हैं।
+                <div class="equation-box">2CH<sub>3</sub>CHO &rarr; CH<sub>3</sub>CH(OH)CH<sub>2</sub>CHO (Aldol)</div>
+                <strong>(ii) कैनिजारो अभिक्रिया:</strong> &alpha;-H विहीन एल्डिहाइड (जैसे HCHO) सांद्र क्षार के साथ असमानुपातन दर्शाते हैं।
+                <div class="equation-box">2HCHO + NaOH &rarr; CH<sub>3</sub>OH + HCOONa</div>
+                (मेथनॉल + सोडियम फॉर्मेट)
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="qa-container">
+            <div class="question">Q15. वैद्युत-रासायनिक सेल (गैल्वेनिक सेल) की क्रियाविधि।</div>
+            <div class="answer">
+                <strong>बनावट:</strong> Zn इलेक्ट्रोड (ZnSO<sub>4</sub>) और Cu इलेक्ट्रोड (CuSO<sub>4</sub>) लवण सेतु द्वारा जुड़े होते हैं।
+                <br><strong>अभिक्रियाएँ:</strong>
+                <ul>
+                    <li><strong>एनोड (-):</strong> Zn &rarr; Zn<sup>2+</sup> + 2e<sup>-</sup> (ऑक्सीकरण)</li>
+                    <li><strong>कैथोड (+):</strong> Cu<sup>2+</sup> + 2e<sup>-</sup> &rarr; Cu (अपचयन)</li>
+                </ul>
+                <strong>सेल अभिक्रिया:</strong>
+                <div class="equation-box">Zn + Cu<sup>2+</sup> &rarr; Zn<sup>2+</sup> + Cu</div>
+                इलेक्ट्रॉन Zn से Cu की ओर प्रवाहित होते हैं।
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="qa-container">
+            <div class="question">Q16. वाष्प दाब के आपेक्षिक अवनमन के लिए राउल्ट का नियम लिखें।</div>
+            <div class="answer">
+                <strong>नियम:</strong> "अवाष्पशील विलेय वाले विलयन का वाष्प दाब का आपेक्षिक अवनमन विलेय के मोल प्रभाज के बराबर होता है।"
+                <div class="equation-box">
+                    <span class="frac"><span class="num">P<sup>0</sup> - P<sub>s</sub></span><span class="den">P<sup>0</sup></span></span>
+                    = X<sub>solute</sub>
+                </div>
+                <strong>अणुभार (m) ज्ञात करना:</strong>
+                <div class="equation-box">
+                    <span class="frac"><span class="num">P<sup>0</sup> - P<sub>s</sub></span><span class="den">P<sup>0</sup></span></span>
+                    = 
+                    <span class="frac"><span class="num">w &times; M</span><span class="den">m &times; W</span></span>
+                </div>
+                (w, m = विलेय; W, M = विलायक के भार/अणुभार)
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="qa-container">
+            <div class="question">Q17. प्रयोगशाला में एनिलीन बनाने की विधि।</div>
+            <div class="answer">
+                <strong>विधि:</strong> नाइट्रोबेंजीन का Sn और HCl द्वारा अपचयन।
+                <div class="equation-box">C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> + 6[H] &rarr; C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + 2H<sub>2</sub>O</div>
+                प्राप्त मिश्रण अम्लीय होता है, इसे NaOH के साथ उपचारित कर शुद्ध एनिलीन प्राप्त करते हैं।
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="qa-container">
+            <div class="question">Q18. लायोफिलिक और लायोफोबिक सॉल में अंतर। पायस क्या है?</div>
+            <div class="answer">
+                <strong>अंतर:</strong>
+                <table>
+                    <tr><th>गुण</th><th>लायोफिलिक</th><th>लायोफोबिक</th></tr>
+                    <tr><td>निर्माण</td><td>आसान (सीधे मिलाने से)</td><td>कठिन (विशेष विधि)</td></tr>
+                    <tr><td>स्थायित्व</td><td>अधिक स्थायी</td><td>कम स्थायी</td></tr>
+                    <tr><td>प्रकृति</td><td>उत्क्रमणीय</td><td>अनुत्क्रमणीय</td></tr>
+                </table>
+                <br>
+                <strong>पायस (Emulsion):</strong> वह कोलाइड जिसमें परिक्षिप्त प्रावस्था और परिक्षेपण माध्यम दोनों द्रव होते हैं।<br>
+                उदा: दूध, क्रीम।
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="qa-container">
+            <div class="question">Q19. क्लोरोफॉर्म बनाने की विधि। एसीटोन से अभिक्रिया।</div>
+            <div class="answer">
+                <strong>विधि:</strong> विरंजक चूर्ण + जल + एसीटोन/इथेनॉल।
+                <ol>
+                    <li>CaOCl<sub>2</sub> + H<sub>2</sub>O &rarr; Cl<sub>2</sub></li>
+                    <li>CH<sub>3</sub>COCH<sub>3</sub> + 3Cl<sub>2</sub> &rarr; CCl<sub>3</sub>COCH<sub>3</sub> (क्लोरीनीकरण)</li>
+                    <li>2CCl<sub>3</sub>COCH<sub>3</sub> + Ca(OH)<sub>2</sub> &rarr; 2CHCl<sub>3</sub></li>
+                </ol>
+                <strong>एसीटोन से क्रिया:</strong> क्षार की उपस्थिति में 'क्लोरीटोन' (निद्राकारी) बनता है।
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="qa-container">
+            <div class="question">Q20. साबुन क्या है? इसकी शोधन क्रिया समझाएं।</div>
+            <div class="answer">
+                <strong>साबुन:</strong> उच्च वसा अम्लों के सोडियम लवण (C<sub>17</sub>H<sub>35</sub>COONa)।
+                <br><strong>शोधन क्रिया:</strong>
+                <ul>
+                    <li><strong>शीर्ष (Hydrophilic):</strong> जल में घुलता है।</li>
+                    <li><strong>पूंछ (Hydrophobic):</strong> तेल/गंदगी में घुलती है।</li>
+                </ul>
+                पानी में यह <strong>मिसेल (Micelle)</strong> बनाता है। पूंछ गंदगी को घेर लेती है और शीर्ष पानी की ओर रहता है। धोने पर गंदगी पानी के साथ बाहर आ जाती है।
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

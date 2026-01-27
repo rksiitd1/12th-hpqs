@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गणित (Mathematics) - Final Exam Formula Sheet 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0.5cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 9pt;
+            line-height: 1.3;
+            color: #000;
+            background: #fff;
+        }
+        
+        .container {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 8mm;
+        }
+        
+        h1 {
+            font-family: 'Noto Serif Devanagari', serif;
+            text-align: center;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .columns {
+            column-count: 3;
+            column-gap: 12px;
+            column-rule: 1px solid #ccc;
+        }
+        
+        .section {
+            break-inside: avoid;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Noto Serif Devanagari', serif;
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            padding: 2px 4px;
+            background: #000;
+            color: #fff;
+        }
+        
+        h3 {
+            font-size: 9pt;
+            font-weight: bold;
+            margin-top: 4px;
+            margin-bottom: 2px;
+            text-decoration: underline;
+        }
+        
+        .formula {
+            margin: 2px 0;
+            padding-left: 4px;
+        }
+        
+        .crucial {
+            background: #e8e8e8;
+            padding: 3px;
+            border-left: 3px solid #000;
+            margin: 3px 0;
+        }
+        
+        .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        .frac .num {
+            display: block;
+            border-bottom: 1px solid #000;
+            padding: 0 2px;
+        }
+        
+        .frac .den {
+            display: block;
+            padding: 0 2px;
+        }
+        
+        .sqrt {
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .sqrt:before {
+            content: "√";
+            position: absolute;
+            left: 0;
+            font-size: 12pt;
+        }
+        
+        .int {
+            font-size: 14pt;
+            vertical-align: middle;
+        }
+        
+        i {
+            font-style: italic;
+        }
+        
+        .vec {
+            position: relative;
+        }
+        
+        .vec:after {
+            content: "→";
+            position: absolute;
+            top: -8px;
+            left: 0;
+            font-size: 8pt;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 4px 0;
+            font-size: 8pt;
+        }
+        
+        table td, table th {
+            border: 1px solid #000;
+            padding: 1px 2px;
+        }
+        
+        table th {
+            background: #ddd;
+            font-weight: bold;
+        }
+        
+        .note {
+            font-size: 8pt;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>गणित (Mathematics) - Final Exam Formula Sheet 2025</h1>
+        
+        <div class="columns">
+            <!-- INVERSE TRIGONOMETRY -->
+            <div class="section">
+                <h2>1. प्रतिलोम त्रिकोणमिति (Inverse Trigonometry)</h2>
+                
+                <h3>Domain & Range</h3>
+                <table>
+                    <tr><th>Function</th><th>Domain</th><th>Range</th></tr>
+                    <tr><td>sin⁻¹<i>x</i></td><td>[-1,1]</td><td>[-π/2, π/2]</td></tr>
+                    <tr><td>cos⁻¹<i>x</i></td><td>[-1,1]</td><td>[0, π]</td></tr>
+                    <tr><td>tan⁻¹<i>x</i></td><td>ℝ</td><td>(-π/2, π/2)</td></tr>
+                    <tr><td>cot⁻¹<i>x</i></td><td>ℝ</td><td>(0, π)</td></tr>
+                    <tr><td>sec⁻¹<i>x</i></td><td>ℝ-(-1,1)</td><td>[0,π]-{π/2}</td></tr>
+                    <tr><td>cosec⁻¹<i>x</i></td><td>ℝ-(-1,1)</td><td>[-π/2,π/2]-{0}</td></tr>
+                </table>
+                
+                <h3>Properties (गुणधर्म)</h3>
+                <div class="formula crucial">sin⁻¹(1/<i>x</i>) = cosec⁻¹<i>x</i></div>
+                <div class="formula crucial">cos⁻¹(1/<i>x</i>) = sec⁻¹<i>x</i></div>
+                <div class="formula crucial">tan⁻¹(1/<i>x</i>) = cot⁻¹<i>x</i>, <i>x</i> > 0</div>
+                <div class="formula">tan⁻¹(1/<i>x</i>) = -π + cot⁻¹<i>x</i>, <i>x</i> < 0</div>
+                <div class="formula crucial">sin⁻¹(-<i>x</i>) = -sin⁻¹<i>x</i></div>
+                <div class="formula">tan⁻¹(-<i>x</i>) = -tan⁻¹<i>x</i></div>
+                <div class="formula">cos⁻¹(-<i>x</i>) = π - cos⁻¹<i>x</i></div>
+                <div class="formula crucial">sin⁻¹<i>x</i> + cos⁻¹<i>x</i> = π/2</div>
+                <div class="formula">tan⁻¹<i>x</i> + cot⁻¹<i>x</i> = π/2</div>
+                <div class="formula">sec⁻¹<i>x</i> + cosec⁻¹<i>x</i> = π/2</div>
+                
+                <h3>Conversion Formulas</h3>
+                <div class="formula crucial">2tan⁻¹<i>x</i> = sin⁻¹<span class="frac"><span class="num">2<i>x</i></span><span class="den">1+<i>x</i>²</span></span></div>
+                <div class="formula crucial">2tan⁻¹<i>x</i> = cos⁻¹<span class="frac"><span class="num">1-<i>x</i>²</span><span class="den">1+<i>x</i>²</span></span></div>
+                <div class="formula crucial">2tan⁻¹<i>x</i> = tan⁻¹<span class="frac"><span class="num">2<i>x</i></span><span class="den">1-<i>x</i>²</span></span></div>
+                
+                <h3>Sum & Difference</h3>
+                <div class="formula crucial">tan⁻¹<i>x</i> + tan⁻¹<i>y</i> = tan⁻¹<span class="frac"><span class="num"><i>x</i>+<i>y</i></span><span class="den">1-<i>xy</i></span></span>, <i>xy</i> < 1</div>
+                <div class="formula crucial">tan⁻¹<i>x</i> - tan⁻¹<i>y</i> = tan⁻¹<span class="frac"><span class="num"><i>x</i>-<i>y</i></span><span class="den">1+<i>xy</i></span></span></div>
+                <div class="formula">tan⁻¹<i>x</i> + tan⁻¹<i>y</i> = π + tan⁻¹<span class="frac"><span class="num"><i>x</i>+<i>y</i></span><span class="den">1-<i>xy</i></span></span>, <i>xy</i> > 1</div>
+            </div>
+            
+            <!-- MATRICES & DETERMINANTS -->
+            <div class="section">
+                <h2>2. आव्यूह (Matrices) & सारणिक (Determinants)</h2>
+                
+                <h3>Types (प्रकार)</h3>
+                <div class="formula"><i>A</i> = <i>A</i>ᵀ → Symmetric</div>
+                <div class="formula"><i>A</i> = -<i>A</i>ᵀ → Skew-Symmetric</div>
+                <div class="formula crucial">Skew में diagonal = 0</div>
+                
+                <h3>Adjoint Properties</h3>
+                <div class="formula crucial"><i>A</i>(adj <i>A</i>) = (adj <i>A</i>)<i>A</i> = |<i>A</i>|<i>I</i></div>
+                <div class="formula crucial">|adj <i>A</i>| = |<i>A</i>|<sup><i>n</i>-1</sup> (order <i>n</i>)</div>
+                <div class="formula">adj(<i>AB</i>) = (adj <i>B</i>)(adj <i>A</i>)</div>
+                <div class="formula">adj(adj <i>A</i>) = |<i>A</i>|<sup><i>n</i>-2</sup><i>A</i></div>
+                <div class="formula">adj(<i>kA</i>) = <i>k</i><sup><i>n</i>-1</sup>(adj <i>A</i>)</div>
+                
+                <h3>Inverse Properties</h3>
+                <div class="formula crucial"><i>A</i>⁻¹ = <span class="frac"><span class="num">1</span><span class="den">|<i>A</i>|</span></span> (adj <i>A</i>)</div>
+                <div class="formula crucial">(<i>AB</i>)⁻¹ = <i>B</i>⁻¹<i>A</i>⁻¹</div>
+                <div class="formula">(<i>A</i>ᵀ)⁻¹ = (<i>A</i>⁻¹)ᵀ</div>
+                <div class="formula">|<i>A</i>⁻¹| = <span class="frac"><span class="num">1</span><span class="den">|<i>A</i>|</span></span></div>
+                <div class="formula">(<i>A</i>⁻¹)⁻¹ = <i>A</i></div>
+                
+                <h3>Determinant Properties</h3>
+                <div class="formula">|<i>AB</i>| = |<i>A</i>||<i>B</i>|</div>
+                <div class="formula">|<i>kA</i>| = <i>k</i><sup><i>n</i></sup>|<i>A</i>| (order <i>n</i>)</div>
+                <div class="formula">|<i>A</i>ᵀ| = |<i>A</i>|</div>
+                
+                <h3>Area of Triangle</h3>
+                <div class="formula crucial">Δ = <span class="frac"><span class="num">1</span><span class="den">2</span></span> |<i>x</i>₁(<i>y</i>₂-<i>y</i>₃) + <i>x</i>₂(<i>y</i>₃-<i>y</i>₁) + <i>x</i>₃(<i>y</i>₁-<i>y</i>₂)|</div>
+                
+                <h3>Matrix Method (System of Equations)</h3>
+                <div class="formula crucial"><i>AX</i> = <i>B</i> ⇒ <i>X</i> = <i>A</i>⁻¹<i>B</i> (जब |<i>A</i>| ≠ 0)</div>
+                <div class="formula">Unique Solution: |<i>A</i>| ≠ 0</div>
+                <div class="formula">No Solution: |<i>A</i>| = 0, (adj <i>A</i>)<i>B</i> ≠ 0</div>
+                <div class="formula">Infinite Solutions: |<i>A</i>| = 0, (adj <i>A</i>)<i>B</i> = 0</div>
+            </div>
+            
+            <!-- DIFFERENTIATION -->
+            <div class="section">
+                <h2>3. अवकलन (Differentiation)</h2>
+                
+                <h3>Standard Derivatives</h3>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(<i>x</i><sup><i>n</i></sup>) = <i>nx</i><sup><i>n</i>-1</sup></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(<i>a</i><sup><i>x</i></sup>) = <i>a</i><sup><i>x</i></sup> ln <i>a</i></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(<i>e</i><sup><i>x</i></sup>) = <i>e</i><sup><i>x</i></sup></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(log<i>ₐx</i>) = <span class="frac"><span class="num">1</span><span class="den"><i>x</i> ln <i>a</i></span></span></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(ln <i>x</i>) = <span class="frac"><span class="num">1</span><span class="den"><i>x</i></span></span></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(sin <i>x</i>) = cos <i>x</i></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cos <i>x</i>) = -sin <i>x</i></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(tan <i>x</i>) = sec²<i>x</i></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cot <i>x</i>) = -cosec²<i>x</i></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(sec <i>x</i>) = sec <i>x</i> tan <i>x</i></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cosec <i>x</i>) = -cosec <i>x</i> cot <i>x</i></div>
+                
+                <h3>Inverse Trig Derivatives</h3>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(sin⁻¹<i>x</i>) = <span class="frac"><span class="num">1</span><span class="den">√(1-<i>x</i>²)</span></span></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cos⁻¹<i>x</i>) = -<span class="frac"><span class="num">1</span><span class="den">√(1-<i>x</i>²)</span></span></div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(tan⁻¹<i>x</i>) = <span class="frac"><span class="num">1</span><span class="den">1+<i>x</i>²</span></span></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cot⁻¹<i>x</i>) = -<span class="frac"><span class="num">1</span><span class="den">1+<i>x</i>²</span></span></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(sec⁻¹<i>x</i>) = <span class="frac"><span class="num">1</span><span class="den">|<i>x</i>|√(<i>x</i>²-1)</span></span></div>
+                <div class="formula"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(cosec⁻¹<i>x</i>) = -<span class="frac"><span class="num">1</span><span class="den">|<i>x</i>|√(<i>x</i>²-1)</span></span></div>
+                
+                <h3>Special Cases</h3>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(<i>x</i><sup><i>x</i></sup>) = <i>x</i><sup><i>x</i></sup>(1 + ln <i>x</i>)</div>
+                <div class="formula crucial"><span class="frac"><span class="num"><i>d</i></span><span class="den"><i>dx</i></span></span>(<i>x</i><sup><i>y</i></sup>) का implicit differentiation करें</div>
+                <div class="formula">Chain Rule: <span class="frac"><span class="num"><i>dy</i></span><span class="den"><i>dx</i></span></span> = <span class="frac"><span class="num"><i>dy</i></span><span class="den"><i>du</i></span></span> · <span class="frac"><span class="num"><i>du</i></span><span class="den"><i>dx</i></span></span></div>
+                <div class="formula crucial">Parametric: <span class="frac"><span class="num"><i>dy</i></span><span class="den"><i>dx</i></span></span> = <span class="frac"><span class="num"><i>dy/dt</i></span><span class="den"><i>dx/dt</i></span></span></div>
+            </div>
+            
+            <!-- APPLICATION OF DERIVATIVES -->
+            <div class="section">
+                <h2>4. अवकलज के अनुप्रयोग (AOD)</h2>
+                
+                <h3>Rate of Change</h3>
+                <div class="formula crucial">Instantaneous Rate = <span class="frac"><span class="num"><i>dy</i></span><span class="den"><i>dx</i></span></span></div>
+                
+                <h3>Tangent & Normal</h3>
+                <div class="formula crucial">Slope of Tangent = <i>m</i> = <span class="frac"><span class="num"><i>dy</i></span><span class="den"><i>dx</i></span></span>|<sub>(<i>x₁</i>,<i>y₁</i>)</sub></div>
+                <div class="formula crucial">Slope of Normal = -<span class="frac"><span class="num">1</span><span class="den"><i>m</i></span></span></div>
+                <div class="formula">Tangent Equation: <i>y</i>-<i>y</i>₁ = <i>m</i>(<i>x</i>-<i>x</i>₁)</div>
+                <div class="formula">Normal Equation: <i>y</i>-<i>y</i>₁ = -<span class="frac"><span class="num">1</span><span class="den"><i>m</i></span></span>(<i>x</i>-<i>x</i>₁)</div>
+                
+                <h3>Increasing/Decreasing</h3>
+                <div class="formula crucial">Increasing: <i>f</i>'(<i>x</i>) ≥ 0</div>
+                <div class="formula crucial">Decreasing: <i>f</i>'(<i>x</i>) ≤ 0</div>
+                <div class="formula">Strictly Inc: <i>f</i>'(<i>x</i>) > 0</div>
+                <div class="formula">Strictly Dec: <i>f</i>'(<i>x</i>) < 0</div>
+                
+                <h3>Maxima & Minima</h3>
+                <div class="formula crucial">Critical Point: <i>f</i>'(<i>x</i>) = 0</div>
+                <div class="formula crucial">First Derivative Test:</div>
+                <div class="formula">• Maxima: <i>f</i>' changes + to -</div>
+                <div class="formula">• Minima: <i>f</i>' changes - to +</div>
+                <div class="formula crucial">Second Derivative Test:</div>
+                <div class="formula">• <i>f</i>''(<i>c</i>) > 0 → Minima at <i>x</i>=<i>c</i></div>
+                <div class="formula">• <i>f</i>''(<i>c</i>) < 0 → Maxima at <i>x</i>=<i>c</i></div>
+                <div class="formula">• <i>f</i>''(<i>c</i>) = 0 → Test fails</div>
+            </div>
+            
+            <!-- INDEFINITE INTEGRALS -->
+            <div class="section">
+                <h2>5. समाकलन (Integrals)</h2>
+                
+                <h3>Standard Forms</h3>
+                <div class="formula crucial">∫<i>x</i><sup><i>n</i></sup> <i>dx</i> = <span class="frac"><span class="num"><i>x</i><sup><i>n</i>+1</sup></span><span class="den"><i>n</i>+1</span></span> + <i>C</i> (<i>n</i> ≠ -1)</div>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den"><i>x</i></span></span> <i>dx</i> = ln|<i>x</i>| + <i>C</i></div>
+                <div class="formula crucial">∫<i>e</i><sup><i>x</i></sup> <i>dx</i> = <i>e</i><sup><i>x</i></sup> + <i>C</i></div>
+                <div class="formula crucial">∫<i>a</i><sup><i>x</i></sup> <i>dx</i> = <span class="frac"><span class="num"><i>a</i><sup><i>x</i></sup></span><span class="den">ln <i>a</i></span></span> + <i>C</i></div>
+                <div class="formula">∫sin <i>x</i> <i>dx</i> = -cos <i>x</i> + <i>C</i></div>
+                <div class="formula">∫cos <i>x</i> <i>dx</i> = sin <i>x</i> + <i>C</i></div>
+                <div class="formula">∫sec²<i>x</i> <i>dx</i> = tan <i>x</i> + <i>C</i></div>
+                <div class="formula">∫cosec²<i>x</i> <i>dx</i> = -cot <i>x</i> + <i>C</i></div>
+                <div class="formula">∫sec <i>x</i> tan <i>x</i> <i>dx</i> = sec <i>x</i> + <i>C</i></div>
+                <div class="formula">∫cosec <i>x</i> cot <i>x</i> <i>dx</i> = -cosec <i>x</i> + <i>C</i></div>
+                <div class="formula">∫tan <i>x</i> <i>dx</i> = ln|sec <i>x</i>| + <i>C</i></div>
+                <div class="formula">∫cot <i>x</i> <i>dx</i> = ln|sin <i>x</i>| + <i>C</i></div>
+                <div class="formula">∫sec <i>x</i> <i>dx</i> = ln|sec <i>x</i> + tan <i>x</i>| + <i>C</i></div>
+                <div class="formula">∫cosec <i>x</i> <i>dx</i> = ln|cosec <i>x</i> - cot <i>x</i>| + <i>C</i></div>
+                
+                <h3>9 Special Integrals (महत्वपूर्ण)</h3>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den"><i>x</i>²+<i>a</i>²</span></span> <i>dx</i> = <span class="frac"><span class="num">1</span><span class="den"><i>a</i></span></span> tan⁻¹<span class="frac"><span class="num"><i>x</i></span><span class="den"><i>a</i></span></span> + <i>C</i></div>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den"><i>x</i>²-<i>a</i>²</span></span> <i>dx</i> = <span class="frac"><span class="num">1</span><span class="den">2<i>a</i></span></span> ln|<span class="frac"><span class="num"><i>x</i>-<i>a</i></span><span class="den"><i>x</i>+<i>a</i></span></span>| + <i>C</i></div>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den"><i>a</i>²-<i>x</i>²</span></span> <i>dx</i> = <span class="frac"><span class="num">1</span><span class="den">2<i>a</i></span></span> ln|<span class="frac"><span class="num"><i>a</i>+<i>x</i></span><span class="den"><i>a</i>-<i>x</i></span></span>| + <i>C</i></div>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den">√(<i>x</i>²+<i>a</i>²)</span></span> <i>dx</i> = ln|<i>x</i> + √(<i>x</i>²+<i>a</i>²)| + <i>C</i></div>
+                <div class="formula crucial">∫<span class="frac"><span class="num">1</span><span class="den">√(<i>x
